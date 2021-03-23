@@ -40,15 +40,15 @@ We use the level order traversal sequence with a special symbol "\#" denoting th
 
 The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
 
+```text
     1
-
   /   \
-
  2     3
-
       /
-
     4
+```
+
+  
 
 想法：
 
