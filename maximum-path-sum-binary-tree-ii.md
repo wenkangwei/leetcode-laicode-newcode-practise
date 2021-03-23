@@ -16,15 +16,15 @@ Given a binary tree in which each node contains an integer number. Find the maxi
 
 **Examples**
 
-   -1
-
+```text
+    -1
   /    \
-
 2      11
-
      /    \
-
     6    -14
+```
+
+ 
 
 one example of paths could be -14 -&gt; 11 -&gt; -1 -&gt; 2
 
