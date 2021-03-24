@@ -11,7 +11,8 @@
 
 ## LinkedList
 
-* [反转链表I](linkedlist/untitled.md)
+* [反转链表I](linkedlist/untitled/README.md)
+  * [Untitled](linkedlist/untitled/untitled-1.md)
 
 ## DFS/BFS
 
@@ -28,4 +29,8 @@
 ## Dynamic Programming
 
 * [Untitled](dynamic-programming/untitled.md)
+
+## Sorting
+
+* [排序](sorting/pai-xu.md)
 
