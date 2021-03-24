@@ -4,9 +4,13 @@ description: 二叉树任意两个节点的最大路径和
 
 # Maximum Path Sum Binary Tree II
 
+1**.Links：**
+
 牛客: [https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196&tqId=37050&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey](https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196&tqId=37050&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey)
 
 Laicode: [https://app.laicode.io/app/problem/139](https://app.laicode.io/app/problem/139)
+
+**2. 题目：**
 
 Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from any node to any node \(the start node and the end node can be the same\).** 
 
@@ -50,10 +54,11 @@ The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
 
   
 
-想法：
+**3想法**：
 
 1. 和之前的任意两个leaf node的最大路径不同的是，这个是任意两个node之间的最大路径，所以在把一个node的left， right subtree的max path相加之前，要先看一下来自left， right 的max path是否大于0。 如果是left/right 的从上往下的max path sum &lt;0, 那么就不用加那个path了
-2. 步骤就是
+2. **思路：任意另个node的max path sum = max \(left 的path sum， right的max path sum， left + right + node的跨了两个branchd的path sum\)**    对于每一个node，找到它left， right subtree的自上而下的consecutive max path sum，如果这个从上往下的path sum是等于0，就加到cur.value 否则如果是负数时，负数加上去不会对max path sum有贡献所以直接设置为0，不考虑。之后在和global max对比更新。最后把加上当前的node的value的从上往下的consecutive的max path sum返回到上一层。
+3. 步骤就是
    1. 遍历每一个node
    2. recursion的输入是node， 输出是从那个node开始自上往下最大的path sum
    3. 如果node是none，返回 0
