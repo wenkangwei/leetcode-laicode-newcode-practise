@@ -1,5 +1,5 @@
 ---
-description: 二叉树任意两个节点的最大路径和
+description: Hard.   二叉树任意两个节点的最大路径和
 ---
 
 # Maximum Path Sum Binary Tree II
