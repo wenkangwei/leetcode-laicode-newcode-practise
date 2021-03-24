@@ -34,3 +34,7 @@
 
 * [排序](sorting/pai-xu.md)
 
+## Heap+Queue
+
+* [Top-K smallest](heap+queue/top-k-smallest.md)
+
