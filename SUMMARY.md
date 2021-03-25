@@ -11,8 +11,8 @@
 
 ## LinkedList
 
-* [反转链表I](linkedlist/untitled/README.md)
-  * [Untitled](linkedlist/untitled/untitled-1.md)
+* [反转链表I](linkedlist/untitled.md)
+* [Reverse K-group linked list](linkedlist/reverse-k-group-linked-list.md)
 
 ## DFS/BFS
 
