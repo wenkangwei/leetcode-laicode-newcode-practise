@@ -32,6 +32,7 @@
 
 ## Sorting
 
+* [Merge intervals](sorting/merge-intervals.md)
 * [排序](sorting/pai-xu.md)
 
 ## Heap+Queue
