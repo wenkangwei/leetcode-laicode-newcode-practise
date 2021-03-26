@@ -1,3 +1,7 @@
+---
+description: '难度: Medium, 公司: 字节 研发 facebook'
+---
+
 # Merge intervals
 
 ### 1. Links
