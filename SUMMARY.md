@@ -40,3 +40,7 @@
 * [Top-K smallest](heap+queue/top-k-smallest.md)
 * [滑动窗口最大值](heap+queue/hua-dong-chuang-kou-zui-da-zhi.md)
 
+## Recommendation System
+
+* [多路召回实现](recommendation-system/duo-lu-zhao-hui-shi-xian.md)
+
