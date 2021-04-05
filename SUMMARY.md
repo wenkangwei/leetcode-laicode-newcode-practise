@@ -2,6 +2,10 @@
 
 * [Introduction](README.md)
 
+## Array
+
+* [Trapping water](array/untitled.md)
+
 ## Tree
 
 * [Binary Tree diameter I](tree/binary-tree-diameter-i.md)
@@ -43,8 +47,4 @@
 ## Recommendation System
 
 * [多路召回实现](recommendation-system/duo-lu-zhao-hui-shi-xian.md)
-
-## Array
-
-* [Untitled](array/untitled.md)
 
