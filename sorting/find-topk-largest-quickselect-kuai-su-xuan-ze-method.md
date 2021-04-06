@@ -96,3 +96,33 @@ class Solution:
         return stored_idx
 ```
 
+用min-heap 找TopK largest 的方法
+
+```text
+class Solution:
+    def findKth(self, a, n, K):
+        # method2: heap sort
+        # 1. build a min-heap using first K element in array
+        # 2. use min-heap to pop the minimum element repeatedly until
+        #   the heap contain only K leement. Then the last element as top k largest
+        #
+        #
+        #
+        #
+        import heapq
+        if K >n and not a:
+            return None
+        heap = [a[i] for i in range(K)]
+        heapq.heapify(heap)
+        pt = K
+        while pt < n:
+            
+            heapq.heappush(heap, a[pt])
+            heapq.heappop(heap)
+            pt += 1
+        
+        # return the minimum value in the K largest values of array
+        # that is TopK largest 
+        return heapq.heappop(heap)
+```
+
