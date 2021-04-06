@@ -38,6 +38,7 @@
 
 * [Merge intervals](sorting/merge-intervals.md)
 * [排序](sorting/pai-xu.md)
+* [Find TopK largest- QuickSelect快速选择 method](sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method.md)
 
 ## Heap+Queue
 
