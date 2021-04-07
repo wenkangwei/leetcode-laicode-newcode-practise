@@ -5,6 +5,7 @@
 ## Array
 
 * [Trapping water](array/untitled.md)
+* [Rotate matrix](array/rotate-matrix.md)
 
 ## Tree
 
