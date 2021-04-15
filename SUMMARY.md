@@ -31,7 +31,7 @@
 
 ## Python
 
-* [Untitled](python/untitled.md)
+* [Python 笔记](python/untitled.md)
 
 ## Dynamic Programming
 
