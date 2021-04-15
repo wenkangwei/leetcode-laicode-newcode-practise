@@ -37,6 +37,7 @@
 
 * [DP-解题过程](dynamic-programming/dp-jie-ti-guo-cheng.md)
 * [1800. Maximum Ascending Subarray Sum](dynamic-programming/untitled.md)
+* [查找string的编码方式个数](dynamic-programming/cha-zhao-string-de-bian-ma-fang-shi-ge-shu.md)
 
 ## Sorting
 
