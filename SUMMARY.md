@@ -35,7 +35,8 @@
 
 ## Dynamic Programming
 
-* [Untitled](dynamic-programming/untitled.md)
+* [DP-解题过程](dynamic-programming/dp-jie-ti-guo-cheng.md)
+* [1800. Maximum Ascending Subarray Sum](dynamic-programming/untitled.md)
 
 ## Sorting
 
