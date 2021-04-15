@@ -23,7 +23,7 @@
 
 ## DFS/BFS
 
-* [Untitled](dfs-bfs/untitled.md)
+* [Number of Provinces](dfs-bfs/untitled.md)
 
 ## String
 
