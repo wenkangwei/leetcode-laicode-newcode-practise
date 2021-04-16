@@ -39,7 +39,7 @@
 * [1800. Maximum Ascending Subarray Sum](dynamic-programming/untitled.md)
 * [查找string的编码方式个数](dynamic-programming/cha-zhao-string-de-bian-ma-fang-shi-ge-shu.md)
 * [Maximum Product](dynamic-programming/maximum-product.md)
-* [Untitled](dynamic-programming/untitled-1.md)
+* [Longest Common Substring](dynamic-programming/untitled-1.md)
 
 ## Sorting
 
