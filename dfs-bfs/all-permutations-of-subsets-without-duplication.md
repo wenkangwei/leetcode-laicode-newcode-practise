@@ -17,6 +17,8 @@
    2. 有n个action就有n个position要遍历
    3. 在每个position选择一个action到该位置，剩下的action放到后面，即把选择后的action和前面pos位置的action交换，然后DFS进入下一个位置时pos+=1 就可以选择剩下的没选的action
    4. 在用“”来不选择action时有可能会出现重复的情况，比如\["", b,""\] 和\["", "", b\] 虽然在不同位置选择b，但是最后join的string是一样的，所以要用set进行对result list除重
+   5. Time: O\(B\*H\), B= tree branch, H= height of tree = number of actions to use
+   6. Space: O\(H\) for recursion, O\(n\) for storing result so O\(H + n\)
 5. **Coding**
 
 ```text
