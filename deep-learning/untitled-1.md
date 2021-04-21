@@ -1,9 +1,5 @@
 # User-base/Item-base实现
 
-
-
-
-
 User-Base: 计算similarity matrix of user-user using cosine similarity
 
 然后通过similarity matrix between user- user 来user vector之间的weighted sum来计算rating
