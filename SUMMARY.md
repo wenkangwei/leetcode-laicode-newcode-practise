@@ -68,3 +68,7 @@
 * [Attention](deep-learning/attention.md)
 * [User-base/Item-base实现](deep-learning/untitled-1.md)
 
+## Searching
+
+* [Find power](searching/find-power.md)
+
