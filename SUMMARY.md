@@ -29,7 +29,7 @@
 * [Number of Provinces](dfs-bfs/untitled.md)
 * [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
 * [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
-* [Untitled](dfs-bfs/untitled-2.md)
+* [Combinations Of Coins](dfs-bfs/untitled-2.md)
 
 ## String
 
