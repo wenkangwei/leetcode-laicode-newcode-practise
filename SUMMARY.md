@@ -30,6 +30,8 @@
 * [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
 * [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
 * [Combinations Of Coins](dfs-bfs/untitled-2.md)
+* [All Subset I](dfs-bfs/all-subset-i.md)
+* [Untitled](dfs-bfs/untitled-1.md)
 
 ## String
 
