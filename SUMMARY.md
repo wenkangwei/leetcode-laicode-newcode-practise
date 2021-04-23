@@ -29,7 +29,7 @@
 * [Number of Provinces](dfs-bfs/untitled.md)
 * [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
 * [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
-* [minEditCost](dfs-bfs/untitled-1.md)
+* [Untitled](dfs-bfs/untitled-2.md)
 
 ## String
 
@@ -46,6 +46,7 @@
 * [查找string的编码方式个数](dynamic-programming/cha-zhao-string-de-bian-ma-fang-shi-ge-shu.md)
 * [Maximum Product](dynamic-programming/maximum-product.md)
 * [Longest Common Substring](dynamic-programming/untitled-1.md)
+* [minEditCost](dynamic-programming/untitled-1-1.md)
 
 ## Sorting
 

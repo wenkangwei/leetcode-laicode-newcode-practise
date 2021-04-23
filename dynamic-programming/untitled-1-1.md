@@ -52,9 +52,7 @@ description: 2D-DP; Medium;
 
 
 
-
-
-3. 思路
+### 3. 思路
 
 1. 2D dp
 2. construct a 2D dp table, columns represents str1 and rows represent str2
@@ -62,8 +60,10 @@ description: 2D-DP; Medium;
 4. 由于要把str1变成str2,所以在每一行往右操作都是 + deletion cost, 每一列往下都是 + insertion cost
 5. 初始第一行和第一列后，从dp\[1\]\[1\]位置,即str1, str2的第一个char开始找最小的cost
 6. 把dp\[i-1\]\[j-1\], dp\[i-1\]\[j\], dp\[i\]\[j-1\] 的更新后的结果的最小值作为dp\[i\]\[j\]的结果
+7. Time: O\(n\*m\) for iterating and updating table, n = len\(str1\), m= len\(str2\)
+8. Space: O\(n\*m\)
 
-4. Code
+### 4. Coding
 
 ```text
 #
