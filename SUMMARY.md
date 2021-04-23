@@ -35,10 +35,6 @@
 
 * [Untitled](string/untitled.md)
 
-## Python
-
-* [Python 笔记](python/untitled.md)
-
 ## Dynamic Programming
 
 * [DP-解题过程](dynamic-programming/dp-jie-ti-guo-cheng.md)
@@ -59,6 +55,10 @@
 
 * [Top-K smallest](heap+queue/top-k-smallest.md)
 * [滑动窗口最大值](heap+queue/hua-dong-chuang-kou-zui-da-zhi.md)
+
+## Python
+
+* [Python 笔记](python/untitled.md)
 
 ## Recommendation System
 
