@@ -41,7 +41,8 @@
 3. 当j &lt; item的volume, 那么就不用考虑第i个item，于是dp\[i\]\[j\] = dp\[i-1\]\[j\] 从上个item的最大值延伸到现在第i个item的状态
 4. 如果j &gt; item的volume,  dp\[i\]\[j\] = max\(在第i-1个item的**volume=j的情况不加第i个item的最大值**，以及在dp\[i-1\]\[j-v\] +w  **上一个item的加上当前第i个item的最大值** \)
 5. Time: O\(n^2\)  Space: O\(n^2\)
-6. 
+6. Example
+
 ![](../.gitbook/assets/image%20%283%29.png)
 
 ### 4. Coding
