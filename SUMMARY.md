@@ -49,6 +49,7 @@
 * [Maximum Product](dynamic-programming/maximum-product.md)
 * [Longest Common Substring](dynamic-programming/untitled-1.md)
 * [minEditCost](dynamic-programming/untitled-1-1.md)
+* [Backpack I](dynamic-programming/backpack-i.md)
 
 ## Sorting
 
