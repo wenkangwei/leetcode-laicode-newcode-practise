@@ -9,6 +9,7 @@
 
 ## Tree
 
+* [Find Tree height \(general iteration method\)](tree/find-tree-height-general-iteration-method.md)
 * [Binary Tree diameter I](tree/binary-tree-diameter-i.md)
 * [Maximum Path Sum Binary Tree](tree/untitled.md)
 * [Maximum Path Sum Binary Tree II](tree/maximum-path-sum-binary-tree-ii.md)
