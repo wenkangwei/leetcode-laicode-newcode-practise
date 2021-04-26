@@ -55,11 +55,17 @@
 
 ### 3. 思路
 
+1. bottom-up method:
 
+   1. 每个node的input: node,    ouput: max\_depth of current node
+   2. 如果node是none，return 0。否则从left， right children获取 max\_depth values, 然后返回 Max\(left depth, right depth\) +1
 
+ 
 
-
-
+2. top down method:
+   1. 每个node的input: node, depth of parent   ouput: None
+   2. 用global的max\_depth 存放结果
+   3. 如果node是none，return, 否则 max\_depth = max\(max depth,  depth + 1\)
 
 ### 4.Coding
 
