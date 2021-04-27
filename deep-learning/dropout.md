@@ -6,6 +6,7 @@ Dropout 实现
 class Dropout(torch.nn.Module):
   def __init__(self, p=0.5):
     super(Dropout, self).__init__()
+    # p is dropout rate. When p= 1, dropout is disabled
     self.p = p
     pass
   def forward(self, x):
