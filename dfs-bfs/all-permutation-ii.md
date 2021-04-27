@@ -2,6 +2,8 @@
 
 1**. Link**
 
+{% embed url="https://app.laicode.io/app/problem/65" %}
+
 \*\*\*\*
 
 **2. 题目**
