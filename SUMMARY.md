@@ -82,6 +82,7 @@
 * [DeepFM](deep-learning/deepfm.md)
 * [Dropout](deep-learning/dropout.md)
 * [Batch Norm](deep-learning/batch-norm.md)
+* [Deep&Cross network \(DCN\)](deep-learning/deep-and-cross-network-dcn.md)
 
 ---
 
