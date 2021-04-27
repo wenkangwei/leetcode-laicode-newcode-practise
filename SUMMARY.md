@@ -79,8 +79,12 @@
 * [Attention](deep-learning/attention.md)
 * [User-base/Item-base实现](deep-learning/untitled-1.md)
 * [NeuralFM](deep-learning/neuralfm.md)
-* [Dropout](deep-learning/dropout/README.md)
-  * [Other models](deep-learning/dropout/other-models.md)
+* [Dropout](deep-learning/dropout.md)
+* [Batch Norm](deep-learning/batch-norm.md)
+
+---
+
+* [Other models](other-models.md)
 
 ## Searching
 

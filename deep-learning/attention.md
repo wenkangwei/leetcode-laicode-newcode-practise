@@ -10,12 +10,12 @@ import torch
 from torch import nn
 class SelfAttention(nn.Module):
     def __init__(self, size=8, n=10, emb_dim = 5):
-        
+        super(SelfAttention,self).__init__()
         self.wq = torch.randn([size, emb_dim])
         self.wk = torch.randn([size, emb_dim])
         self.wv = torch.randn([size, emb_dim])
         
-    def forward(x):
+    def forward(self,x):
         q = torch.matmul(x, self.wq)
         k = torch.matmul(x, self.wk)
         v = torch.matmul(x, self.wv)
@@ -24,11 +24,12 @@ class SelfAttention(nn.Module):
         z = torch.matmul(a, v)
         return z
 
-size=8, n=10, emb_dim = 5
-
-x = torch.randn([n,size])
+size=8
+n=10
+emb_dim = 5
+x = torch.randn([n,size],requires_grad=False)
 att = SelfAttention()
 z = att(x)
-z.shape, v.shape
+z.shape
 ```
 
