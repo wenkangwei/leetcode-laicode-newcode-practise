@@ -37,7 +37,7 @@ class FM(nn.Module):
 
   def forward(self, x):
     """
-    x: input with shape: (batch_size, one fields/rows)
+    x: input with shape: (batch_size, feature vector dim before embedding)
 
     Note
       1. fields in FM usually contain User, Item, Tag, different fields mean different profile of user, item, other factor
@@ -46,7 +46,7 @@ class FM(nn.Module):
       3. \sum^n_i \sum^n_{j=i+1} <vi, vj>xi*xj 交叉项可以简化成 0.5*\sum^k_f=1 ( (\sum^n_i(vi*xi))^2 - \sum^n_i(vi^2*xi^2) )
       这样计算只有O(kn)的时间，并且如果是 只需要vector而不用reduce dimension到scalar value，就可以简单去掉 \sum^k_f=1 的loop
     """
-    linear_output = self.linear(x).squeeze() # reduce dimension to 1D
+    linear_output = self.linear(x).squeeze() #  # Linear combination
     sum_square = torch.pow(torch.matmul(x, self.V),2) # x: (batch, n), self.V: (n, embed_dimension)
     square_sum = torch.matmul(torch.pow(x,2),torch.pow(self.V,2))
     cross_fea = 0.5*(sum_square - square_sum)
