@@ -113,6 +113,12 @@ tags_df.registerTempTable("tags")
 # Or 使用global temporary view。但是 用global temporary view
 # 时 在SQL里面需要 select * from global_temp.movies 要加多global_temp.
 # 这一句
+#
+#
+#Note： Difference between Global temp view and temp view
+# If you want to have a temporary view that is shared among all sessions 
+# and keep alive until the Spark application terminates, 
+# you can create a global temporary view.
 movies_df.createOrReplaceGlobalTempView("movies")
 ```
 
