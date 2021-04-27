@@ -2,7 +2,7 @@
 
 paper: [https://www.ijcai.org/Proceedings/2017/0239.pdf](https://www.ijcai.org/Proceedings/2017/0239.pdf)
 
-Implementation of Deep FM with more than 1 fields and each field has only 1 feature
+Simple Implementation of Deep FM with more than 1 fields and each field has only 1 feature
 
 ```text
 class FM(nn.Module):
@@ -84,6 +84,10 @@ x = torch.rand(size=(3,field_dim))
 out = dfm(x)
 out
 ```
+
+Reference
+
+{% embed url="https://github.com/shenweichen/DeepCTR-Torch/blob/8265c75237e473c7f238fd6ba44cb09f55d1d9a9/deepctr\_torch/layers/interaction.py\#L12" %}
 
 
 
