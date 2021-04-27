@@ -1,6 +1,8 @@
-# All Subset I
+# All Subset I \(without fixing size of subset, without order, without duplication\)
 
 1.**Link**
+
+{% embed url="https://app.laicode.io/app/problem/62" %}
 
 
 

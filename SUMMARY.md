@@ -32,7 +32,7 @@
 * [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
 * [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
 * [Combinations Of Coins](dfs-bfs/untitled-2.md)
-* [All Subset I](dfs-bfs/all-subset-i.md)
+* [All Subset I \(without fixing size of subset, without order, without duplication\)](dfs-bfs/all-subset-i.md)
 * [All Subset of K size without duplication II](dfs-bfs/untitled-1.md)
 * [All Subset of K size III \(with duplication without considering order\)](dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
 * [All Permutation II \(with duplication and consider order\)](dfs-bfs/all-permutation-ii.md)
