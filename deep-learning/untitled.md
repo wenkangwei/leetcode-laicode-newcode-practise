@@ -4,7 +4,7 @@ Fatorization machine FM 实现
 
 1. 公式
 
-输入的是**一个field \(一般field有 User， Item， Tag等不同的fields**\)的feature vector x, 里面可以是continuous value也可以是sparse value，每个value都有对应的embedding vector，交叉时要把continuous value和 embedding vector element-wise相乘作为rescale，而sparse feature作为lookup table的形式选择
+这里考虑FM的输入是只有一个**field \(fields一般有 User， Item， Tag等不同的fields。如果在DeepFM里面有多个fields, 那么就先把每个field里面的embedding vectors先加起来，这样每个field对应一个pooling后的embedding vector， 之后再做FM的交叉**\)的feature vector x, 里面可以是continuous value也可以是sparse value，每个value都有对应的embedding vector，交叉时要把continuous value和 embedding vector element-wise相乘作为rescale，而sparse feature作为lookup table的形式选择
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
