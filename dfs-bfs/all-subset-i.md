@@ -1,3 +1,7 @@
+---
+description: DFS;
+---
+
 # All Subset I \(without fixing size of subset, without order, without duplication\)
 
 1.**Link**
