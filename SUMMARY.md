@@ -34,7 +34,7 @@
 * [Combinations Of Coins](dfs-bfs/untitled-2.md)
 * [All Subset I](dfs-bfs/all-subset-i.md)
 * [All Subset of K size without duplication II](dfs-bfs/untitled-1.md)
-* [All Subset of K size with duplication III](dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
+* [All Subset of K size III \(with duplication without considering order\)](dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
 * [All Permutation II \(with duplication and consider order\)](dfs-bfs/all-permutation-ii.md)
 
 ## String

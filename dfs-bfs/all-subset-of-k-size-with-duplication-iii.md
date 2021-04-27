@@ -1,4 +1,4 @@
-# All Subset of K size with duplication III
+# All Subset of K size III \(with duplication without considering order\)
 
 1**.Link**
 
