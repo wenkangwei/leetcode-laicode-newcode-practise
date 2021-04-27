@@ -1,10 +1,6 @@
 # Deep&Cross network \(DCN\)
 
-
-
-
-
-
+paper: [https://arxiv.org/pdf/1708.05123.pdf](https://arxiv.org/pdf/1708.05123.pdf)
 
 Implementation of DCN
 
@@ -92,6 +88,10 @@ out
 ```
 
 
+
+Reference:
+
+{% embed url="https://github.com/shenweichen/DeepCTR-Torch/blob/8265c75237e473c7f238fd6ba44cb09f55d1d9a9/deepctr\_torch/layers/interaction.py\#L409" %}
 
 
 
