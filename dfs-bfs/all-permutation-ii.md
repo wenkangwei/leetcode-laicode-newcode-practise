@@ -1,4 +1,4 @@
-# All Permutation II
+# All Permutation II \(with duplication and consider order\)
 
 1**. Link**
 
