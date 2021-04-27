@@ -78,6 +78,9 @@
 * [Fatorization Machine FM](deep-learning/untitled.md)
 * [Attention](deep-learning/attention.md)
 * [User-base/Item-base实现](deep-learning/untitled-1.md)
+* [NeuralFM](deep-learning/neuralfm.md)
+* [Dropout](deep-learning/dropout/README.md)
+  * [Other models](deep-learning/dropout/other-models.md)
 
 ## Searching
 
