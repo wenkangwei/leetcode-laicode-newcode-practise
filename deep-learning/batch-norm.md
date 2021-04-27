@@ -1,12 +1,12 @@
 # Batch Norm
 
-Paper: [https://arxiv.org/pdf/1502.03167.pdf](https://arxiv.org/pdf/1502.03167.pdf)
+**Paper**: [https://arxiv.org/pdf/1502.03167.pdf](https://arxiv.org/pdf/1502.03167.pdf)
 
-Batch Normalization transformation: 
+**Batch Normalization transformation:** 
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
-Training:
+**Training:**
 
 when training update gamma and beta using batch samples and also update running mean E\[x\], running variance Var\[x\]
 
@@ -14,13 +14,13 @@ When inference, use running mean E\[x\], running variance Var\[x\], rather than 
 
 ![](../.gitbook/assets/image%20%285%29.png)
 
-Gradient Computation during training and updating var, mean
+**Gradient Computation** during training and updating var, mean
 
 ![](../.gitbook/assets/image%20%286%29.png)
 
 
 
-Coding in pytorch
+**Coding in pytorch**
 
 ```text
 import torch
