@@ -1,4 +1,4 @@
-# Factor Combination
+# Factor Combination-质数分解
 
 1**. Link**
 
