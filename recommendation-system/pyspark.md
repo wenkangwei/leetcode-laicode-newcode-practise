@@ -61,7 +61,25 @@ movies_df = spark.read.csv(root+"movies.csv", header = True)
 # options: settings for loading, it can be timezone format
 ```
 
+**Note when creating dataframe:**
 
+1. When converting Pandas DataFrame to PySpark DataFrame, use StructType + createDataFrame + pandas dataframe
+2. When creating pyspark dataframe directly, use createDataFrame + **list of dictionary**, **each element in list = one row in table**
+
+```python
+from pyspark.sql.types import *
+
+df = spark.createDataFrame([{"hello": "world"} for x in range(1000)])
+df.show()
+
+mySchema = StructType([ StructField("col name1", IntegerType(), True)\
+                    ,StructField("col name2", StringType(), True)\
+                    ,StructField("col name3", IntegerType(), True)])
+dic = {"col name1": [1,2,3], "col name2":['a','b','c'],"col name3":[4,5,6]}
+df = pd.DataFrame(dic)
+spark_df = spark.createDataFrame(df, mySchema)
+spark_df.show()
+```
 
 **4. Change data type:**
 
