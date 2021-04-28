@@ -5,6 +5,8 @@ paper: [https://arxiv.org/pdf/1708.05123.pdf](https://arxiv.org/pdf/1708.05123.p
 Implementation of DCN
 
 ```text
+import torch
+from torch import nn
 class CrossNet(nn.Module):
   def __init__(self, fea_dim = 5,embed_dim = 5, layer_num=3):
     super(CrossNet, self).__init__()
@@ -19,7 +21,7 @@ class CrossNet(nn.Module):
     for j in range(len(x)):
       x0 = x[j,:]
       for i in range(self.layer_num):
-        in_fea[j,:] = torch.dot(x0,in_fea[j,:]) *self.weight[i,:] + self.bias[i,:] + in_fea[j,:]
+        in_fea[j,:] = x0 * torch.dot(in_fea[j,:],self.weight[i,:])  + self.bias[i,:] + in_fea[j,:]
         #print(in_fea[j,:].shape)
 
     # for i in range(self.layer_num):
@@ -78,10 +80,8 @@ dense_dim =5
 batch = 5
 dcn = DCN(fea_dim = 5,emb_dim=8, dense_dim =5)
 
-# sparse vectors
-x_sparse = torch.randn(batch,fea_dim)<0.5
 
-# dense vectors
+x_sparse = torch.randn(batch,fea_dim)<0.5
 x_dense = torch.randn(batch,dense_dim)
 out = dcn(x_dense, x_sparse)
 out 
