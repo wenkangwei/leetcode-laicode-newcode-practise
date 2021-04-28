@@ -36,6 +36,7 @@
 * [All Subset of K size without duplication II](dfs-bfs/untitled-1.md)
 * [All Subset of K size III \(with duplication without considering order\)](dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
 * [All Permutation II \(with duplication and consider order\)](dfs-bfs/all-permutation-ii.md)
+* [Factor Combination](dfs-bfs/factor-combination.md)
 
 ## String
 
