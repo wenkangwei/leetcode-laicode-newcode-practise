@@ -52,6 +52,7 @@
 * [Longest Common Substring](dynamic-programming/untitled-1.md)
 * [minEditCost](dynamic-programming/untitled-1-1.md)
 * [Backpack I](dynamic-programming/backpack-i.md)
+* [Array Hopper I](dynamic-programming/array-hopper-i.md)
 
 ## Sorting
 
