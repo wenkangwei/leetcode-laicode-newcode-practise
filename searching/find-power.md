@@ -51,7 +51,10 @@ class Solution:
     def Power(self, base, exponent):
         #
         # write code here
-        # 
+        # base*base in iteration = base^1, base^2, base^4, base^8 
+        #... = base^(2^0 + 2^1 + 2^2 + 2^3 + ....2^n)
+        # res = x1* base^1 * x2*base^2 * x3*base^4* ...
+        # xi = 1 or 0 bit depending on exponent 的bit 二进制位数
         #用于倒数
         sign = False
         if exponent <0:
