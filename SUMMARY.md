@@ -87,6 +87,7 @@
 ---
 
 * [Other models](other-models.md)
+* [Cross Entropy Loss](cross-entropy-loss.md)
 
 ## Searching
 
