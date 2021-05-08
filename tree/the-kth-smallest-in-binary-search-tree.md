@@ -1,5 +1,5 @@
 ---
-description: Medium
+description: Medium; BST
 ---
 
 # The Kth smallest in Binary Search Tree
