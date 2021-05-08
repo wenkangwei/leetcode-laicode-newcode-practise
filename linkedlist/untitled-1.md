@@ -38,6 +38,7 @@ description: Easy; 剑指 Offer 22; Linked List
    1. **把list直接先reverse**
    2. **正着数第k个node**
    3. **把head 达到这个node的list再reverse一遍并返回**
+3. **两种方法都是Time complexity:  O\(n\),  Space complexity:  O\(1\)因为只是单纯把linked list 线性遍历**
 
 **4. Coding**
 
