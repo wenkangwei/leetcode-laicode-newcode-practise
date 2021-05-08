@@ -18,6 +18,7 @@
 * [Tree diameter 树的直径II](tree/tree-diameter-shu-de-zhi-jing-ii.md)
 * [Tree ReConstruction](tree/tree-reconstruction.md)
 * [Check if B is Subtree of A](tree/check-if-b-is-subtree-of-a.md)
+* [The Kth smallest in Binary Search Tree](tree/the-kth-smallest-in-binary-search-tree.md)
 
 ## LinkedList
 
