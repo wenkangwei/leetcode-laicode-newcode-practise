@@ -43,6 +43,7 @@ Output: 3
    3. then find how many node is smaller than current node/left child and check if the returned result from left node or current node is the K^th smallest. If so, return result.
    4. Then go to right child of current node with updated amount of node smaller than the right node.
    5. Note that the main idea of this method is to label every node with its ranking  based on BST property. ****
+5. **Time: O\(n\) to iterate every tree node.  Space: O\(logn\) to store the depth of tree**
 
 **4. Coding**
 
