@@ -51,13 +51,3 @@ class Solution:
         return A
 ```
 
-
-
-
-
-
-
-
-
-
-
