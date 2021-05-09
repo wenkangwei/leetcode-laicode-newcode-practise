@@ -6,6 +6,7 @@
 
 * [Trapping water](array/untitled.md)
 * [Rotate matrix](array/rotate-matrix.md)
+* [Merge Two Array in-place](array/merge-two-array-in-place.md)
 
 ## Tree
 
