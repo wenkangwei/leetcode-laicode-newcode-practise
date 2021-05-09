@@ -32,17 +32,17 @@ description: Easy; 剑指 Offer 22; Linked List
 
 1. **方法1：**
    1. **先把list 过一遍找到list length**
-   2. **计算正着数的node的position**
-   3. **再遍历一遍找到position的node，并返回**
+   2. **计算正着数的node的position，即 list length - k**
+   3. **再从头遍历一遍找到对应位置的node，并返回**
 2. **方法2**
    1. **把list直接先reverse**
-   2. **正着数第k个node**
+   2. **找到正着数第k个node**
    3. **把head 达到这个node的list再reverse一遍并返回**
-3. **两种方法都是Time complexity:  O\(n\),  Space complexity:  O\(1\)因为只是单纯把linked list 线性遍历**
+3. **两种方法都是Time complexity:  O\(n\),  Space complexity:  O\(1\)因为只是单纯把linked list 线性遍历，没有用到额外的空间**
 
 **4. Coding**
 
-Method **1**: 
+Method **1**:  正找node的位置
 
 ```text
 # Definition for singly-linked list.
