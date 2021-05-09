@@ -27,6 +27,7 @@
 * [DetectCycle](linkedlist/detectcycle.md)
 * [链表的共同节点](linkedlist/lian-biao-de-gong-tong-jie-dian.md)
 * [链表中倒数第k个节点](linkedlist/untitled-1.md)
+* [合并两个链表](linkedlist/he-bing-liang-ge-lian-biao.md)
 
 ## DFS/BFS
 
