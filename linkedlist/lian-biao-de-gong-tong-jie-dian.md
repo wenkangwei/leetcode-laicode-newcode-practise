@@ -2,15 +2,49 @@
 
 ### 1.Link
 
-### 
+{% embed url="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/submissions/" %}
+
+{% embed url="https://www.nowcoder.com/practice/6ab1d9a29e88450685099d45c9e31e46?tpId=196&tqId=37095&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
 ### 2. 题目描述
 
-输入两个链表，找出它们的第一个公共结点。（注意因为传入数据是链表，所以错误测试数据的提示是用其他方式显示的，保证传入数据是正确的）
+输入两个链表，找出它们的第一个公共节点。
+
+如下面的两个链表**：**
+
+[![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
+
+![](../.gitbook/assets/image%20%288%29.png)
+
+在节点 c1 开始相交。
+
+**示例 1**
+
+```text
+输入：head = [3,2,0,-4], pos = 1
+输出：true
+解释：链表中有一个环，其尾部连接到第二个节点。
+```
 
 
 
 ### 3. 思路
+
+而同一个地址值意味着存储的内容一致，以此往下推，说明从第一个公共结点之后，两链表的所有结点都是一样的。 找到公共节点后，因为节点地址一样，后面连的内容都是一样，剩下的所有节点都是公共点
+
+例子  list1:  1-2-3 6-7-8-9-0   list2:  10-12 -6-7-8-9-0
+
+把他们拼接情况有:
+
+1-2-3 6-7-8-9-0 **+** 10-12 -**6**-7-8-9-0
+
+10-12 -6-7-8-9-0  **+** 1-2-3 **6**-7-8-9-0
+
+其中加粗的6的数字就是第一个公共点。 第一个公共的节点6 很明显前面片段的长度是3+ 5 + 2 或者 2+ 5 + 3 长度一样，只不过不同的片段换了位置。也就是说只要把两个list前后拼接起来就会时如果用两个指针分别从两个list 遍历， 当两个指针相遇时，那个相遇点就是第一个公共点。
+
+Time Complexity: O\(n\).  Space Complexity: O\(1\) 
+
+
 
 ### 4. Coding
 
