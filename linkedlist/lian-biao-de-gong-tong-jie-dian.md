@@ -1,3 +1,7 @@
+---
+description: Easy; LinkedList
+---
+
 # 链表的共同节点
 
 ### 1.Link
