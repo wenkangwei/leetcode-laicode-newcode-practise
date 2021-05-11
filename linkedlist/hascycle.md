@@ -1,3 +1,7 @@
+---
+description: Easy; Linkedlist;
+---
+
 # HasCycle
 
 **1. Link**
