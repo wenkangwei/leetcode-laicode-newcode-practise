@@ -14,6 +14,7 @@ description: 常用的函数和细节备忘录
    2.  **chr\(num\):** convert int number to character
    3. **"".isalpha\(\)** : return True if all char in string is char a-z
    4. **"".isnumeric\(\):** return True if **all chars** in string is number, do not consider negative number and float
+   5. **id\(a\)**:   return address  ID of that variable
 3. Deep Copy and Shallow Copy
    1.  list 里面的 copy:   b=a.copy\(\) 或者 b= a\[:\]是deep copy
    2. dictionary 里面的copy:    b=a.copy\(\)是只对key的array进行deep copy，而对应的value的list是shallow copy
