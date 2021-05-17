@@ -1,6 +1,8 @@
-# 删除链表里面重复的元素
+# 删除链表里面重复的元素-1
 
 ### 1. Link
+
+{% embed url="https://www.nowcoder.com/practice/71cef9f8b5564579bf7ed93fbe0b2024?tpId=188&tqId=38353&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking&tab=answerKey" %}
 
 
 
