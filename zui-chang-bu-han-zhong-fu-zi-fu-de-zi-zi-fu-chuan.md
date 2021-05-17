@@ -1,6 +1,12 @@
+---
+description: Medium; DP; Two Pointer; String
+---
+
 # 最长不含重复字符的子字符串
 
 1**. Link**
+
+{% embed url="https://leetcode-cn.com/problems/two-sum/submissions/" %}
 
 \*\*\*\*
 
@@ -57,18 +63,15 @@ class Solution:
         cnt = 0
         res = 0
         while fast < len(s):
-            if s[fast] not in se:
-                se.add(s[fast])
-                cnt += 1
+            if s[fast] in se:
+                se.remove(s[slow])
+                slow += 1
+                cnt -=1
             else:
-                while s[fast] in se:
-                    se.remove(s[slow])
-                    slow += 1
-                    cnt -=1
                 se.add(s[fast])
                 cnt += 1
-            fast += 1
-            res = max(res, cnt)
+                fast += 1
+                res = max(res, cnt)
         return res
         
 ```
