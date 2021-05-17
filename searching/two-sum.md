@@ -1,3 +1,7 @@
+---
+description: Easy; Two pointer;
+---
+
 # Two Sum
 
 1**.  Link**
