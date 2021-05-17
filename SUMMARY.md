@@ -20,6 +20,7 @@
 * [Tree ReConstruction](tree/tree-reconstruction.md)
 * [Check if B is Subtree of A](tree/check-if-b-is-subtree-of-a.md)
 * [The Kth smallest in Binary Search Tree](tree/the-kth-smallest-in-binary-search-tree.md)
+* [打印Tree的右视图](tree/da-yin-tree-de-you-shi-tu.md)
 
 ## LinkedList
 
