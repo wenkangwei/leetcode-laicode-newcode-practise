@@ -1,3 +1,7 @@
+---
+description: Medium; heap; array; sorting;
+---
+
 # 最小的k个数
 
 ### 1. Link
