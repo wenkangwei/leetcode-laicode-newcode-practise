@@ -56,6 +56,56 @@ def user_Recommend(user, sim_matrix_user, users, items, k):
 
 ```
 
+另外一种写法：
+
+```text
+# 基于用户的召回 u2u2i
+def user_based_recommend(user_id, user_item_time_dict, u2u_sim, sim_user_topk, recall_item_num, 
+                         item_topk_click, item_created_time_dict, emb_i2i_sim):
+    """
+        基于文章协同过滤的召回
+        :param user_id: 用户id
+        :param user_item_time_dict: 字典, 根据点击时间获取用户的点击文章序列   {user1: [(item1, time1), (item2, time2)..]...}
+        :param u2u_sim: 字典，文章相似性矩阵
+        :param sim_user_topk: 整数， 选择与当前用户最相似的前k个用户
+        :param recall_item_num: 整数， 最后的召回文章数量
+        :param item_topk_click: 列表，点击次数最多的文章列表，用户召回补全
+        :param item_created_time_dict: 文章创建时间列表
+        :param emb_i2i_sim: 字典基于内容embedding算的文章相似矩阵
+        
+        return: 召回的文章列表 [(item1, score1), (item2, score2)...]
+    """
+    # 历史交互
+    user_item_time_list = user_item_time_dict[user_id]    #  [(item1, time1), (item2, time2)..]
+    user_hist_items = set([i for i, t in user_item_time_list])   # 存在一个用户与某篇文章的多次交互， 这里得去重
+    
+    items_rank = {}
+    for sim_u, wuv in sorted(u2u_sim[user_id].items(), key=lambda x: x[1], reverse=True)[:sim_user_topk]:
+        for i, click_time in user_item_time_dict[sim_u]:
+            if i in user_hist_items:
+                continue
+            items_rank.setdefault(i, 0)
+
+            items_rank[i] += wuv
+        
+    # 热度补全
+    if len(items_rank) < recall_item_num:
+        for i, item in enumerate(item_topk_click):
+            if item in items_rank.items(): # 填充的item应该不在原来的列表中
+                continue
+            items_rank[item] = - i - 100 # 随便给个复数就行
+            if len(items_rank) == recall_item_num:
+                break
+        
+    items_rank = sorted(items_rank.items(), key=lambda x: x[1], reverse=True)[:recall_item_num]    
+    
+    return items_rank
+```
+
+
+
+
+
 Item-Base: 计算similarity matrix of item-item using cosine similarity
 
 然后通过similarity matrix between item- item 来计算item vector之间的weighted sum以及每个user对这个item的rating
@@ -107,6 +157,55 @@ def item_Recommend(item, sim_matrix_item, users, items, k):
   rating_df = (rating_df.sum()/sum(topk_items)).sort_values(ascending = False)
   return topk_items, rating_df
 ```
+
+
+
+另外一种写法：
+
+```text
+def item_based_recommend(user_id, user_item_time_dict, i2i_sim, sim_item_topk, recall_item_num, item_topk_click, item_created_time_dict, emb_i2i_sim):
+    """
+        基于文章协同过滤的召回
+        :param user_id: 用户id
+        :param user_item_time_dict: 字典, 根据点击时间获取用户的点击文章序列   {user1: [(item1, time1), (item2, time2)..]...}
+        :param i2i_sim: 字典，文章相似性矩阵
+        :param sim_item_topk: 整数， 选择与当前文章最相似的前k篇文章
+        :param recall_item_num: 整数， 最后的召回文章数量
+        :param item_topk_click: 列表，点击次数最多的文章列表，用户召回补全
+        :param emb_i2i_sim: 字典基于内容embedding算的文章相似矩阵
+        
+        return: 召回的文章列表 [(item1, score1), (item2, score2)...]
+    """
+    # 获取用户历史交互的文章
+    user_hist_items = user_item_time_dict[user_id]
+    user_hist_items_ = {user_id for user_id, _ in user_hist_items}
+    
+    item_rank = {}
+    for loc, (i, click_time) in enumerate(user_hist_items):
+        for j, wij in sorted(i2i_sim[i].items(), key=lambda x: x[1], reverse=True)[:sim_item_topk]:
+            if j in user_hist_items_:
+                continue
+            
+            item_rank.setdefault(j, 0)
+            item_rank[j] += wij
+    
+    # 不足10个，用热门商品补全
+    if len(item_rank) < recall_item_num:
+        for i, item in enumerate(item_topk_click):
+            if item in item_rank.items(): # 填充的item应该不在原来的列表中
+                continue
+            item_rank[item] = - i - 100 # 随便给个负数就行
+            if len(item_rank) == recall_item_num:
+                break
+    
+    item_rank = sorted(item_rank.items(), key=lambda x: x[1], reverse=True)[:recall_item_num]
+        
+    return item_rank
+```
+
+
+
+
 
 
 
