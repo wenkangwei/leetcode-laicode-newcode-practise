@@ -147,9 +147,8 @@ def user_based_recommend(user_id, user_item_time_dict, u2u_sim, sim_user_topk, r
     items_rank = sorted(items_rank.items(), key=lambda x: x[1], reverse=True)[:recall_item_num]    
     
     return items_rank
+    
 ```
-
-
 
 
 
