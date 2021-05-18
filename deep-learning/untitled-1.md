@@ -58,6 +58,49 @@ def user_Recommend(user, sim_matrix_user, users, items, k):
 
 另外一种写法：
 
+计算 user-user similarity
+
+```text
+def usercf_sim(all_click_df, user_activate_degree_dict):
+    """
+        用户相似性矩阵计算
+        :param all_click_df: 数据表
+        :param user_activate_degree_dict: 用户活跃度的字典
+        return 用户相似性矩阵
+        
+        思路: 基于用户的协同过滤(详细请参考上一期推荐系统基础的组队学习) + 关联规则
+    """
+    
+    # 返回一个key 是item， value是user list的dictionary
+    item_user_time_dict = get_item_user_time_dict(all_click_df)
+    
+    u2u_sim = {}
+    user_cnt = defaultdict(int)
+    for item, user_time_list in tqdm(item_user_time_dict.items()):
+        for u, click_time in user_time_list:
+            user_cnt[u] += 1
+            u2u_sim.setdefault(u, {})
+            for v, click_time in user_time_list:
+                u2u_sim[u].setdefault(v, 0)
+                if u == v:
+                    continue
+                u2u_sim[u][v] += 1 / math.log(len(user_time_list) + 1)
+    
+    u2u_sim_ = u2u_sim.copy()
+    for u, related_users in u2u_sim.items():
+        for v, wij in related_users.items():
+            u2u_sim_[u][v] = wij / math.sqrt(user_cnt[u] * user_cnt[v])
+    
+    # 将得到的相似性矩阵保存到本地
+    pickle.dump(u2u_sim_, open(save_path + 'usercf_u2u_sim.pkl', 'wb'))
+
+    return u2u_sim_
+```
+
+
+
+计算topK ranking 
+
 ```text
 # 基于用户的召回 u2u2i
 def user_based_recommend(user_id, user_item_time_dict, u2u_sim, sim_user_topk, recall_item_num, 
@@ -110,8 +153,6 @@ Item-Base: 计算similarity matrix of item-item using cosine similarity
 
 然后通过similarity matrix between item- item 来计算item vector之间的weighted sum以及每个user对这个item的rating
 
-
-
 ```text
 
 def itemCF(users, items):
@@ -161,6 +202,49 @@ def item_Recommend(item, sim_matrix_item, users, items, k):
 
 
 另外一种写法：
+
+计算item-item similarity
+
+```text
+def itemcf_sim(df, item_created_time_dict):
+    """
+        文章与文章之间的相似性矩阵计算
+        :param df: 数据表
+        :item_created_time_dict:  文章创建时间的字典
+        return : 文章与文章的相似性矩阵
+        
+        思路: 基于物品的协同过滤(详细请参考上一期推荐系统基础的组队学习) + 关联规则
+    """
+    
+    user_item_time_dict = get_user_item_time(df)
+    
+    # 计算物品相似度
+    i2i_sim = {}
+    item_cnt = defaultdict(int)
+    for user, item_time_list in tqdm(user_item_time_dict.items()):
+        # 在基于商品的协同过滤优化的时候可以考虑时间因素
+        for loc1, (i, i_click_time) in enumerate(item_time_list):
+            item_cnt[i] += 1
+            i2i_sim.setdefault(i, {})
+            for loc2, (j, j_click_time) in enumerate(item_time_list):
+                if(i == j):
+                    continue                    
+
+                i2i_sim[i][j] += 1/ math.log(len(item_time_list) + 1)
+                
+    i2i_sim_ = i2i_sim.copy()
+    for i, related_items in i2i_sim.items():
+        for j, wij in related_items.items():
+            i2i_sim_[i][j] = wij / math.sqrt(item_cnt[i] * item_cnt[j])
+    
+    # 将得到的相似性矩阵保存到本地
+    pickle.dump(i2i_sim_, open(save_path + 'itemcf_i2i_sim.pkl', 'wb'))
+    
+    return i2i_sim_
+    
+```
+
+计算item的 ranking和选择topK个召回
 
 ```text
 def item_based_recommend(user_id, user_item_time_dict, i2i_sim, sim_item_topk, recall_item_num, item_topk_click, item_created_time_dict, emb_i2i_sim):
