@@ -60,6 +60,10 @@ def user_Recommend(user, sim_matrix_user, users, items, k):
 
 计算 user-user similarity
 
+考虑到存在着这样一种用户，他与很多商品都发生过交互，但他发生交互可能是因为他是做这个生意的或者怎么，并不是因为这些商品之间存在某种相似性，所以这里我们同样可以引入Inverse User Frequence来对物品相似度进行加权，从而避免这种用户的影响这里的similariry用了
+
+![](../.gitbook/assets/image%20%2810%29.png)
+
 ```text
 def usercf_sim(all_click_df, user_activate_degree_dict):
     """
@@ -289,7 +293,9 @@ def item_based_recommend(user_id, user_item_time_dict, i2i_sim, sim_item_topk, r
 
 
 
+Reference
 
+[https://blog.csdn.net/sinat\_22594309/article/details/86420207](https://blog.csdn.net/sinat_22594309/article/details/86420207)
 
 
 
