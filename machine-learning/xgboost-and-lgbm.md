@@ -144,5 +144,7 @@ Xgboost 它有以下几个优良的特性：
 
 \[2\] [https://zhuanlan.zhihu.com/p/58269560](https://zhuanlan.zhihu.com/p/58269560)
 
+\[3\] [https://zhuanlan.zhihu.com/p/53980138](https://zhuanlan.zhihu.com/p/53980138)
+
 
 
