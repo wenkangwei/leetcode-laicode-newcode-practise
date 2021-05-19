@@ -99,11 +99,11 @@
 * [Batch Norm](deep-learning/batch-norm.md)
 * [Deep&Cross network \(DCN\)](deep-learning/deep-and-cross-network-dcn.md)
 
----
+## Machine Learning
 
-* [XGBoost and LGBM](xgboost-and-lgbm.md)
-* [Other models](other-models.md)
-* [Cross Entropy Loss](cross-entropy-loss.md)
+* [XGBoost and LGBM](machine-learning/xgboost-and-lgbm.md)
+* [Cross Entropy Loss](machine-learning/cross-entropy-loss.md)
+* [Other models](machine-learning/other-models.md)
 
 ## Searching
 
