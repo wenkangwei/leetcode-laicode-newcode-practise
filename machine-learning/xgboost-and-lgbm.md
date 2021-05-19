@@ -136,9 +136,7 @@ Xgboost 它有以下几个优良的特性：
 
 1. GBDT 用的CART tree分类时用的是Gini gain 而回归时用方差 variance，而XGBoost里面的启发函数用的是一个基于前面树的梯度的一阶二阶导数的Loss
 
-
-
-### Reference
+## Reference
 
 \[1\] [https://zhuanlan.zhihu.com/p/143009353](https://zhuanlan.zhihu.com/p/143009353)
 
