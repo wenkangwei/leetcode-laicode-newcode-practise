@@ -101,7 +101,7 @@
 
 ## Machine Learning
 
-* [XGBoost and LGBM](machine-learning/xgboost-and-lgbm.md)
+* [XGBoost](machine-learning/xgboost-and-lgbm.md)
 * [Cross Entropy Loss](machine-learning/cross-entropy-loss.md)
 * [Other models](machine-learning/other-models.md)
 

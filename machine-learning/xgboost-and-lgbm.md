@@ -1,4 +1,4 @@
-# XGBoost and LGBM
+# XGBoost
 
 ## GDBT介绍
 
