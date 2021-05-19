@@ -146,5 +146,9 @@ Xgboost 它有以下几个优良的特性：
 
 \[3\] [https://zhuanlan.zhihu.com/p/53980138](https://zhuanlan.zhihu.com/p/53980138)
 
+\[4\] XGBoost [http://cinslab.com/wp-content/uploads/2019/06/Ke-Wang-XGBoost-A-Scalable-Tree-Boosting-System.pdf](http://cinslab.com/wp-content/uploads/2019/06/Ke-Wang-XGBoost-A-Scalable-Tree-Boosting-System.pdf)
+
+\[5\] LGBM [https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf](https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
+
 
 
