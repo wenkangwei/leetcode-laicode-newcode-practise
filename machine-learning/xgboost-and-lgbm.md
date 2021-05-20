@@ -113,6 +113,20 @@ $$
 
 
 
+**5. 对缺失值或稀疏值处理**
+
+在XGBoost 里面，它能够自动处理缺失值和稀疏值时是把它们放到稀疏矩阵里面处理
+
+1. 对于训练时遇到的缺失值默认把它们试着分别放到右子树，左子树然后找到最大的gain的分裂点进行分裂。并且计算时间只考虑非缺失值
+2. 对于预测时遇到的缺失值，默认被分到右子树。
+3. XGBoost不需要额外的categorical feature的encoding，比如onehot, 它把稀疏数据和缺失数据用相同方式处理。
+
+![](../.gitbook/assets/image%20%2844%29.png)
+
+
+
+
+
 ### XGBoost 特点
 
 GBDT：
@@ -127,14 +141,17 @@ Xgboost 它有以下几个优良的特性：
 2. 公式推导中用到了二阶导数，用了二阶泰勒展开。
 3. 实现了分裂点寻找近似算法。
 4. 利用了特征的稀疏性。
-5. 不同columns的数据事先排序并且以 block 形式存储，有利于用并行计算加速。
+5. xgboost在训练之前，预先对数据通过并行计算进行了排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量。
 6. 传统GBDT用了所有数据，但XGBoost像RandomForest一样用了Column Subsampling 来抑制overfitting并且加速了计算。
 7. 传统的GBDT没有设计对缺失值进行处理需要人工对缺失值处理，XGBoost能够自动学习出缺 失值的处理策略。
 8. 树模型对outlier不敏感，不像Parameterized model,如LR之类的
+9. XGBoost 相对于传统的GBDT可以处理缺失值，也不用对类别数据进行encoding \(比如onehot\)
 
 其他特点：
 
 1. GBDT 用的CART tree分类时用的是Gini gain 而回归时用方差 variance，而XGBoost里面的启发函数用的是一个基于前面树的梯度的一阶二阶导数的Loss
+
+
 
 ## Reference
 
