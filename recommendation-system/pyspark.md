@@ -170,7 +170,36 @@ movie_missing_value.show()
 
 
 
+6. User Define Function in PySpark
 
+```python
+from pyspark.sql.functions import col, udf
+from pyspark.sql.types import FloatType
+
+from pyspark.sql import SparkSession
+# 创建pyspark APP实例
+spark = SparkSession.builder.appName("Spark-Practice").master('local').getOrCreate() 
+# 读取数据
+json_df = spark.read.json("sample_data/anscombe.json")
+
+# define user define function
+def square_udf(s):
+  if s == None:
+    return 1
+  return s*s
+
+def diff_square_udf(s1,s2):
+  if s1 == None or s2==None:
+    return None
+  return (s1-s2)**2
+# register udf function
+square = udf(square_udf, FloatType())
+diff_square = udf(diff_square_udf,FloatType())
+# apply udf to data
+json_df = json_df.withColumn("Z", square(col("X") + col("Y")))
+json_df = json_df.withColumn("Diff", diff_square(col("X"), col("Y")))
+json_df.show(10)
+```
 
 
 
