@@ -185,6 +185,22 @@ LGBM考虑多个稀疏的特征在很多情况下都是为0的，很少时候同
 
 对于指定为类别特征的特征，LightGBM可以直接将每个类别取值和一个bin关联，从而自动地处理它们，而无需预处理成onehot编码多此一举。
 
+
+
+### 时间复杂度
+
+XGBoost时间复杂度
+
+1. 对每个连续特征预排序O\(nlogn\), n = sample 个数
+2. 建树时 O\(nxm\),  n= 样本的数目， m=特征的数目，因为要对每个特征的排序后的样本进行扫描找分裂点。
+
+LGBM时间复杂度:  
+
+1. 在分桶的时候，LGBM里面用了直方图统计的方法，没有用到预排序，不用考虑预排序时间复杂度
+2. 在GOSS单边采样的时候，它先把样本根据梯度大小排序，然后按照梯度来选取样本。（**注意LGBM里面的排序是为了采样，XGBoost里面的排序是为了找分裂点**）
+3. 在搭建直方图时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以O\(number of data x  number of feature\)
+4. 找分裂点时， O\(number of bins x number of feature\),因为要遍历每个桶进行最大增益分裂点的查找
+5. 
 ## Reference
 
 \[1\] [https://zhuanlan.zhihu.com/p/143009353](https://zhuanlan.zhihu.com/p/143009353)
