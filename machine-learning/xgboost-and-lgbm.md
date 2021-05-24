@@ -119,7 +119,7 @@ $$
 
 1. 对于训练时遇到的缺失值默认把它们试着分别放到右子树，左子树然后找到最大的gain的分裂点进行分裂。并且计算时间只考虑非缺失值
 2. 对于预测时遇到的缺失值，默认被分到右子树。
-3. XGBoost不需要额外的categorical feature的encoding，比如onehot, 它把稀疏数据和缺失数据用相同方式处理。
+3. XGBoost把稀疏数据和缺失数据用相同方式处理。不过对类别特征还是要encoding成稀疏值后才能处理。
 
 ![](../.gitbook/assets/image%20%2844%29.png)
 
@@ -144,6 +144,7 @@ Xgboost 它有以下几个优良的特性：
 7. 传统的GBDT没有设计对缺失值进行处理需要人工对缺失值处理，XGBoost能够自动学习出缺 失值的处理策略。
 8. 树模型对outlier不敏感，不像Parameterized model,如LR之类的
 9. XGBoost 相对于传统的GBDT可以处理缺失值，并且处理稀疏数据时比GBDT要好
+10. 思路总结： 加了Regularization term -&gt; 用二阶泰勒展开式对树模型求解-&gt;得到每个叶子的输出计算公式以及对树结构的gain的计算方式-&gt;通过gain的计算方式+ 贪心算法找到每个feature的分裂点 -&gt;按照分裂点的gain提出对稀疏值和缺失值的处理方法 -&gt;
 
 其他特点：
 
@@ -157,10 +158,10 @@ Xgboost 它有以下几个优良的特性：
 
 LGBM 相对于是对XGBoost的工程上的优化
 
-1. LGBM 通过采样的方式对XGBoost进行加速，计算速度远快于XGboost
+1. LGBM 通过利用直方图分桶和采样的方式对XGBoost进行加速，计算速度远快于XGboost （用GOSS对样本采样， 用EFB对稀疏特征捆绑成新特征减少特征量）
 2. LGBM相对于XGboost需要更少的内存
 3. LGBM和XGBoost一样能够处理缺失值
-4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码
+4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码类别数据形成稀疏值后才能进行计算
 
 LGBM对XGBoost有3个改进之处
 
