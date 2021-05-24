@@ -161,7 +161,8 @@ LGBM 相对于是对XGBoost的工程上的优化
 1. LGBM 通过利用直方图分桶和采样的方式对XGBoost进行加速，计算速度远快于XGboost （用GOSS对样本采样， 用EFB对稀疏特征捆绑成新特征减少特征量）
 2. LGBM相对于XGboost需要更少的内存
 3. LGBM和XGBoost一样能够处理缺失值
-4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码类别数据形成稀疏值后才能进行计算
+4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码类别数据形成稀疏值后才能进行计算. 
+5. 对于缺失值处理， XGBoost是把它当成稀疏值进行处理并且排序时把稀疏值放到左边或右边并排序来找最优分裂点，而LGBM是不需要输入数据编码，自动把特征编码并且通过EFB算法把多个稀疏值合并成更少特征。
 
 LGBM对XGBoost有3个改进之处
 
@@ -200,7 +201,9 @@ LGBM时间复杂度:
 2. 在GOSS单边采样的时候，它先把样本根据梯度大小排序，然后按照梯度来选取样本。（**注意LGBM里面的排序是为了采样，XGBoost里面的排序是为了找分裂点**）
 3. 在搭建直方图时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以O\(number of data x  number of feature\)
 4. 找分裂点时， O\(number of bins x number of feature\),因为要遍历每个桶进行最大增益分裂点的查找
-5. 
+
+
+
 ## Reference
 
 \[1\] [https://zhuanlan.zhihu.com/p/143009353](https://zhuanlan.zhihu.com/p/143009353)
