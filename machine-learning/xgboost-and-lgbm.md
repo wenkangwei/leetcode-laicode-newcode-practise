@@ -199,8 +199,10 @@ LGBM时间复杂度:
 
 1. 在分桶的时候，LGBM里面用了直方图统计的方法，没有用到预排序，不用考虑预排序时间复杂度
 2. 在GOSS单边采样的时候，它先把样本根据梯度大小排序，然后按照梯度来选取样本。（**注意LGBM里面的排序是为了采样，XGBoost里面的排序是为了找分裂点**）
-3. 在搭建直方图时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以O\(number of data x  number of feature\)
-4. 找分裂点时， O\(number of bins x number of feature\),因为要遍历每个桶进行最大增益分裂点的查找
+3. 在**搭建直方图**时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以**O\(number of data x  number of feature\)。并且由于子节点的直方图的和是等于父节点的直方图，所以可以做差加速对直方图做快速计算，不用重新统计**
+4. **找直方图分裂点**时， **O\(number of bins x number of feature\)**,因为要遍历每个桶进行最大增益分裂点的查找。
+
+![](../.gitbook/assets/image%20%2847%29.png)
 
 
 
