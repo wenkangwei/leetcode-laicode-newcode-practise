@@ -143,13 +143,46 @@ Xgboost 它有以下几个优良的特性：
 6. 传统GBDT用了所有数据，但XGBoost像RandomForest一样用了Column Subsampling 来抑制overfitting并且加速了计算。
 7. 传统的GBDT没有设计对缺失值进行处理需要人工对缺失值处理，XGBoost能够自动学习出缺 失值的处理策略。
 8. 树模型对outlier不敏感，不像Parameterized model,如LR之类的
-9. XGBoost 相对于传统的GBDT可以处理缺失值，也不用对类别数据进行encoding \(比如onehot\)
+9. XGBoost 相对于传统的GBDT可以处理缺失值，并且处理稀疏数据时比GBDT要好
 
 其他特点：
 
 1. GBDT 用的CART tree分类时用的是Gini gain 而回归时用方差 variance，而XGBoost里面的启发函数用的是一个基于前面树的梯度的一阶二阶导数的Loss
 
 
+
+
+
+## LGBM
+
+LGBM 相对于是对XGBoost的工程上的优化
+
+1. LGBM 通过采样的方式对XGBoost进行加速，计算速度远快于XGboost
+2. LGBM相对于XGboost需要更少的内存
+3. LGBM和XGBoost一样能够处理缺失值
+4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码
+
+LGBM对XGBoost有3个改进之处
+
+### 在找分裂点时,LGBM用直方图方法进行采样
+
+![](../.gitbook/assets/image%20%2846%29.png)
+
+LGBM可以通过预先把特征值进行排序，找到分位数，并按照分位数把特征离散化得到多个bins，而不像XGBoost把每个分裂点都遍历一遍，从而提高计算速度
+
+### 在样本采样中，用GOSS根据梯度大小对样本采样进行下一个模型更新
+
+Gradient-based One side sampling 单边采样 \(GOSS\) 算法的创新之处在于它只对梯度绝对值较小的样本按照一定比例进行随机采样，而保留了梯度绝对值较大的样本。这个梯度的大小可以由阀值进行决定
+
+![](../.gitbook/assets/image%20%2845%29.png)
+
+### 在特征采样中,LGBM用EFB互斥特征绑定方法进行特征采样
+
+EFB算法全称是Exclusive Feature Bundling。 EFB算法可以有效减少用于构建直方图的特征数量，从而降低计算复杂度，尤其是特征中包含大量稀疏特征的时候。在大量稀疏数据时相似ID数据，尽管用了之前的GOSS样本采样以及直方图找分裂点，但是太多稀疏特征依然会降低计算速度。
+
+LGBM考虑多个稀疏的特征在很多情况下都是为0的，很少时候同时不为0，所以它假设这些特征是互斥的，因此可以把这些稀疏特征捆绑在一起作为一个新的特征。
+
+对于指定为类别特征的特征，LightGBM可以直接将每个类别取值和一个bin关联，从而自动地处理它们，而无需预处理成onehot编码多此一举。
 
 ## Reference
 
@@ -163,5 +196,5 @@ Xgboost 它有以下几个优良的特性：
 
 \[5\] LGBM [https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf](https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
 
-
+\[6\] [https://blog.csdn.net/pearl8899/article/details/106159264](https://blog.csdn.net/pearl8899/article/details/106159264)
 
