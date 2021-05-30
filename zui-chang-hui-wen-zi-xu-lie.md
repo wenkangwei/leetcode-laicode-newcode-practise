@@ -33,7 +33,8 @@
 3. 当i == j ,  dp\[i\]\[j\] =0 只有一个char
 4. 当 i!=j,   s\[i\] == s\[j\],  dp\[i\]\[j\] = dp\[i+1\]\[j-1\] + 2 这里的2是考虑char s\[i\]和s\[j\]
 5. 当 s\[i\] ！= s\[j\],     dp\[i\]\[j\] = max\(dp\[i+1\]\[j\],  dp\[i\]\[j-1\]\) 分别把substring的头尾加到中间的substring然后看两者最大的长度
-6. Time : O\(n^2\), Space:O\(n^2\)
+6. 遍历时候，把string   pointer  i 从后面遍历到前面, 查找 substring  i 到 len\(s\)-1 之间的substring
+7. Time : O\(n^2\), Space:O\(n^2\)
 
 \*\*\*\*
 
