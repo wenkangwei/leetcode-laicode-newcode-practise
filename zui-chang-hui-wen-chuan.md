@@ -1,6 +1,12 @@
+---
+description: Medium; String;  Palindrome;
+---
+
 # 最长回文串
 
 1. **Link**
+
+{% embed url="https://leetcode-cn.com/problems/longest-palindrome/" %}
 
 \*\*\*\*
 
