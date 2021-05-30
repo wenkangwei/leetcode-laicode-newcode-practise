@@ -1,3 +1,7 @@
+---
+description: Medium; Binary Search;
+---
+
 # Search in Rotate Array
 
 **1. Link**
