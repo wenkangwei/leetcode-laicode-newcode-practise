@@ -64,6 +64,7 @@
 * [查找string的编码方式个数](dynamic-programming/cha-zhao-string-de-bian-ma-fang-shi-ge-shu.md)
 * [Maximum Product](dynamic-programming/maximum-product.md)
 * [Longest Common Substring](dynamic-programming/untitled-1.md)
+* [Longest Common Substring-II](dynamic-programming/longest-common-substring-ii.md)
 * [minEditCost](dynamic-programming/untitled-1-1.md)
 * [Backpack I](dynamic-programming/backpack-i.md)
 * [Array Hopper I](dynamic-programming/array-hopper-i.md)
