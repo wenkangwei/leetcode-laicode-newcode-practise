@@ -54,6 +54,7 @@
 * [Reverse String](reverse-string.md)
 * [最长不含重复字符的子字符串](zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan.md)
 * [最长回文串](zui-chang-hui-wen-chuan.md)
+* [最长回文子序列](zui-chang-hui-wen-zi-xu-lie.md)
 
 ## Dynamic Programming
 
