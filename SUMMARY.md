@@ -68,13 +68,20 @@
 * [Backpack I](dynamic-programming/backpack-i.md)
 * [Array Hopper I](dynamic-programming/array-hopper-i.md)
 
+## Searching
+
+* [Find power](searching/find-power.md)
+* [2 Sum All Pair II](searching/2-sum-all-pair-ii.md)
+* [Two Sum](searching/two-sum.md)
+* [Search in Rotate Array](searching/search-in-rotate-array.md)
+* [Search In Shifted Sorted Array II](searching/search-in-shifted-sorted-array-ii.md)
+
 ## Sorting
 
 * [Merge intervals](sorting/merge-intervals.md)
 * [排序](sorting/pai-xu.md)
 * [最小的k个数](sorting/zui-xiao-dekge-shu.md)
 * [Find TopK largest- QuickSelect快速选择 method](sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method.md)
-* [Search In Shifted Sorted Array II](sorting/search-in-shifted-sorted-array-ii.md)
 
 ## Heap+Queue
 
@@ -106,14 +113,4 @@
 * [XGBoost](machine-learning/xgboost-and-lgbm.md)
 * [Cross Entropy Loss](machine-learning/cross-entropy-loss.md)
 * [Other models](machine-learning/other-models.md)
-
-## Searching
-
-* [Find power](searching/find-power.md)
-* [2 Sum All Pair II](searching/2-sum-all-pair-ii.md)
-* [Two Sum](searching/two-sum.md)
-
-## Searching <a id="searching-1"></a>
-
-* [Search in Rotate Array](searching-1/search-in-rotate-array.md)
 

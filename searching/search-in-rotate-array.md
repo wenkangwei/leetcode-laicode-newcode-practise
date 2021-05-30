@@ -2,9 +2,7 @@
 
 **1. Link**
 
-
-
-
+{% embed url="https://leetcode-cn.com/problems/search-in-rotated-sorted-array/" %}
 
 **2. 题目**
 
