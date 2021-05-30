@@ -113,3 +113,7 @@
 * [2 Sum All Pair II](searching/2-sum-all-pair-ii.md)
 * [Two Sum](searching/two-sum.md)
 
+## Searching <a id="searching-1"></a>
+
+* [Search in Rotate Array](searching-1/search-in-rotate-array.md)
+
