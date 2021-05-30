@@ -49,6 +49,7 @@ class Solution(object):
       if (array[mid]>=target and target > array[0] ) or (array[mid]>=target and array[mid]< array[0] )  or ( target >= array[0] and array[mid] < array[0]):
         right = mid
       elif array[mid] == array[0]:
+        #将 left, right searching space 往中间缩小
         left += 1
       else:
         left = mid
