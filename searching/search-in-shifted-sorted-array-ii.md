@@ -26,8 +26,9 @@ For Example, A = {3, 4, 5, 1, 2} \(shifted left by 2 positions\). Find the index
 思路：
 
 1. 先把所有的 array\[mid\]在target右边的情况全列出来，并更新right
-2. 当 array\[mid\] == array\[0\] 时我们不清楚mid是在target的右边还是左边，就默认把left +=1右移逐个检查
+2. 当 array\[mid\] == array\[0\] 时我们不清楚mid是在target的右边还是左边，就默认把left +=1右移逐个检查， 把left, right 中间的searching space往中间缩小， 有可能arr\[mid\] == arr\[0\], 并且mid是在arr右端， 而arr\[0\] 在左端，要往中间缩小搜索范围
 3. else默认左移right
+4. Time: O\(n\) worest case,  average case: O\(logn\)
 
 ```text
 class Solution(object):
