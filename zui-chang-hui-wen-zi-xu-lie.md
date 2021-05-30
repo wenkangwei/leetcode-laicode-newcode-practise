@@ -1,4 +1,8 @@
-# 最长回文子序列
+---
+description: Medium; DP; String
+---
+
+# 最长回文子序列-DP
 
 1**. Link**
 
