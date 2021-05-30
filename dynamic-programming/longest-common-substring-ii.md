@@ -2,6 +2,10 @@
 
 **1. Link**
 
+{% embed url="https://leetcode-cn.com/problems/longest-common-subsequence/" %}
+
+{% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&&tqId=38338&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking" %}
+
 
 
 **2. 题目**
