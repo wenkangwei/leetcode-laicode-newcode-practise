@@ -37,6 +37,7 @@
 
 ## DFS/BFS
 
+* [Number of island](dfs-bfs/number-of-island.md)
 * [Number of Provinces](dfs-bfs/untitled.md)
 * [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
 * [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
