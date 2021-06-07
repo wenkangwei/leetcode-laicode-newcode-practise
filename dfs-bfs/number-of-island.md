@@ -1,3 +1,7 @@
+---
+description: Medium; BFS;
+---
+
 # Number of island
 
 ### 1. Link
