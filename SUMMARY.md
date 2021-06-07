@@ -10,6 +10,7 @@
 
 ## Tree
 
+* [ZigZag Order traversal](tree/zigzag-order-traversal.md)
 * [Check BST and Check CompleteTree](tree/check-bst-and-check-completetree.md)
 * [Find Tree height \(general iteration method\)](tree/find-tree-height-general-iteration-method.md)
 * [Binary Tree diameter I](tree/binary-tree-diameter-i.md)
