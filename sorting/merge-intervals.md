@@ -118,3 +118,30 @@ class Solution:
         
 ```
 
+```text
+    
+class Solution:
+    # array 二维列表
+    def Find(self, target, array):
+        #
+        #input: target int, 2D array,  output: boolean 
+        # idea: binary search
+        # search from upper left corner
+        # since element < cur on the left, >cur on the bottom, so
+        # check current element:
+        #  case 1: if current clement < target ->search bottom
+        # case 2: if current elemtn > target -> search left side
+        if not array or not array[0] or target == None:
+            return False
+        
+        r, c = 0, len(array[0])-1
+        while c >=0 and r < len(array):
+            if array[r][c] <target:
+                r += 1
+            elif array[r][c] >target:
+                c -= 1
+            else:
+                return True
+        return False
+```
+
