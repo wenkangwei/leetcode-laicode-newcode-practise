@@ -36,10 +36,12 @@
 
 ### 3. 思路
 
-1. base^exponent = x^n = x^\(  1\*2^1 + 1\*2^2 + .. + 1\*2^n\)= x^\(1\*2\*1\) \* x^\(1\*2\*2\)  \* ...x^\(1\*2\*n\)
-2. 而其中 x^\(2\*i\) 就是累积的base，  i 代表把exponent的二进制里面的第i位，如果第i位为1，就乘上这个项
-3. 可以通右移 exponent 的bit 看是否需要乘上对应的这个base
-4. Time: O\(logn\), Space: O\(1\) 
+1. base^exponent = x^n = x^\(  2^1 + 2^2 + .. + 2^n\)= x^\(2^1\) \* x^\(2^2\)  \* ...x^\(2^n\)
+2. 而其中 x^\(2^i\) 就是累积的base， i 代表把exponent的二进制里面的第i位，如果第i位为1，就乘上这个项
+3. 在while loop里面，每次计算 base \*=base 来计算 x^\(2^i\)
+4. 之后可以通右移 exponent 的bit 看第一位bit是否为1，如果是就需要乘上对应的这个base
+5. 考虑到 exponent 可以为负数，需要提前把exponent取反，最后把结果倒数
+6. Time: O\(logn\), Space: O\(1\) 
 
  
 
