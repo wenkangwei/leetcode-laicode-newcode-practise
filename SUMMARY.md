@@ -78,6 +78,7 @@
 * [Two Sum](searching/two-sum.md)
 * [Search in Rotate Array](searching/search-in-rotate-array.md)
 * [Search In Shifted Sorted Array II](searching/search-in-shifted-sorted-array-ii.md)
+* [Search in 2D array](searching/search-in-2d-array.md)
 
 ## Sorting
 
