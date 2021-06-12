@@ -46,6 +46,7 @@ true
 5. 当往左遍历时如果发现node的值&gt; 当前最大值，即左子树的值&gt; parent 或 右子树的值，那么就return False
 6. Time: 遍历每个array的值 O\(n\) ， 因为push的个数= pop的个数，并非每次pop的都是O\(n\), 所以实际上是O\(n\)  for popping +O\(n\) for iterating array = O\(n\)
 7. Space: O\(n\)
+8. Note:   pre-order traversal 和 反转过来的post-order traversal 在树的遍历方向上是对称/相反的，**pre-order traversal 从左往右， post-order traversal 反转顺序后是从右往左** 而**in-order traversal 相对于把tree 当成list一样平铺开来再打印**
 
 ### 4. Coding
 
