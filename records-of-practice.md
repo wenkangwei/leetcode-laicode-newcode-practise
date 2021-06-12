@@ -8,6 +8,8 @@
 
    b. in-order traversal of tree \(iteration\):   [https://app.laicode.io/app/problem/43](https://app.laicode.io/app/problem/43)
 
+   c. 二叉搜索树的后序遍历序列: [https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd?tpId=13&&tqId=11176&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking](https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd?tpId=13&&tqId=11176&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
+
 
 
 
