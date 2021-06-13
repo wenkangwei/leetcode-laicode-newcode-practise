@@ -5,27 +5,25 @@
 
 ## Array
 
-* [Array](array/array/README.md)
-  * [Rotate matrix](array/array/rotate-matrix.md)
-  * [Trapping water](array/array/untitled.md)
-  * [Merge Two Array in-place](array/array/merge-two-array-in-place.md)
+* [Rotate matrix](array/rotate-matrix.md)
+* [Trapping water](array/untitled.md)
+* [Merge Two Array in-place](array/merge-two-array-in-place.md)
 
 ## Tree
 
-* [Tree](tree/tree/README.md)
-  * [Find Tree height \(general iteration method\)](tree/tree/find-tree-height-general-iteration-method.md)
-  * [Check BST and Check CompleteTree](tree/tree/check-bst-and-check-completetree.md)
-  * [ZigZag Order traversal](tree/tree/zigzag-order-traversal.md)
-  * [Binary Tree diameter I](tree/tree/binary-tree-diameter-i.md)
-  * [Maximum Path Sum Binary Tree](tree/tree/untitled.md)
-  * [Maximum Path Sum Binary Tree II](tree/tree/maximum-path-sum-binary-tree-ii.md)
-  * [Binary Tree Path Sum To Target III](tree/tree/binary-tree-path-sum-to-target-iii.md)
-  * [Tree diameter 树的直径II](tree/tree/tree-diameter-shu-de-zhi-jing-ii.md)
-  * [Tree ReConstruction](tree/tree/tree-reconstruction/README.md)
-    * [Check if B is Subtree of A](tree/tree/tree-reconstruction/check-if-b-is-subtree-of-a.md)
-  * [The Kth smallest in Binary Search Tree](tree/tree/the-kth-smallest-in-binary-search-tree.md)
-  * [打印Tree的右视图](tree/tree/da-yin-tree-de-you-shi-tu.md)
-  * [二叉搜索树的后序遍历序列](tree/tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
+* [Find Tree height \(general iteration method\)](tree/find-tree-height-general-iteration-method.md)
+* [Check BST and Check CompleteTree](tree/check-bst-and-check-completetree.md)
+* [ZigZag Order traversal](tree/zigzag-order-traversal.md)
+* [Binary Tree diameter I](tree/binary-tree-diameter-i.md)
+* [Maximum Path Sum Binary Tree](tree/untitled.md)
+* [Maximum Path Sum Binary Tree II](tree/maximum-path-sum-binary-tree-ii.md)
+* [Binary Tree Path Sum To Target III](tree/binary-tree-path-sum-to-target-iii.md)
+* [Tree diameter 树的直径II](tree/tree-diameter-shu-de-zhi-jing-ii.md)
+* [Tree ReConstruction](tree/tree-reconstruction/README.md)
+  * [Check if B is Subtree of A](tree/tree-reconstruction/check-if-b-is-subtree-of-a.md)
+* [The Kth smallest in Binary Search Tree](tree/the-kth-smallest-in-binary-search-tree.md)
+* [打印Tree的右视图](tree/da-yin-tree-de-you-shi-tu.md)
+* [二叉搜索树的后序遍历序列](tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
 
 ## LinkedList
 
