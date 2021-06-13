@@ -5,9 +5,10 @@
 
 ## Array
 
-* [Trapping water](array/untitled.md)
-* [Rotate matrix](array/rotate-matrix.md)
-* [Merge Two Array in-place](array/merge-two-array-in-place.md)
+* [Array](array/array/README.md)
+  * [Rotate matrix](array/array/rotate-matrix.md)
+  * [Trapping water](array/array/untitled.md)
+  * [Merge Two Array in-place](array/array/merge-two-array-in-place.md)
 
 ## Tree
 
@@ -123,5 +124,5 @@
 
 ## Graph Neural Network
 
-* [Untitled](graph-neural-network/untitled.md)
+* [GNN](graph-neural-network/untitled.md)
 
