@@ -121,3 +121,7 @@
 * [Cross Entropy Loss](machine-learning/cross-entropy-loss.md)
 * [Other models](machine-learning/other-models.md)
 
+## Graph Neural Network
+
+* [Untitled](graph-neural-network/untitled.md)
+
