@@ -1,5 +1,7 @@
 # Records of Practice
 
+记录一下之后的练习，虽然之前的没有记录下来
+
 6/12/2021
 
 1.  Tree
@@ -10,9 +12,14 @@
 
    c. 二叉搜索树的后序遍历序列: [https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd?tpId=13&&tqId=11176&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking](https://www.nowcoder.com/practice/a861533d45854474ac791d90e447bafd?tpId=13&&tqId=11176&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)
 
+6/15/2021
 
-
-
+1. DP
+   1. 子数组的最大累加和问题： [https://www.nowcoder.com/practice/554aa508dd5d4fefbf0f86e5fe953abd?tpId=188&&tqId=38594&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/554aa508dd5d4fefbf0f86e5fe953abd?tpId=188&&tqId=38594&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
+   2. 子数组最大乘积[https://www.nowcoder.com/practice/9c158345c867466293fc413cff570356?tpId=188&&tqId=38656&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/9c158345c867466293fc413cff570356?tpId=188&&tqId=38656&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
+   3. 三个数的最大乘积[https://www.nowcoder.com/practice/8ae05c2913fe438b8b14f3968f64fc0b?tpId=188&&tqId=38616&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/8ae05c2913fe438b8b14f3968f64fc0b?tpId=188&&tqId=38616&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
+2. LinkedList
+   1. 删除链表的倒数第n个节点[https://www.nowcoder.com/practice/f95dcdafbde44b22a6d741baf71653f6?tpId=188&&tqId=38587&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/f95dcdafbde44b22a6d741baf71653f6?tpId=188&&tqId=38587&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
 
 
 

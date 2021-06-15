@@ -34,6 +34,7 @@
 * [DetectCycle II](linkedlist/detectcycle-ii.md)
 * [链表的共同节点](linkedlist/lian-biao-de-gong-tong-jie-dian.md)
 * [链表中倒数第k个节点](linkedlist/untitled-1.md)
+* [删除链表倒数第k个节点](linkedlist/shan-chu-lian-biao-dao-shu-dikge-jie-dian.md)
 * [合并两个链表](linkedlist/he-bing-liang-ge-lian-biao.md)
 * [在排序数组中查找元素的第一个和最后一个位置](linkedlist/zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
 * [删除链表里面重复的元素-1](linkedlist/shan-chu-lian-biao-li-mian-zhong-fu-de-yuan-su.md)
