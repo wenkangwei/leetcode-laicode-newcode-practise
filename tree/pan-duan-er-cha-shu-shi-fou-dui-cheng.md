@@ -41,6 +41,10 @@ true
 
 see notes in Coding
 
+Time： O\(n\) since we need to go through every pair of nodes to check if they have same values. Then go back to parent node to search another pair of nodes
+
+Space: O\(height of tree\)
+
 ### 4. Coding
 
 ```text
