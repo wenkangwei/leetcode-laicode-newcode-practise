@@ -26,6 +26,7 @@
 * [二叉搜索树的后序遍历序列](tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
 * [重建二叉树](tree/zhong-jian-er-cha-shu.md)
 * [判断二叉树是否对称](tree/pan-duan-er-cha-shu-shi-fou-dui-cheng.md)
+* [Sum to Target in Tree](tree/sum-to-target-in-tree.md)
 
 ## LinkedList
 
