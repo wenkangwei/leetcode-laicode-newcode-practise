@@ -25,6 +25,7 @@
 
 1. Tree
    1. 重建二叉树[https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking)
+   2. 判断二叉树是否对称[https://www.nowcoder.com/practice/1b0b7f371eae4204bc4a7570c84c2de1?tpId=188&&tqId=38623&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/1b0b7f371eae4204bc4a7570c84c2de1?tpId=188&&tqId=38623&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
 2. DFS
 
 
