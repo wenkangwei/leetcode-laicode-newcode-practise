@@ -21,5 +21,11 @@
 2. LinkedList
    1. 删除链表的倒数第n个节点[https://www.nowcoder.com/practice/f95dcdafbde44b22a6d741baf71653f6?tpId=188&&tqId=38587&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/f95dcdafbde44b22a6d741baf71653f6?tpId=188&&tqId=38587&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
 
+6/17/2021
+
+1. Tree
+   1. 重建二叉树[https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking)
+2. DFS
+
 
 

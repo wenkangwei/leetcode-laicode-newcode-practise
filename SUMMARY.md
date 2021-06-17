@@ -24,6 +24,7 @@
 * [The Kth smallest in Binary Search Tree](tree/the-kth-smallest-in-binary-search-tree.md)
 * [打印Tree的右视图](tree/da-yin-tree-de-you-shi-tu.md)
 * [二叉搜索树的后序遍历序列](tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
+* [重建二叉树](tree/zhong-jian-er-cha-shu.md)
 
 ## LinkedList
 
