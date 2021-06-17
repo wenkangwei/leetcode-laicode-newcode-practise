@@ -124,5 +124,5 @@
 
 ## Graph Neural Network
 
-* [GNN](graph-neural-network/untitled.md)
+* [GNN-1-Basic](graph-neural-network/untitled.md)
 
