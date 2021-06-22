@@ -1,4 +1,4 @@
-# Sum to Target in Tree
+# Path Sum to Target in Binary Tree
 
 ### 1. Link
 

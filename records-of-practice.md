@@ -26,7 +26,15 @@
 1. Tree
    1. 重建二叉树[https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking](https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=191&&tqId=35922&rp=1&ru=/activity/oj&qru=/ta/job-code-high-algorithm/question-ranking)
    2. 判断二叉树是否对称[https://www.nowcoder.com/practice/1b0b7f371eae4204bc4a7570c84c2de1?tpId=188&&tqId=38623&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/1b0b7f371eae4204bc4a7570c84c2de1?tpId=188&&tqId=38623&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
-2. DFS
+   3. 二叉树是否存在和为目标值的路径[https://www.nowcoder.com/practice/508378c0823c423baa723ce448cbfd0c?tpId=188&&tqId=38614&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/508378c0823c423baa723ce448cbfd0c?tpId=188&&tqId=38614&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
+
+6/22/2021
+
+1. Divide and Conquer
+   1. 找第K大的元素[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking)
+   2. 
+
+
 
 
 
