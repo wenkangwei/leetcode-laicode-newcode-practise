@@ -55,7 +55,7 @@
    2. Space: O\(1\), inplace
 2. method 2: heapsort
    1. Time: O\(Nlogk\)
-   2. Space: O\(k\)
+   2. Space: O\(k\) for heap storage
 
 ### 4. Coding
 
