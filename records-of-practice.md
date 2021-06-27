@@ -32,7 +32,12 @@
 
 1. Divide and Conquer
    1. 找第K大的元素[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking)
-   2. 
+
+6/27/2021
+
+1. Array
+   1. 最长无重复子数组:[https://www.nowcoder.com/practice/b56799ebfd684fb394bd315e89324fb4?tpId=188&&tqId=38553&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/b56799ebfd684fb394bd315e89324fb4?tpId=188&&tqId=38553&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
+   2. 链表的奇偶重排[https://www.nowcoder.com/practice/02bf49ea45cd486daa031614f9bd6fc3?tpId=188&&tqId=38658&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/02bf49ea45cd486daa031614f9bd6fc3?tpId=188&&tqId=38658&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking)
 
 
 
