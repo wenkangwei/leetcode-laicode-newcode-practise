@@ -8,6 +8,7 @@
 * [Rotate matrix](array/rotate-matrix.md)
 * [Trapping water](array/untitled.md)
 * [Merge Two Array in-place](array/merge-two-array-in-place.md)
+* [Longest Consecutive Subarray](array/longest-consecutive-subarray.md)
 
 ## Tree
 
