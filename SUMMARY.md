@@ -77,6 +77,7 @@
 * [minEditCost](dynamic-programming/untitled-1-1.md)
 * [Backpack I](dynamic-programming/backpack-i.md)
 * [Array Hopper I](dynamic-programming/array-hopper-i.md)
+* [Minimum distance between strings](dynamic-programming/minimum-distance-between-strings.md)
 
 ## Searching
 
