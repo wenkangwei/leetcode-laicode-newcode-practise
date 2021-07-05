@@ -2,7 +2,7 @@
 
 ### 1. Link
 
-
+[https://www.nowcoder.com/practice/82bd533cd9c34df29ba15bbf1591bedf?tpId=196&&tqId=37196&rp=1&ru=/activity/oj&qru=/ta/job-code-total/question-ranking](https://www.nowcoder.com/practice/82bd533cd9c34df29ba15bbf1591bedf?tpId=196&&tqId=37196&rp=1&ru=/activity/oj&qru=/ta/job-code-total/question-ranking)
 
 ### 2. 描述
 
