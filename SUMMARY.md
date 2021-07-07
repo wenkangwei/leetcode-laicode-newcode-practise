@@ -87,6 +87,7 @@
 * [Search in Rotate Array](searching/search-in-rotate-array.md)
 * [Search In Shifted Sorted Array II](searching/search-in-shifted-sorted-array-ii.md)
 * [Search in 2D array](searching/search-in-2d-array.md)
+* [Three Sum with duplicated values](searching/three-sum-with-duplicated-values.md)
 
 ## Sorting
 
