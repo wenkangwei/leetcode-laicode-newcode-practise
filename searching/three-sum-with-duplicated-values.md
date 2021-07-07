@@ -2,11 +2,7 @@
 
 ### 1. Link
 
-
-
-
-
-
+{% embed url="https://www.nowcoder.com/practice/345e2ed5f81d4017bbb8cc6055b0b711?tpId=190&&tqId=35196&rp=1&ru=/activity/oj&qru=/ta/job-code-high-rd/question-ranking" %}
 
 ### 2. 描述
 
