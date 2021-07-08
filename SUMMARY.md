@@ -134,3 +134,7 @@
 
 * [GNN-1-Basic](graph-neural-network/untitled.md)
 
+## Big Data
+
+* [Reservoir Sampling](big-data/reservoir-sampling.md)
+
