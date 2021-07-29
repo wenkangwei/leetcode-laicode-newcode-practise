@@ -6,8 +6,6 @@ description: 练习回顾
 
 **1.** **Download data set MovieLen data set and PySpark**
 
-
-
 ```text
 ! wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
 ! unzip ml-latest-small.zip
