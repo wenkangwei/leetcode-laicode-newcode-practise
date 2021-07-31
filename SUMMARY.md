@@ -140,5 +140,5 @@
 
 ## SQL
 
-* [SQL  functions](sql/sql-functions.md)
+* [SQL  and PySpark functions](sql/sql-functions.md)
 
