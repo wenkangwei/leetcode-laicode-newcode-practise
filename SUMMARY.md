@@ -138,3 +138,7 @@
 
 * [Reservoir Sampling](big-data/reservoir-sampling.md)
 
+## SQL
+
+* [SQL  functions](sql/sql-functions.md)
+
