@@ -2,7 +2,6 @@
 
 1. Link
 2. Create table 
-
    1. 创建一个actor表，包含如下列信息
 
       ```sql
@@ -48,12 +47,32 @@
       insert into actor_name
        (select a.first_name, a.last_name
              from actor a);
+      alter table actor add create_date datetime not null default('0000-00-00 00:00:00');       
+
       ```
 
+   4. **修改 table： 关键词'add', 'drop'**
+
+      ```sql
+      alter table table_name add new_column_name datetime not null default('0000-00-00 00:00:00');       
 
 
-   1. kk
+      alter table table_name drop column_name;  
+      ```
 
+   5. **删除table 记录:   delete from table\_name  where**
+      1. 直接  delete from table\_name :  删除所有数据
+      2. 选择性删除：  （delete和 query不能同时用，应该先query，再delete）
+
+         ```sql
+         delete from table_name where column_name in (
+         select * from (
+         #sub-query...
+         )
+
+         )
+         ```
+   6. 
 3. Note
 
    1. SQL 对table的大小写敏感，但对table里面的column name大小写不敏感
