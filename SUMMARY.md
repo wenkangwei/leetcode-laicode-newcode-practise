@@ -142,7 +142,7 @@
 
 * [SQL  and PySpark functions](sql/sql-functions.md)
 * [Query Film Infomation](sql/query-film-infomation.md)
-* [Create and Insert Actor Table](sql/create-and-insert-actor-table.md)
+* [Create, Insert and Alter Actor Table](sql/create-and-insert-actor-table.md)
 * [Untitled](sql/untitled-1.md)
 * [Untitled](sql/untitled.md)
 

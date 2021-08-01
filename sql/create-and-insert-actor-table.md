@@ -1,4 +1,4 @@
-# Create and Insert Actor Table
+# Create, Insert and Alter Actor Table
 
 1. Link
 
