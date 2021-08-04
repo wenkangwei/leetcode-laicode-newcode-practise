@@ -2,7 +2,7 @@
 description: 字节，研发
 ---
 
-# 反转链表I
+# Reverse LinkedList I
 
 **Links:**
 

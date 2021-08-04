@@ -31,7 +31,7 @@
 
 ## LinkedList
 
-* [反转链表I](linkedlist/untitled.md)
+* [Reverse LinkedList I](linkedlist/untitled.md)
 * [Reverse K-group linked list](linkedlist/reverse-k-group-linked-list.md)
 * [Detect Start of Cycle](linkedlist/detectcycle.md)
 * [HasCycle](linkedlist/hascycle.md)
