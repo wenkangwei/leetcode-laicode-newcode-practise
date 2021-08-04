@@ -128,5 +128,4 @@
   * [Backpack I](datastructure/dynamicprogramming/backpack-i.md)
   * [Array Hopper I](datastructure/dynamicprogramming/array-hopper-i.md)
   * [Minimum distance between strings](datastructure/dynamicprogramming/minimum-distance-between-strings.md)
-* [Untitled](datastructure/untitled.md)
 
