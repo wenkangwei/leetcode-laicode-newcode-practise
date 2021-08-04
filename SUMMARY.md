@@ -3,31 +3,7 @@
 * [Introduction](README.md)
 * [Records of Practice](records-of-practice.md)
 
-## Array
-
-* [Rotate matrix](array/rotate-matrix.md)
-* [Trapping water](array/untitled.md)
-* [Merge Two Array in-place](array/merge-two-array-in-place.md)
-* [Longest Consecutive Subarray](array/longest-consecutive-subarray.md)
-
 ## Tree
-
-* [Find Tree height \(general iteration method\)](tree/find-tree-height-general-iteration-method.md)
-* [Check BST and Check CompleteTree](tree/check-bst-and-check-completetree.md)
-* [ZigZag Order traversal](tree/zigzag-order-traversal.md)
-* [Binary Tree diameter I](tree/binary-tree-diameter-i.md)
-* [Maximum Path Sum Binary Tree](tree/untitled.md)
-* [Maximum Path Sum Binary Tree II](tree/maximum-path-sum-binary-tree-ii.md)
-* [Binary Tree Path Sum To Target III](tree/binary-tree-path-sum-to-target-iii.md)
-* [Tree diameter 树的直径II](tree/tree-diameter-shu-de-zhi-jing-ii.md)
-* [Tree ReConstruction](tree/tree-reconstruction/README.md)
-  * [Check if B is Subtree of A](tree/tree-reconstruction/check-if-b-is-subtree-of-a.md)
-* [The Kth smallest in Binary Search Tree](tree/the-kth-smallest-in-binary-search-tree.md)
-* [打印Tree的右视图](tree/da-yin-tree-de-you-shi-tu.md)
-* [二叉搜索树的后序遍历序列](tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
-* [重建二叉树](tree/zhong-jian-er-cha-shu.md)
-* [判断二叉树是否对称](tree/pan-duan-er-cha-shu-shi-fou-dui-cheng.md)
-* [Path Sum to Target in Binary Tree](tree/sum-to-target-in-tree.md)
 
 ## LinkedList
 
@@ -41,7 +17,8 @@
 * [删除链表倒数第k个节点](linkedlist/shan-chu-lian-biao-dao-shu-dikge-jie-dian.md)
 * [合并两个链表](linkedlist/he-bing-liang-ge-lian-biao.md)
 * [在排序数组中查找元素的第一个和最后一个位置](linkedlist/zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
-* [删除链表里面重复的元素-1](linkedlist/shan-chu-lian-biao-li-mian-zhong-fu-de-yuan-su.md)
+* [LinkedList](linkedlist/linkedlist/README.md)
+  * [删除链表里面重复的元素-1](linkedlist/linkedlist/shan-chu-lian-biao-li-mian-zhong-fu-de-yuan-su.md)
 
 ## DFS/BFS
 
@@ -145,4 +122,30 @@
 * [Create, Insert and Alter Actor Table](sql/create-and-insert-actor-table.md)
 * [Untitled](sql/untitled-1.md)
 * [Untitled](sql/untitled.md)
+
+## DataStructure
+
+* [Array](datastructure/array/README.md)
+  * [Longest Consecutive Subarray](datastructure/array/longest-consecutive-subarray.md)
+  * [Merge Two Array in-place](datastructure/array/merge-two-array-in-place.md)
+  * [Trapping water](datastructure/array/untitled.md)
+  * [Rotate matrix](datastructure/array/rotate-matrix.md)
+* [Tree](datastructure/tree/README.md)
+  * [Find Tree height \(general iteration method\)](datastructure/tree/find-tree-height-general-iteration-method.md)
+  * [Check BST and Check CompleteTree](datastructure/tree/check-bst-and-check-completetree.md)
+  * [ZigZag Order traversal](datastructure/tree/zigzag-order-traversal.md)
+  * [Binary Tree diameter I](datastructure/tree/binary-tree-diameter-i.md)
+  * [Maximum Path Sum Binary Tree](datastructure/tree/untitled.md)
+  * [Maximum Path Sum Binary Tree II](datastructure/tree/maximum-path-sum-binary-tree-ii.md)
+  * [Binary Tree Path Sum To Target III](datastructure/tree/binary-tree-path-sum-to-target-iii.md)
+  * [Tree diameter 树的直径II](datastructure/tree/tree-diameter-shu-de-zhi-jing-ii.md)
+  * [Tree ReConstruction](datastructure/tree/tree-reconstruction.md)
+  * [Check if B is Subtree of A](datastructure/tree/check-if-b-is-subtree-of-a.md)
+  * [The Kth smallest in Binary Search Tree](datastructure/tree/the-kth-smallest-in-binary-search-tree.md)
+  * [打印Tree的右视图](datastructure/tree/da-yin-tree-de-you-shi-tu.md)
+  * [二叉搜索树的后序遍历序列](datastructure/tree/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie.md)
+  * [重建二叉树](datastructure/tree/zhong-jian-er-cha-shu.md)
+  * [判断二叉树是否对称](datastructure/tree/pan-duan-er-cha-shu-shi-fou-dui-cheng.md)
+  * [Path Sum to Target in Binary Tree](datastructure/tree/sum-to-target-in-tree.md)
+* [Untitled](datastructure/untitled.md)
 
