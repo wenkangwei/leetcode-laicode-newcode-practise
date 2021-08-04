@@ -18,7 +18,7 @@ description: Easy; LinkedList
 
 [![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 在节点 c1 开始相交。
 

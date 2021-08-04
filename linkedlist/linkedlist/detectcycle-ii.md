@@ -28,7 +28,7 @@ description: LinkedList; Easy
 
 示例 1：
 
-![](../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
 输入：head = \[3,2,0,-4\], pos = 1 输出：返回索引为 1 的链表节点 解释：链表中有一个环，其尾部连接到第二个节点。
 

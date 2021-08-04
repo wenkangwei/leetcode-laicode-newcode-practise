@@ -7,31 +7,32 @@
 
 ## LinkedList
 
-* [Reverse LinkedList I](linkedlist/untitled.md)
-* [Reverse K-group linked list](linkedlist/reverse-k-group-linked-list.md)
-* [Detect Start of Cycle](linkedlist/detectcycle.md)
-* [HasCycle](linkedlist/hascycle.md)
-* [DetectCycle II](linkedlist/detectcycle-ii.md)
-* [链表的共同节点](linkedlist/lian-biao-de-gong-tong-jie-dian.md)
-* [链表中倒数第k个节点](linkedlist/untitled-1.md)
-* [删除链表倒数第k个节点](linkedlist/shan-chu-lian-biao-dao-shu-dikge-jie-dian.md)
-* [合并两个链表](linkedlist/he-bing-liang-ge-lian-biao.md)
-* [在排序数组中查找元素的第一个和最后一个位置](linkedlist/zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
 * [LinkedList](linkedlist/linkedlist/README.md)
+  * [Reverse LinkedList I](linkedlist/linkedlist/untitled.md)
+  * [Reverse K-group linked list](linkedlist/linkedlist/reverse-k-group-linked-list.md)
+  * [Detect Start of Cycle](linkedlist/linkedlist/detectcycle.md)
+  * [HasCycle](linkedlist/linkedlist/hascycle.md)
+  * [DetectCycle II](linkedlist/linkedlist/detectcycle-ii.md)
+  * [链表的共同节点](linkedlist/linkedlist/lian-biao-de-gong-tong-jie-dian.md)
+  * [链表中倒数第k个节点](linkedlist/linkedlist/untitled-1.md)
+  * [删除链表倒数第k个节点](linkedlist/linkedlist/shan-chu-lian-biao-dao-shu-dikge-jie-dian.md)
+  * [合并两个链表](linkedlist/linkedlist/he-bing-liang-ge-lian-biao.md)
+  * [在排序数组中查找元素的第一个和最后一个位置](linkedlist/linkedlist/zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
   * [删除链表里面重复的元素-1](linkedlist/linkedlist/shan-chu-lian-biao-li-mian-zhong-fu-de-yuan-su.md)
 
 ## DFS/BFS
 
-* [Number of island](dfs-bfs/number-of-island.md)
-* [Number of Provinces](dfs-bfs/untitled.md)
-* [All Permutations of Subsets without duplication](dfs-bfs/all-permutations-of-subsets-without-duplication.md)
-* [All Permutations of Subsets with duplication](dfs-bfs/all-permutations-of-subsets-with-duplication.md)
-* [Combinations Of Coins](dfs-bfs/untitled-2.md)
-* [All Subset I \(without fixing size of subset, without order, without duplication\)](dfs-bfs/all-subset-i.md)
-* [All Subset of K size without duplication II](dfs-bfs/untitled-1.md)
-* [All Subset of K size III \(with duplication without considering order\)](dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
-* [All Permutation II \(with duplication and consider order\)](dfs-bfs/all-permutation-ii.md)
-* [Factor Combination-质数分解](dfs-bfs/factor-combination.md)
+* [DFS/BFS](dfs-bfs/dfs-bfs/README.md)
+  * [Number of island](dfs-bfs/dfs-bfs/number-of-island.md)
+  * [Number of Provinces](dfs-bfs/dfs-bfs/untitled.md)
+  * [All Permutations of Subsets without duplication](dfs-bfs/dfs-bfs/all-permutations-of-subsets-without-duplication.md)
+  * [All Permutations of Subsets with duplication](dfs-bfs/dfs-bfs/all-permutations-of-subsets-with-duplication.md)
+  * [Combinations Of Coins](dfs-bfs/dfs-bfs/untitled-2.md)
+  * [All Subset I \(without fixing size of subset, without order, without duplication\)](dfs-bfs/dfs-bfs/all-subset-i.md)
+  * [All Subset of K size without duplication II](dfs-bfs/dfs-bfs/untitled-1.md)
+  * [All Subset of K size III \(with duplication without considering order\)](dfs-bfs/dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
+  * [All Permutation II \(with duplication and consider order\)](dfs-bfs/dfs-bfs/all-permutation-ii.md)
+  * [Factor Combination-质数分解](dfs-bfs/dfs-bfs/factor-combination.md)
 
 ## String
 

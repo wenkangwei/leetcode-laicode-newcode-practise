@@ -26,7 +26,7 @@ description: Easy; Linkedlist;
 
 **示例 1：**
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 ```text
 输入：head = [3,2,0,-4], pos = 1
