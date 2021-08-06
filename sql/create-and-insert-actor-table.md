@@ -56,6 +56,11 @@
              from actor a);
       ```
 
+      1. **Note:**
+         1. **insert  into 如果 table的key已经有了会报错**
+         2. **replace into 把已经有的key的数据进行替换，如果没有重复的key就会和insert into一样**
+         3. **insert ignore: 对于已经有的key，会直接忽略，不会更新**
+
    4. **修改 table： 关键词'add', 'drop'**
 
       ```sql
@@ -101,5 +106,11 @@
 2. Note
 
    1. SQL 对table的大小写敏感，但对table里面的column name大小写不敏感
-   2.  Insert 数据时，如果是直接用row 数据输入要加 table的column list以及 values \(row1\), \(row2\) ...;   但如果是从已有的table里面导入数据， 直接insert into table\_name  \(select \* from table ..\); 
+   2.  Insert 数据时，如果是直接用row 数据输入要加 table的column list以及 values \(row1\), \(row2\) ...;   但如果是从已有的table里面导入数据， 直接insert into table\_name  \(select \* from table ..\);
+   3. 关于 insert into 和replace into区别
+      1. **insert  into 如果 table的key已经有了会报错**
+      2. **replace into 把已经有的key的数据进行替换，如果没有重复的key就会和insert into一样**
+      3. **insert ignore: 对于已经有的key，会直接忽略，不会更新**
+
+  
 
