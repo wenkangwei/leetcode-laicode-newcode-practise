@@ -59,7 +59,7 @@
       1. **Note:**
          1. **insert  into 如果 table的key已经有了会报错**
          2. **replace into 把已经有的key的数据进行替换，如果没有重复的key就会和insert into一样**
-         3. **insert ignore: 对于已经有的key，会直接忽略，不会更新**
+         3. **insert ignore into: 对于已经有的key，会直接忽略，不会更新**
 
    4. **修改 table： 关键词'add', 'drop'**
 
@@ -110,7 +110,7 @@
    3. 关于 insert into 和replace into区别
       1. **insert  into 如果 table的key已经有了会报错**
       2. **replace into 把已经有的key的数据进行替换，如果没有重复的key就会和insert into一样**
-      3. **insert ignore: 对于已经有的key，会直接忽略，不会更新**
+      3. **insert ignore into: 对于已经有的key，会直接忽略，不会更新**
 
   
 
