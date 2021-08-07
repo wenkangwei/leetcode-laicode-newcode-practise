@@ -71,6 +71,41 @@ PRIMARY KEY (`emp_no`));
 
 5. 按照dept\_no进行汇总，属于同一个部门的emp\_no按照逗号进行连接，结果给出dept\_no以及连接出的结果, 预期结果:
 
+   ```sql
+   CREATE TABLE `salaries` ( `emp_no` int(11) NOT NULL,
+   `salary` int(11) NOT NULL,
+   `from_date` date NOT NULL,
+   `to_date` date NOT NULL,
+   PRIMARY KEY (`emp_no`,`from_date`));
+   如：
+   INSERT INTO salaries VALUES(10001,85097,'2001-06-22','2002-06-22');
+   INSERT INTO salaries VALUES(10001,88958,'2002-06-22','9999-01-01');
+   INSERT INTO salaries VALUES(10002,72527,'2001-08-02','9999-01-01');
+   INSERT INTO salaries VALUES(10003,43699,'2000-12-01','2001-12-01');
+   INSERT INTO salaries VALUES(10003,43311,'2001-12-01','9999-01-01');
+   INSERT INTO salaries VALUES(10004,70698,'2000-11-27','2001-11-27');
+   INSERT INTO salaries VALUES(10004,74057,'2001-11-27','9999-01-01');
+
+
+
+   select avg(s1.salary) as avg_salary
+   from salaries s1
+   where s1.to_date ='9999-01-01' 
+   and s1.salary not in (select max(s.salary)
+       from salaries s
+       where s.to_date ='9999-01-01'
+   )
+   and s1.salary not in (
+   select min(s.salary)
+       from salaries s
+       where s.to_date ='9999-01-01'
+   )
+   ;
+   ;
+   ```
+
+6. 7. 按照dept\_no进行汇总，属于同一个部门的emp\_no按照逗号进行连接，结果给出dept\_no以及连接出的结果, 预期结果:
+
    | dept\_no | employees |
    | :--- | :--- |
    | d001 | 10001,10002 |
@@ -113,5 +148,7 @@ PRIMARY KEY (`emp_no`));
    group by d.dept_no;
    ```
 
+```sql
 
+```
 
