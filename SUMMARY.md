@@ -15,7 +15,7 @@
 ## Deep-Learning
 
 * [Non-Negative Matrix Fatorization\(NMF\)](deep-learning/non-negative-matrix-fatorization-nmf.md)
-* [Fatorization Machine FM](deep-learning/untitled.md)
+* [Fatorization Machine\(FM\)](deep-learning/fm.md)
 * [Attention](deep-learning/attention.md)
 * [User-base/Item-base实现](deep-learning/untitled-1.md)
 * [NeuralFM](deep-learning/neuralfm.md)
