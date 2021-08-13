@@ -1,14 +1,12 @@
+---
+description: Binary Search; Hard;
+---
+
 # Median of Two Sorted Arrays
 
 ### 1. Link
 
 {% embed url="https://www.nowcoder.com/practice/6fbe70f3a51d44fa9395cfc49694404f?tpId=188&&tqId=38639&rp=1&ru=/activity/oj&qru=/ta/job-code-high-week/question-ranking" %}
-
-
-
-
-
-
 
 ### 2. 描述: NC36 在两个长度相等的排序数组中找到上中位数
 
@@ -66,8 +64,8 @@
    1.  Define left, right pointers of arr1 = l1, r1 and  left, right pointers of arr2 = l2, r2
    2.  Since two **sorted arrays** have same length, so first find the middle elements of two arrays \(two medians of two array\)
    3. if arr1\[mid1\] == arr2\[mid2\]  -&gt;  two arrays have the same median and this is the global median 
-   4. **if  arr1\[mid1\]  &gt; arr2\[mid2\],** then arr1\[mid1\] is on the right hand side of arr2\[mid2\]  in the global array.   That is,  **arr1\[mid1\]  &gt;= global median &gt;= arr2\[mid2\]**.    So we need to search the left space of arr1\[mid1\]  and  the right space of arr2\[mid2\].  So let  l1 = mid1,  r2 = mid2
-   5. if arr1\[mid1\] &lt;  arr2\[mid2\],  similary,  arr1\[mid1\] &lt;= global median &lt;= arr2\[mid2\].  So let  r1 = mid1, l2 = mid2.
+   4. **if  arr1\[mid1\]  &gt; arr2\[mid2\],** then arr1\[mid1\] is on the right hand side of arr2\[mid2\]  in the global array.   That is,  **arr1\[mid1\]  &gt;= global median &gt;= arr2\[mid2\]**.    So we need to search the left space of arr1\[mid1\]  and  the right space of arr2\[mid2\].  So let  **l1 = mid1,  r2 = mid2**
+   5. **if arr1\[mid1\] &lt;  arr2\[mid2\],**  similary,  **arr1\[mid1\] &lt;= global median &lt;= arr2\[mid2\].  So let  r1 = mid1, l2 = mid2.**
    6. repeat step 1~5  while l1 &lt; r1
    7. Note:  
       1. when l1=r1-1,  compute middle between  l1, r1 could lead to  dead loop, since  l1 = mid1 always. **When  subarray arr1\[l1:r1+1\] has even size, we need l1 = mid1 + 1  and l2 = mid1 + 1**
