@@ -56,6 +56,7 @@
   * [Search In Shifted Sorted Array II](datastructure/searching/search-in-shifted-sorted-array-ii.md)
   * [Search in 2D array](datastructure/searching/search-in-2d-array.md)
   * [Three Sum with duplicated values](datastructure/searching/three-sum-with-duplicated-values.md)
+  * [Median of Two Sorted Arrays](datastructure/searching/median-of-two-sorted-arrays.md)
 * [Array](datastructure/array/README.md)
   * [Longest Consecutive Subarray](datastructure/array/longest-consecutive-subarray.md)
   * [Merge Two Array in-place](datastructure/array/merge-two-array-in-place.md)
