@@ -183,32 +183,6 @@ where a.r_number % 2 = 1
 
 
 ```sql
-select a.first_name
-from  employees e left join
-(
-select e.first_name, ROW_NUMBER() over (order by e.first_name ) as r_number
-from employees as e
-) as a
-on e.first_name = a.first_name
-where a.r_number % 2 = 1
-;
-
-
-
-
-select s.emp_no, s.salary, sum(s.salary) over (order by s.emp_no) as running_total
-from salaries as s
-where s.to_date = "9999-01-01"
-;
-select e.emp_no, e.first_name,
-        e.last_name, b.btype, 
-        s.salary, case when b.btype=1 then s.salary*0.1
-                   when b.btype=2 then s.salary*0.2
-                  else s.salary * 0.3  end  bonus
-from emp_bonus as b 
-left join employees as e on b.emp_no = e.emp_no
-left join salaries as s on b.emp_no = s.emp_no
-where s.to_date = "9999-01-01";
 
 ```
 
