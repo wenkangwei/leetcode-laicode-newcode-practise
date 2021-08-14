@@ -61,6 +61,22 @@ CREATE TABLE `salaries` ( `emp_no` int(11) NOT NULL,
 `from_date` date NOT NULL,
 `to_date` date NOT NULL,
 PRIMARY KEY (`emp_no`,`from_date`));
+
+#Question 4
+
+CREATE TABLE `employees` (
+`emp_no` int(11) NOT NULL,
+`birth_date` date NOT NULL,
+`first_name` varchar(14) NOT NULL,
+`last_name` varchar(16) NOT NULL,
+`gender` char(1) NOT NULL,
+`hire_date` date NOT NULL,
+PRIMARY KEY (`emp_no`));
+如，输入为：
+INSERT INTO employees VALUES(10001,'1953-09-02','Georgi','Facello','M','1986-06-26');
+INSERT INTO employees VALUES(10002,'1964-06-02','Bezalel','Simmel','F','1985-11-21');
+INSERT INTO employees VALUES(10005,'1955-01-21','Kyoichi','Maliniak','M','1989-09-12');
+INSERT INTO employees VALUES(10006,'1953-04-20','Anneke','Preusig','F','1989-06-02');
 ```
 
 
@@ -125,7 +141,41 @@ where s.to_date = "9999-01-01"
 
 
 
+4. 对于employees表中，输出first\_name排名\(按first\_name升序排序\)为奇数的first\_name
+
 ```sql
+select a.first_name
+from  employees e left join
+(
+select e.first_name, ROW_NUMBER() over (order by e.first_name ) as r_number
+from employees as e
+) as a
+on e.first_name = a.first_name
+where a.r_number % 2 = 1
+;
+
+```
+
+
+
+
+
+
+
+```sql
+select a.first_name
+from  employees e left join
+(
+select e.first_name, ROW_NUMBER() over (order by e.first_name ) as r_number
+from employees as e
+) as a
+on e.first_name = a.first_name
+where a.r_number % 2 = 1
+;
+
+
+
+
 select s.emp_no, s.salary, sum(s.salary) over (order by s.emp_no) as running_total
 from salaries as s
 where s.to_date = "9999-01-01"
