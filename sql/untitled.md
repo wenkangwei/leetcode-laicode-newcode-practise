@@ -158,7 +158,27 @@ where a.r_number % 2 = 1
 
 
 
+## Conclusion
 
+1. 这里回顾了Window Function用法
+   1. 在window function里面  func\(..\) over \(..\)  如果over\(\)里面没有指定partition by进行分组， 那么window function 会对当前的row之前的所有row\(包括当前的row\) 进行window function的操作。 比如下面 sum salary 里面没有用partition by， 那么它就会第 i 行的running——total的值等于前面 1~ i行的salary的sum
+
+      ```sql
+      select s.emp_no, s.salary, sum(s.salary) over (order by s.emp_no) as running_total
+      from salaries as s
+      where s.to_date = "9999-01-01"
+      ;
+      ```
+2. Case when的用法回顾
+
+   ```sql
+   select  case when condition_a then do_a
+   case when condition_b then do_b
+   ...
+   else default_value end  column_alias_name
+
+   from ...;
+   ```
 
 
 
