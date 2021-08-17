@@ -102,6 +102,7 @@
 * [Heap&Queue](datastructure/heap-and-queue/README.md)
   * [Top-K smallest](datastructure/heap-and-queue/top-k-smallest.md)
   * [滑动窗口最大值](datastructure/heap-and-queue/hua-dong-chuang-kou-zui-da-zhi.md)
+  * [Find the K-Largest](datastructure/heap-and-queue/find-the-k-largest.md)
 * [String](datastructure/string-1/README.md)
   * [Reverse String](datastructure/string-1/reverse-string.md)
   * [最长不含重复字符的子字符串](datastructure/string-1/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan.md)
