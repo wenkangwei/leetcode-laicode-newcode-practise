@@ -98,6 +98,7 @@
   * [重建二叉树](datastructure/tree/zhong-jian-er-cha-shu.md)
   * [判断二叉树是否对称](datastructure/tree/pan-duan-er-cha-shu-shi-fou-dui-cheng.md)
   * [Path Sum to Target in Binary Tree](datastructure/tree/sum-to-target-in-tree.md)
+  * [Tree-PreOrder-InOrder-PostOrder](datastructure/tree/tree-preorder-inorder-postorder.md)
 * [Heap&Queue](datastructure/heap-and-queue/README.md)
   * [Top-K smallest](datastructure/heap-and-queue/top-k-smallest.md)
   * [滑动窗口最大值](datastructure/heap-and-queue/hua-dong-chuang-kou-zui-da-zhi.md)
