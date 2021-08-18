@@ -32,6 +32,8 @@ description: Big Data; Sampling;
 
 ## **Coding**
 
+**ReservoirSampling with size of k**
+
 ```python
 import random
 class ReservoirSampler():
@@ -58,6 +60,52 @@ for i, v in enumerate(data):
     if i>= s.k:
         print(s.arr)
 ```
+
+\*\*\*\*
+
+**Return random largest value:**
+
+In data stream, there could be multiple duplicated max value. This function is to return the index of one of those max values randomly.
+
+```python
+
+import random
+class RandomMax():
+    def __init__(self, ):
+        self.sample = 0
+        self.index = 0
+        self.max_v = -float("inf")
+        self.count = 1
+    def sampleMax(self, val):
+        # record the index of current input value
+        self.index += 1
+        if val > self.max_v:
+            #set current max value to the new value
+            self.max_v = val
+            self.count = 1 # only 1 max value
+            self.sample = self.index # index of max value
+        elif val == self.max_v:
+            # randomly pick one of max_values and return its index 
+            self.count += 1 
+            idx = random.randint(0, self,index)
+            # pick one of the max values with equal possibility 1/count,
+            # count = the amount of the same max values
+            if idx ==0:
+                self.sample = self.index
+        return self.sample
+    
+s = RandomMax()
+import numpy as np
+data = np.random.rand(1000).tolist()
+for i, v in enumerate(data):
+    print(s.sampleMax(v))
+    
+
+
+
+```
+
+\*\*\*\*
 
 \*\*\*\*
 

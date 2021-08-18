@@ -136,7 +136,7 @@
 
 * [Big Data Processing Algorithms](big-data-algorithms/big-data-processing-algorithms/README.md)
   * [Reservior Sampling](big-data-algorithms/big-data-processing-algorithms/reservior-sampling.md)
-  * [Randomization](big-data-algorithms/big-data-processing-algorithms/randomization.md)
+  * [Shuffle](big-data-algorithms/big-data-processing-algorithms/randomization.md)
   * [MapReduce](big-data-algorithms/big-data-processing-algorithms/mapreduce.md)
   * [Bloom Filter](big-data-algorithms/big-data-processing-algorithms/bloom-filter.md)
   * [BitMap](big-data-algorithms/big-data-processing-algorithms/bitmap.md)
