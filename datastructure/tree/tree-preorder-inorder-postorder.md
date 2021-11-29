@@ -16,13 +16,13 @@
 
 输入：
 
-```text
+```
 {1,2,3}
 ```
 
 复制返回值：
 
-```text
+```
 [[1,2,3],[2,1,3],[2,3,1]]
 ```
 
@@ -30,7 +30,7 @@
 
 ### 备注：
 
-```text
+```
 n \leq 10^6n≤106
 ```
 
@@ -43,9 +43,9 @@ n \leq 10^6n≤106
 
 
 
-### 4. Coding\# class TreeNode:
+### 4. Coding# class TreeNode:
 
-{% code title="Tree\_Traversal" %}
+{% code title="Tree_Traversal" %}
 ```python
 #     def __init__(self, x):
 #         self.val = x
@@ -143,8 +143,6 @@ class Solution:
 
 ```
 {% endcode %}
-
-
 
 
 

@@ -4,9 +4,9 @@
 
 {% embed url="https://www.nowcoder.com/practice/a158fa6e79274ac497832697b4b83658?tpId=82&&tqId=29781&rp=1&ru=/activity/oj&qru=/ta/sql/question-ranking" %}
 
-2. Tables
+2\. Tables
 
-```text
+```
 drop table if exists  film ;
 drop table if exists  category  ; 
 drop table if exists  film_category  ; 
@@ -45,20 +45,20 @@ INSERT INTO film_category VALUES(2,11,'2006-02-14 21:07:09');
 
 ## Questions:
 
-1. SQL29 使用join查询方式找出没有分类的电影id以及名称
+1\. SQL29 使用join查询方式找出没有分类的电影id以及名称
 
 1. Method 1: use   is NULL
 
-```text
+```
 select f.film_id, f.title
 from film  f left join film_category fc on f.film_id = fc.film_id
 where fc.category_id is NULL
 ;
 ```
 
-2. Method 1: use   is NULL
+2\. Method 1: use   is NULL
 
-```text
+```
 select film_id ,title
 from film
 where film_id not in(select f.film_id
@@ -67,9 +67,9 @@ from film f inner join film_category fc on f.film_id=fc.film_id)
 
 
 
-2. 你能使用子查询的方式找出属于Action分类的所有电影对应的title,description吗
+2\. 你能使用子查询的方式找出属于Action分类的所有电影对应的title,description吗
 
-```text
+```
 select f.title, f.description
 from  (
      select fc.film_id
@@ -87,6 +87,4 @@ where f.film_id in (
     where c.name ='Action'
 ) ;
 ```
-
-
 

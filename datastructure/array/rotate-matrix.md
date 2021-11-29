@@ -14,17 +14,17 @@ description: 字节；腾讯
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [[1,2,3],[4,5,6],[7,8,9]],3 
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [[7,4,1],[8,5,2],[9,6,3]]
 ```
 
@@ -34,9 +34,9 @@ description: 字节；腾讯
 2. 计算它目前位置的column到cs 的距离
 3. 利用这个距离和cs, ce, rs, re 查找4个对应位置的element 并swap
 4. cs, ce, rs, re向内部缩小一层
-5. 重复2~4直到cs &gt;= ce位置
+5. 重复2\~4直到cs >= ce位置
 
-```text
+```
 class Solution:
     def rotateMatrix(self, mat, n):
         #
@@ -80,6 +80,4 @@ class Solution:
             
             
 ```
-
-
 

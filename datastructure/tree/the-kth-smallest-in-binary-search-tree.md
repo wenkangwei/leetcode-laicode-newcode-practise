@@ -12,20 +12,20 @@ description: Medium; BST
 
 **2. 题目**
 
-230. Kth Smallest Element in a BST
+230\. Kth Smallest Element in a BST
 
-Given the `root` of a binary search tree, and an integer `k`, return _the_ `kth` \(**1-indexed**\) _smallest element in the tree_.
+Given the `root` of a binary search tree, and an integer `k`, return _the_ `kth` (**1-indexed**) _smallest element in the tree_.
 
 **Example 1:**![](https://assets.leetcode.com/uploads/2021/01/28/kthtree1.jpg)
 
-```text
+```
 Input: root = [3,1,4,null,2], k = 1
 Output: 1
 ```
 
 **Example 2:**![](https://assets.leetcode.com/uploads/2021/01/28/kthtree2.jpg)
 
-```text
+```
 Input: root = [5,3,6,2,4,null,null,1], k = 3
 Output: 3
 ```
@@ -36,18 +36,18 @@ Output: 3
 
 1. **Idea: Recursion  of the Binary search tree**
 2. **Input of recursion:  parent node, k, the number of node smaller than parent**
-3. **Output of recursion : either the found kth smallest node and it ranking k,  or the maximum node value and the corresponding ranking \(ascending ranking\)**
+3. **Output of recursion : either the found kth smallest node and it ranking k,  or the maximum node value and the corresponding ranking (ascending ranking)**
 4. **Idea**
    1. Iterate every node
    2. first go to its left child to find the smallest node and its ranking
    3. then find how many node is smaller than current node/left child and check if the returned result from left node or current node is the K^th smallest. If so, return result.
    4. Then go to right child of current node with updated amount of node smaller than the right node.
-   5. Note that the main idea of this method is to label every node with its ranking  based on BST property. ****
-5. **Time: O\(n\) to iterate every tree node.  Space: O\(logn\) to store the depth of tree**
+   5. Note that the main idea of this method is to label every node with its ranking  based on BST property.** **
+5. **Time: O(n) to iterate every tree node.  Space: O(logn) to store the depth of tree**
 
 **4. Coding**
 
-```text
+```
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -90,8 +90,6 @@ class Solution:
         r_node, r_num = self.findnode(node.right, num,k)
         return r_node, r_num
 ```
-
-
 
 
 

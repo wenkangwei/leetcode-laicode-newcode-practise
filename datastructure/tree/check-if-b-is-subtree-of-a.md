@@ -16,17 +16,17 @@
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {8,8,#,9,#,2,#,5},{8,9,#,2}
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 true
 ```
 
@@ -41,12 +41,12 @@ true
    4. 否则对比当前treeA的node 和B的node的value，不一致就return False
 2. 在HasSubtree 里面先对比tree A当前的node和tree B的root node，如果一致，就对比以tree A当前的node为root node的subtree和tree B
 3. 如果不一致，就对比tree A当前的node的left，right分支有没有包含tree B。
-4. Time: O\(m\) for matching subtree A and tree B, m= number of node in B,  O\(n\) for iterating every node in A. In total: O\(m\*n\)
-5. Space: O\(logn\) for recursion
+4. Time: O(m) for matching subtree A and tree B, m= number of node in B,  O(n) for iterating every node in A. In total: O(m\*n)
+5. Space: O(logn) for recursion
 
 ### 4. Coding
 
-```text
+```
 # -*- coding:utf-8 -*-
 # class TreeNode:
 #     def __init__(self, x):
@@ -80,4 +80,3 @@ class Solution:
         f1= self.sametree(node1.left, node2.left) and self.sametree(node1.right, node2.right)
         return f1
 ```
-

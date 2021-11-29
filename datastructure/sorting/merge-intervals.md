@@ -16,17 +16,17 @@ description: '难度: Medium, 公司: 字节 研发 facebook'
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [[10,30],[20,60],[80,100],[150,180]]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [[10,60],[80,100],[150,180]]
 ```
 
@@ -34,18 +34,19 @@ description: '难度: Medium, 公司: 字节 研发 facebook'
 
 1. 先把intervals按照start 进行排序
 2. two points method: slow pt 指向要返回的list的最后一个interval， fast pt用于遍历查找下一个interval
-3. 对比slowpt interval和fast pt的interval
+3.  对比slowpt interval和fast pt的interval
 
-   1. case 1:  if slow interval.end  &gt; fast.interval. end -&gt;continue
-   2. case 2: if slow interval.end &gt; fast. interval .start and slow interval end &lt; fast interval.end -&gt; merge intervals by updating slow.interval end = fast.interval.end
-   3. case 3: if slow interval end &lt; fast interval.start -&gt; slow += 1, copy fast interval to slow
-   4. move fast forward by 1
+    1. case 1:  if slow interval.end  > fast.interval. end ->continue
+    2. case 2: if slow interval.end > fast. interval .start and slow interval end < fast interval.end -> merge intervals by updating slow.interval end = fast.interval.end
+    3. case 3: if slow interval end < fast interval.start -> slow += 1, copy fast interval to slow
+    4. move fast forward by 1
 
-4. Time: O\(nlogn\) for sorting  +O\(n\) for merging. Space: O\(1\)
+
+4. Time: O(nlogn) for sorting  +O(n) for merging. Space: O(1)
 
 ### 4. Code
 
-```text
+```
 # class Interval:
 #     def __init__(self, a=0, b=0):
 #         self.start = a
@@ -116,7 +117,7 @@ class Solution:
         
 ```
 
-```text
+```
     
 class Solution:
     # array 二维列表
@@ -142,4 +143,3 @@ class Solution:
                 return True
         return False
 ```
-

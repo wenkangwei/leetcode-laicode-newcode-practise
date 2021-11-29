@@ -6,34 +6,34 @@
 
 ### 2. 描述
 
-给定一棵二叉树，判断其是否是自身的镜像（即：是否对称）  
-例如：下面这棵二叉树是对称的  
-1  
-/  \  
-2    2  
-/ \    / \  
-3 4  4  3  
-下面这棵二叉树不对称。  
-1  
-/ \  
-2   2  
-\    \  
-3    3  
-备注：  
-希望你可以用递归和迭代两种方法解决这个问题  
+给定一棵二叉树，判断其是否是自身的镜像（即：是否对称）\
+例如：下面这棵二叉树是对称的\
+1\
+/  \\\
+2    2\
+/ \    / \\\
+3 4  4  3\
+下面这棵二叉树不对称。\
+1\
+/ \\\
+2   2\
+\    \\\
+3    3\
+备注：\
+希望你可以用递归和迭代两种方法解决这个问题\
 
 
 ### 示例1
 
 输入：
 
-```text
+```
 {1,2,2}
 ```
 
 复制返回值：
 
-```text
+```
 true
 ```
 
@@ -41,13 +41,13 @@ true
 
 see notes in Coding
 
-Time： O\(n\) since we need to go through every pair of nodes to check if they have same values. Then go back to parent node to search another pair of nodes
+Time： O(n) since we need to go through every pair of nodes to check if they have same values. Then go back to parent node to search another pair of nodes
 
-Space: O\(height of tree\)
+Space: O(height of tree)
 
 ### 4. Coding
 
-```text
+```
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -84,6 +84,4 @@ class Solution:
         
         
 ```
-
-
 

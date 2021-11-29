@@ -1,10 +1,10 @@
 ---
-description: 'array,; hard;'
+description: array,; hard;
 ---
 
 # Trapping water
 
-1. Link
+1\. Link
 
 {% embed url="https://leetcode-cn.com/problems/trapping-rain-water/comments/" %}
 
@@ -12,27 +12,27 @@ description: 'array,; hard;'
 
 
 
-2.  题目
+2\.  题目
 
-522. Trapping Rain WaterDescriptionNotesHard
+522\. Trapping Rain WaterDescriptionNotesHard
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-For example,   
+For example, \
 Given `[0,1,0,2,1,0,1,3,2,1,2,1]`, return `6`.
 
 ![](https://leetcode.com/static/images/problemset/rainwatertrap.png)
 
-3. 思路
+3\. 思路
 
-1. 在array里面 找global max height的index位置 
-2. 定义local max height=A\[0\]，从左往global max height的位置走，如果A\[cur\] &lt; local max height, 就result加上高度差（水位的深度）。如果A\[cur\] &gt;=local max height, 更新local max height,之后继续找高度差
-3. 定义 local max height=A\[-1\]，从右往global max height的位置走，如果A\[cur\] &lt; local max height, 就resut加上高度差（水位的深度）。如果A\[cur\] &gt;=local max height, 更新local max height,之后继续找高度差
-4. Time Complexity: O\(3n\) = O\(n\), Space O\(1\)
+1. 在array里面 找global max height的index位置&#x20;
+2. 定义local max height=A\[0]，从左往global max height的位置走，如果A\[cur] < local max height, 就result加上高度差（水位的深度）。如果A\[cur] >=local max height, 更新local max height,之后继续找高度差
+3. 定义 local max height=A\[-1]，从右往global max height的位置走，如果A\[cur] < local max height, 就resut加上高度差（水位的深度）。如果A\[cur] >=local max height, 更新local max height,之后继续找高度差
+4. Time Complexity: O(3n) = O(n), Space O(1)
 
-4. Code
+4\. Code
 
-```text
+```
 class Solution(object):
   def trapWater(self, A):
     """
@@ -96,6 +96,4 @@ class Solution(object):
 
     
 ```
-
-
 

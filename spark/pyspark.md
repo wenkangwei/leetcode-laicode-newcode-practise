@@ -6,7 +6,7 @@ description: 练习回顾
 
 **1.** **Download data set MovieLen data set and PySpark**
 
-```text
+```
 ! wget http://files.grouplens.org/datasets/movielens/ml-latest-small.zip
 ! unzip ml-latest-small.zip
 ! ls
@@ -168,7 +168,7 @@ movie_missing_value.show()
 
 
 
-6. User Define Function in PySpark
+6\. User Define Function in PySpark
 
 ```python
 from pyspark.sql.functions import col, udf
@@ -198,8 +198,6 @@ json_df = json_df.withColumn("Z", square(col("X") + col("Y")))
 json_df = json_df.withColumn("Diff", diff_square(col("X"), col("Y")))
 json_df.show(10)
 ```
-
-
 
 
 

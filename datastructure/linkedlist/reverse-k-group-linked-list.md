@@ -6,26 +6,26 @@ description: 难度：Medium; 类型： linkedlist; 公司：字节研发，华�
 
 ### 1. Links
 
-牛客： [https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&tqId=38025&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking&tab=answerKey](https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188&tqId=38025&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking&tab=answerKey)
+牛客： [https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188\&tqId=38025\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188\&tqId=38025\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking\&tab=answerKey)
 
 ### 2. 题目描述
 
-将给出的链表中的节点每 k k 个一组翻转，返回翻转后的链表 如果链表中的节点数不是 k k 的倍数，将最后剩下的节点保持原样 你不能更改节点中的值，只能更改节点本身。 要求空间复杂度  O\(1\) O\(1\) 例如： 给定的链表是1→2→3→4→5 对于  k = 2 k=2, 你应该返回  2→1→4→3→5 对于  k = 3 k=3, 你应该返回3→2→1→4→5  
+将给出的链表中的节点每 k k 个一组翻转，返回翻转后的链表 如果链表中的节点数不是 k k 的倍数，将最后剩下的节点保持原样 你不能更改节点中的值，只能更改节点本身。 要求空间复杂度  O(1) O(1) 例如： 给定的链表是1→2→3→4→5 对于  k = 2 k=2, 你应该返回  2→1→4→3→5 对于  k = 3 k=3, 你应该返回3→2→1→4→5\
 示例1
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {1,2,3,4,5},2
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {2,1,4,3,5}
 ```
 
@@ -45,7 +45,7 @@ description: 难度：Medium; 类型： linkedlist; 公司：字节研发，华�
 
 ### 4. Code
 
-```text
+```
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -109,4 +109,3 @@ class Solution:
         new_head= prev
         return new_head, tail
 ```
-

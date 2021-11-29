@@ -1,5 +1,5 @@
 ---
-description: '没有weight的二叉树直径, 直接用node的高度计算直径'
+description: 没有weight的二叉树直径, 直接用node的高度计算直径
 ---
 
 # Binary Tree diameter I
@@ -14,47 +14,49 @@ If there does not exist any such paths, return 0.
 
 **Examples**
 
-    ****5
+**    **5
 
-  /    \
+&#x20; /    \\
 
 2      11
 
-     /    \
+&#x20;    /    \\
 
-    6     14
+&#x20;   6     14
 
-The diameter of this tree is 4 \(2 → 5 → 11 → 14\)
+The diameter of this tree is 4 (2 → 5 → 11 → 14)
 
 **How is the binary tree represented?**
 
-We use the level order traversal sequence with a special symbol "\#" denoting the null node.
+We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
 **For Example:**
 
-The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
+The sequence \[1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+&#x20;   1
 
-  /   \
+&#x20; /   \\
 
- 2     3
+&#x20;2     3
 
-      /
+&#x20;     /
 
-    4
+&#x20;   4
 
 想法: top-down+ bottom up
 
 1. 遍历tree的每一个node
-2. 在recursion里面： 输入： 下一个child node， 输出： 那个node的高度
+2.  在recursion里面： 输入： 下一个child node， 输出： 那个node的高度
 
-   1. 在当前的node里面从left， right children得到对应的高度
-   2. 把left，right的高度相加再+1 当前的node得到当前subtree 的直径
-   3. 把当前的直径和global max的直径对比，更新global max 直径
-   4. 返回当前的node的高度，即max\(left, right\) +1
+    1. 在当前的node里面从left， right children得到对应的高度
+    2. 把left，right的高度相加再+1 当前的node得到当前subtree 的直径
+    3. 把当前的直径和global max的直径对比，更新global max 直径
+    4. 返回当前的node的高度，即max(left, right) +1
 
-```text
+
+
+```
 class Solution(object):
   def diameter(self, root):
     """
@@ -102,7 +104,7 @@ class Solution(object):
     
 ```
 
-```text
+```
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -170,4 +172,3 @@ class Solution(object):
     return height, max_path
 
 ```
-

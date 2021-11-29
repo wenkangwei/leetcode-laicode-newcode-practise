@@ -12,17 +12,17 @@
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,2,3,4,5,6,7],[3,2,4,1,6,5,7]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {1,2,5,3,4,6,7}
 ```
 
@@ -30,15 +30,17 @@
 
 ### 3.思路
 
-1.  Recursion: pre-order 用于遍历每一个node，并得到当前的subtree的rootnode，（pre-order从左往右数起，第一个node是root node） in-order 用于搜索root node位置来重建树
+1. &#x20;Recursion: pre-order 用于遍历每一个node，并得到当前的subtree的rootnode，（pre-order从左往右数起，第一个node是root node） in-order 用于搜索root node位置来重建树
 2. Recursion: 输入是 剩下没有重建的pre-order的node和in-order 的信息，以及搜索的左右边界缩小搜索范围
 3. 如果在left， right边界里面找到root后，以它为中心分开左右两个subarray查找左右subtree的rootnode，并接到当前的rootnode的left， right
-4. Time: O\(n\) for searching root in subarray, O\(n\) for iterating every node for reconstruction, so O\(n^2\)
-5. Space: O\(logn\) for recursion
+4. Time: O(n) for searching root in subarray, O(n) for iterating every node for reconstruction, so O(n^2)
+5.  Space: O(logn) for recursion
+
+
 
 ### 4. Coding
 
-```text
+```
 # -*- coding:utf-8 -*-
 # class TreeNode:
 #     def __init__(self, x):
@@ -99,9 +101,7 @@ class Solution:
         
 ```
 
-### 
-
-
+###
 
 
 

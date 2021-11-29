@@ -12,17 +12,17 @@
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {2,1,3}
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [true,true]
 ```
 
@@ -32,14 +32,14 @@
 
 ### 3. 思路
 
-1. Check Valid Binary Search Tree: Time O\(n\)
-2. Check Complete Tree: Time O\(n\)
+1. Check Valid Binary Search Tree: Time O(n)
+2. Check Complete Tree: Time O(n)
 
 
 
 ### 4. Coding
 
-```text
+```
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -110,8 +110,6 @@ class Solution:
         return True
     
 ```
-
-
 
 
 

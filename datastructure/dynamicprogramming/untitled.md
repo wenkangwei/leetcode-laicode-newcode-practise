@@ -8,10 +8,9 @@
 
 
 
-Given an array of positive integers `nums`, return the _maximum possible sum of an **ascending** subarray in_ `nums`.
+Given an array of positive integers `nums`, return the _maximum possible sum of an **ascending** subarray in _`nums`.
 
-```text
-
+```
 ```
 
 A subarray is defined as a contiguous sequence of numbers in an array.
@@ -20,7 +19,7 @@ A subarray `[numsl, numsl+1, ..., numsr-1, numsr]` is **ascending** if for all `
 
 **Example 1:**
 
-```text
+```
 Input: nums = [10,20,30,5,10,50]
 Output: 65
 Explanation: [5,10,50] is the ascending subarray with the maximum sum of 65.
@@ -28,7 +27,7 @@ Explanation: [5,10,50] is the ascending subarray with the maximum sum of 65.
 
 **Example 2:**
 
-```text
+```
 Input: nums = [10,20,30,40,50]
 Output: 150
 Explanation: [10,20,30,40,50] is the ascending subarray with the maximum sum of 150.
@@ -38,12 +37,12 @@ Explanation: [10,20,30,40,50] is the ascending subarray with the maximum sum of 
 
 思路： DP
 
-1. 由于是连续的subarray每次只要和前面的arr\[i-1\]对比看符不符合条件，所以只要一个loop
-2. state: 当前第i个element的符合条件arr\[i\]&gt;arr\[i-1\]的cumulative sum, 
-3. 转移方程是 if arr\[i\]&gt;arr\[i-1\],  cum-sum += arr\[i\]  otherwise,  cum-sum = arr\[i\]
+1. 由于是连续的subarray每次只要和前面的arr\[i-1]对比看符不符合条件，所以只要一个loop
+2. state: 当前第i个element的符合条件arr\[i]>arr\[i-1]的cumulative sum,&#x20;
+3. 转移方程是 if arr\[i]>arr\[i-1],  cum-sum += arr\[i]  otherwise,  cum-sum = arr\[i]
 4. optimal solution 是当前的最大值
 
-```text
+```
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
         #
@@ -64,4 +63,3 @@ class Solution:
             
         
 ```
-

@@ -16,15 +16,15 @@ description: Easy; LinkedList
 
 如下面的两个链表**：**
 
-[![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
+[![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160\_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160\_statement.png)
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](<../../.gitbook/assets/image (8).png>)
 
 在节点 c1 开始相交。
 
 **示例 1**
 
-```text
+```
 输入：head = [3,2,0,-4], pos = 1
 输出：true
 解释：链表中有一个环，其尾部连接到第二个节点。
@@ -40,19 +40,19 @@ description: Easy; LinkedList
 
 把他们拼接情况有:
 
-1-2-3 6-7-8-9-0 **+** 10-12 -**6**-7-8-9-0
+1-2-3 6-7-8-9-0 **+ **10-12 -**6**-7-8-9-0
 
 10-12 -6-7-8-9-0  **+** 1-2-3 **6**-7-8-9-0
 
 其中加粗的6的数字就是第一个公共点。 第一个公共的节点6 很明显前面片段的长度是3+ 5 + 2 或者 2+ 5 + 3 长度一样，只不过不同的片段换了位置。也就是说只要把两个list前后拼接起来就会时如果用两个指针分别从两个list 遍历， 当两个指针相遇时，那个相遇点就是第一个公共点。
 
-Time Complexity: O\(n\).  Space Complexity: O\(1\) 
+Time Complexity: O(n).  Space Complexity: O(1)&#x20;
 
 
 
 ### 4. Coding
 
-```text
+```
 # -*- coding:utf-8 -*-
 # class ListNode:
 #     def __init__(self, x):
@@ -91,6 +91,4 @@ class Solution:
         
         
 ```
-
-
 

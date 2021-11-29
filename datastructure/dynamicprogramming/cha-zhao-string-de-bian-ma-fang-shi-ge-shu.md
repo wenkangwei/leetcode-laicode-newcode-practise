@@ -12,27 +12,27 @@ description: DP;  Medium; 字节
 
 ### 题目描述
 
-有一种将字母编码成数字的方式：'a'-&gt;1, 'b-&gt;2', ... , 'z-&gt;26'。现在给一串数字，返回有多少种可能的译码结果示例1
+有一种将字母编码成数字的方式：'a'->1, 'b->2', ... , 'z->26'。现在给一串数字，返回有多少种可能的译码结果示例1
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "12"
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 2
 ```
 
 ### 说明
 
-```text
+```
 2种可能的译码结果（”ab” 或”l”）
 ```
 
@@ -40,9 +40,9 @@ description: DP;  Medium; 字节
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "31717126241541717"
 ```
 
@@ -50,27 +50,29 @@ description: DP;  Medium; 字节
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 192
 ```
 
 思想: DP
 
-1.  确定state : dp\[i\] = 在字符串0到i位置这个子字符里面的decoding ways个数
+1. &#x20;确定state : dp\[i] = 在字符串0到i位置这个子字符里面的decoding ways个数
 2. 通过base case 找到transition 方程
-   1. base case: when str = "n", n=0,  -&gt; dp\[0\] = 0 没有decoding way，因为不在1-26范围里面。 when str ="n", n&gt;0,  then  dp\[0\] = 1
-   2. 下一个状态 str = "nm", 它的decoding的方式有
+   1. base case: when str = "n", n=0,  -> dp\[0] = 0 没有decoding way，因为不在1-26范围里面。 when str ="n", n>0,  then  dp\[0] = 1
+   2.  下一个状态 str = "nm", 它的decoding的方式有
 
-      1. str = "n/m", 把新进来的char不管怎么样都总是当成一个digit，那么如果”m” &gt;0 那么dp\[1\] += dp\[0\],  就是加上前面“n” 里面的decoding的方式个数
-      2. str = "/nm" 把前面一个digit加上现在新进来的digit看成一个整体， 如果“nm”里面的n !=0 并且 int\(nm\) &lt;26 那么它就是valid的字符，这样我们就在只考虑 "nm"之前的digit的编码个数。 “nm”之前没有东西，所以这里就默认成1。 所以 如果 i-2 ==-1,  dp\[i\] += 1 否则 i-2&gt;-1,  dp\[i\] += dp\[i-2\]
-      3. 由于编码的数字最多2个digit，所以到这里就不用再切分了。这样就根据限制条件找到转换方程了
-3. Time: O\(n\) Space: O\(n\)
+       1. str = "n/m", 把新进来的char不管怎么样都总是当成一个digit，那么如果”m” >0 那么dp\[1] += dp\[0],  就是加上前面“n” 里面的decoding的方式个数
+       2. str = "/nm" 把前面一个digit加上现在新进来的digit看成一个整体， 如果“nm”里面的n !=0 并且 int(nm) <26 那么它就是valid的字符，这样我们就在只考虑 "nm"之前的digit的编码个数。 “nm”之前没有东西，所以这里就默认成1。 所以 如果 i-2 ==-1,  dp\[i] += 1 否则 i-2>-1,  dp\[i] += dp\[i-2]
+       3. 由于编码的数字最多2个digit，所以到这里就不用再切分了。这样就根据限制条件找到转换方程了
 
-### 
 
-```text
+3. Time: O(n) Space: O(n)
+
+###
+
+```
 #
 # 解码
 # @param nums string字符串 数字串
@@ -141,9 +143,8 @@ class Solution:
 
 ### 说明
 
-```text
+```
 192种可能的译码结果
 ```
 
-[ 关联企业](javascript:void%280%29;)
-
+[ 关联企业](javascript:void\(0\);)

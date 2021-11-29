@@ -4,11 +4,11 @@ description: Medium; String;  Palindrome;
 
 # 最长回文串
 
-1. **Link**
+1.** Link**
 
 {% embed url="https://leetcode-cn.com/problems/longest-palindrome/" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
@@ -33,11 +33,11 @@ description: Medium; String;  Palindrome;
 1. 遍历所有字符，统计出现频率
 2. 对于出现频率为偶数或奇数，把count += freq//2
 3. 遇到第一个奇数时，加上1 palindrome的中间点并记录, 之后遇到奇数时要把多余的1个char去掉
-4. Time: O\(n + k \), n= array length,  k= unique char in dictionary
+4. Time: O(n + k ), n= array length,  k= unique char in dictionary
 
 **4. Coding**
 
-```text
+```
 class Solution:
     def longestPalindrome(self, s: str) -> int:
         if len(s)<=1:
@@ -56,8 +56,6 @@ class Solution:
                 cnt += 1
         return cnt
 ```
-
-
 
 
 

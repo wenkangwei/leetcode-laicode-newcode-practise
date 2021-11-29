@@ -20,34 +20,35 @@ description: 字节，研发
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {1,2,3}
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {3,2,1}
 ```
 
 ### 2.思路
 
-1.  输入： linkedlist head,  输出：  reversed linkedlist head
-2. idea:
+1. &#x20;输入： linkedlist head,  输出：  reversed linkedlist head
+2.  idea:
 
-   1. 既然是要反转链表的顺序，那么就要遍历每个node并把每个node的next指向prev
-   2. 所以需要prev, cur, next 三个pointer
-   3. 把cur.next 保存， 把cur的next 指向prev进行reverse
-   4. prev 移向cur， cur 移向保存的next进行遍历
-   5. 直到cur =none不用返回，就prev 就是new head，返回prev就可以了
+    1. 既然是要反转链表的顺序，那么就要遍历每个node并把每个node的next指向prev
+    2. 所以需要prev, cur, next 三个pointer
+    3. 把cur.next 保存， 把cur的next 指向prev进行reverse
+    4. prev 移向cur， cur 移向保存的next进行遍历
+    5. 直到cur =none不用返回，就prev 就是new head，返回prev就可以了
 
-3. Time :O\(n\)   Space O\(n\) 
 
-```text
+3. Time :O(n)   Space O(n)&#x20;
+
+```
 # -*- coding:utf-8 -*-
 # class ListNode:
 #     def __init__(self, x):
@@ -68,6 +69,4 @@ class Solution:
             cur = next_node
         return prev
 ```
-
-
 

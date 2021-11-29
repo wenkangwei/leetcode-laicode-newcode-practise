@@ -1,10 +1,10 @@
-# All Permutation II \(with duplication and consider order\)
+# All Permutation II (with duplication and consider order)
 
 1**. Link**
 
 {% embed url="https://app.laicode.io/app/problem/65" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
@@ -12,41 +12,41 @@ Given a string with possible duplicate characters, return a list with all permut
 
 **Examples**
 
-* Set = “abc”, all permutations are \[“abc”, “acb”, “bac”, “bca”, “cab”, “cba”\]
-* Set = "aba", all permutations are \["aab", "aba", "baa"\]
-* Set = "", all permutations are \[""\]
-* Set = null, all permutations are \[\]
+* Set = “abc”, all permutations are \[“abc”, “acb”, “bac”, “bca”, “cab”, “cba”]
+* Set = "aba", all permutations are \["aab", "aba", "baa"]
+* Set = "", all permutations are \[""]
+* Set = null, all permutations are \[]
 
 
 
 **3. 思路**
 
-1. 先把重复的char用**dictionary表示除重，key= char， value= count**  action = key
+1. 先把重复的char用**dictionary表示除重，key= char， value= count ** action = key
 2. DFS method, 因为是考虑order顺序，所以需要**用for loop对不同的char进行位置**对换
 3. 对于重复的char，每次pick action时把它的count -= 1 表示剩下可以选的次数，如果没有，count=0，就选下一个action.这样能避免同一个level里面有相同的tree branch 分支，因为**每次level选取的char都保证是不一样**
-4. recursion tree 变成： exmaple
+4.  recursion tree 变成： exmaple
 
-   ```text
-   For example:   str = "aaab"
-   #       root
-   #      a:1        b:2          the number represents the count of a that can be selected
-   #   aa:0  ab:1      ba     
-   #  aab    aba     baa   
+    ```
+    For example:   str = "aaab"
+    #       root
+    #      a:1        b:2          the number represents the count of a that can be selected
+    #   aa:0  ab:1      ba     
+    #  aab    aba     baa   
 
 
 
-   str = 'abbcdd'
-   {'a':1, 'b':2, 'c':1, 'd':2}
-                 a:1
-             ab:1                   ac
-        abb:0  abc:1,..      acb:1   acd
-    abbc      acbb:0        ....
- 
-   ```
+    str = 'abbcdd'
+    {'a':1, 'b':2, 'c':1, 'd':2}
+                  a:1
+              ab:1                   ac
+         abb:0  abc:1,..      acb:1   acd
+     abbc      acbb:0        ....
+     
+    ```
 
 **4. Coding**
 
-```text
+```
 class Solution(object):
   def permutations(self, input):
     """
@@ -99,8 +99,6 @@ class Solution(object):
         # recover the count of char since we want to reuse it in other branches of recursion tree
         action[act] += 1
 ```
-
-
 
 
 

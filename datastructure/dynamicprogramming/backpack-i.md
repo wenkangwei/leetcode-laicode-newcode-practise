@@ -12,23 +12,23 @@
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 10,2,[[1,3],[10,4]]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 4
 ```
 
 ### 说明
 
-```text
+```
 第一个物品的体积为1，重量为3，第二个物品的体积为10，重量为4。只取第二个物品可以达到最优方案，取物重量为4
 ```
 
@@ -36,18 +36,18 @@
 
 ### 3. 思路
 
-1.  2D - dp:   dp table： row = item的id,     column =考虑第i个物品后（可以选也可以不选） 剩下volume， dp\[i\]\[j\] = 在考虑第i个物品 时剩下volume = j情况的的最大重量
+1. &#x20;2D - dp:   dp table： row = item的id,     column =考虑第i个物品后（可以选也可以不选） 剩下volume， dp\[i]\[j] = 在考虑第i个物品 时剩下volume = j情况的的最大重量
 2. 遍历 n items 和 遍历 V volume values, start from j=V and end  at j=0
-3. 当j &lt; item的volume, 那么就不用考虑第i个item，于是dp\[i\]\[j\] = dp\[i-1\]\[j\] 从上个item的最大值延伸到现在第i个item的状态
-4. 如果j &gt; item的volume,  dp\[i\]\[j\] = max\(在第i-1个item的**volume=j的情况不加第i个item的最大值**，以及在dp\[i-1\]\[j-v\] +w  **上一个item的加上当前第i个item的最大值** \)
-5. Time: O\(n^2\)  Space: O\(n^2\)
+3. 当j < item的volume, 那么就不用考虑第i个item，于是dp\[i]\[j] = dp\[i-1]\[j] 从上个item的最大值延伸到现在第i个item的状态
+4. 如果j > item的volume,  dp\[i]\[j] = max(在第i-1个item的**volume=j的情况不加第i个item的最大值**，以及在dp\[i-1]\[j-v] +w  **上一个item的加上当前第i个item的最大值 **)
+5. Time: O(n^2)  Space: O(n^2)
 6. Example
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](<../../.gitbook/assets/image (3).png>)
 
 ### 4. Coding
 
-```text
+```
 class Solution:
     def knapsack(self , V , n , vw ):
         #
@@ -86,8 +86,6 @@ class Solution:
         return dp[n][V]
         
 ```
-
-
 
 
 

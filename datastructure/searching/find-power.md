@@ -10,25 +10,25 @@
 
 ### 2. 题目描述
 
-给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。  
-  
-保证base和exponent不同时为0。不得使用库函数，同时不需要考虑大数问题，也不用考虑小数点后面0的位数。  
-  
+给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。\
+\
+保证base和exponent不同时为0。不得使用库函数，同时不需要考虑大数问题，也不用考虑小数点后面0的位数。\
+\
 示例1
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 2.00000,3
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 8.00000
 ```
 
@@ -36,18 +36,18 @@
 
 ### 3. 思路
 
-1. base^exponent = x^n = x^\(  2^1 + 2^2 + .. + 2^n\)= x^\(2^1\) \* x^\(2^2\)  \*x^\(2^3\)\* ...x^\(2^n\)
-2. 而其中 x^\(2^i\) 就是累积的base， i 代表把exponent的二进制里面的第i位，如果第i位为1，就乘上这个项
-3. 在while loop里面，每次计算 base \*=base 来计算 x^\(2^i\)
+1. base^exponent = x^n = x^(  2^1 + 2^2 + .. + 2^n)= x^(2^1) \* x^(2^2)  \*x^(2^3)\* ...x^(2^n)
+2. 而其中 x^(2^i) 就是累积的base， i 代表把exponent的二进制里面的第i位，如果第i位为1，就乘上这个项
+3. 在while loop里面，每次计算 base \*=base 来计算 x^(2^i)
 4. 之后可以通右移 exponent 的bit 看第一位bit是否为1，如果是就需要乘上对应的这个base
 5. 考虑到 exponent 可以为负数，需要提前把exponent取反，最后把结果倒数
-6. Time: O\(logn\), Space: O\(1\) 
+6.  Time: O(logn), Space: O(1)&#x20;
 
- 
+    &#x20;
 
 ### 4. Coding
 
-```text
+```
 # -*- coding:utf-8 -*-
 class Solution:
     def Power(self, base, exponent):
@@ -74,8 +74,6 @@ class Solution:
             base *= base
         return 1/res if sign else res
 ```
-
-
 
 
 

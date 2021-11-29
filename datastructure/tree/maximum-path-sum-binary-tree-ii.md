@@ -6,13 +6,13 @@ description: Hard.   二叉树任意两个节点的最大路径和
 
 1**.Links：**
 
-牛客: [https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196&tqId=37050&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey](https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196&tqId=37050&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey)
+牛客: [https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196\&tqId=37050\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196\&tqId=37050\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey)
 
 Laicode: [https://app.laicode.io/app/problem/139](https://app.laicode.io/app/problem/139)
 
 **2. 题目：**
 
-Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from any node to any node \(the start node and the end node can be the same\).** 
+Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from any node to any node (the start node and the end node can be the same). **
 
 **Assumptions**
 
@@ -20,7 +20,7 @@ Given a binary tree in which each node contains an integer number. Find the maxi
 
 **Examples**
 
-```text
+```
     -1
   /    \
 2      11
@@ -28,23 +28,23 @@ Given a binary tree in which each node contains an integer number. Find the maxi
     6    -14
 ```
 
- 
+&#x20;
 
-one example of paths could be -14 -&gt; 11 -&gt; -1 -&gt; 2
+one example of paths could be -14 -> 11 -> -1 -> 2
 
 another example could be the node 11 itself
 
-The maximum path sum in the above binary tree is 6 + 11 + \(-1\) + 2 = 18
+The maximum path sum in the above binary tree is 6 + 11 + (-1) + 2 = 18
 
 **How is the binary tree represented?**
 
-We use the level order traversal sequence with a special symbol "\#" denoting the null node.
+We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
 **For Example:**
 
-The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
+The sequence \[1, 2, 3, #, #, 4] represents the following binary tree:
 
-```text
+```
     1
   /   \
  2     3
@@ -52,23 +52,23 @@ The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
     4
 ```
 
-  
+&#x20;&#x20;
 
 **3想法**：
 
-1. 和之前的任意两个leaf node的最大路径不同的是，这个是任意两个node之间的最大路径，所以在把一个node的left， right subtree的max path相加之前，要先看一下来自left， right 的max path是否大于0。 如果是left/right 的从上往下的max path sum &lt;0, 那么就不用加那个path了
-2. **思路：任意另个node的max path sum = max \(left 的path sum， right的max path sum， left + right + node的跨了两个branchd的path sum\)**    对于每一个node，找到它left， right subtree的自上而下的consecutive max path sum，如果这个从上往下的path sum是等于0，就加到cur.value 否则如果是负数时，负数加上去不会对max path sum有贡献所以直接设置为0，不考虑。之后在和global max对比更新。最后把加上当前的node的value的从上往下的consecutive的max path sum返回到上一层。
+1. 和之前的任意两个leaf node的最大路径不同的是，这个是任意两个node之间的最大路径，所以在把一个node的left， right subtree的max path相加之前，要先看一下来自left， right 的max path是否大于0。 如果是left/right 的从上往下的max path sum <0, 那么就不用加那个path了
+2. **思路：任意另个node的max path sum = max (left 的path sum， right的max path sum， left + right + node的跨了两个branchd的path sum)**    对于每一个node，找到它left， right subtree的自上而下的consecutive max path sum，如果这个从上往下的path sum是等于0，就加到cur.value 否则如果是负数时，负数加上去不会对max path sum有贡献所以直接设置为0，不考虑。之后在和global max对比更新。最后把加上当前的node的value的从上往下的consecutive的max path sum返回到上一层。
 3. 步骤就是
    1. 遍历每一个node
    2. recursion的输入是node， 输出是从那个node开始自上往下最大的path sum
    3. 如果node是none，返回 0
-   4. 在每一个node里面找到left, right children的自上往下的max path sum，如果自上往下max path sum &gt;0, 就 left +right +node.val 得到从左往右的max path sum
+   4. 在每一个node里面找到left, right children的自上往下的max path sum，如果自上往下max path sum >0, 就 left +right +node.val 得到从左往右的max path sum
    5. 把从左往右的max path sum和 global max path sum 对比并更新
    6. 返回加上当前节点的自上往下的max path sum
 
 Source Code
 
-```text
+```
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -112,5 +112,4 @@ class Solution(object):
 
 ```
 
- 
-
+&#x20;

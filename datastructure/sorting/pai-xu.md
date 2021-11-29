@@ -1,5 +1,5 @@
 ---
-description: 'sorting, quicksort, mergesort,'
+description: sorting, quicksort, mergesort,
 ---
 
 # 排序
@@ -10,17 +10,17 @@ description: 'sorting, quicksort, mergesort,'
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [5,2,3,1,4]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,2,3,4,5]
 ```
 
@@ -28,27 +28,27 @@ description: 'sorting, quicksort, mergesort,'
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [5,1,6,2,5]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,2,5,5,6]
 ```
 
 ### 2. 思路
 
 1. merge sort
-2. Time O\(nlogn\) , O\(n\) for merging in each level, O\(logn\) for iterating the whole tree. so O\(nlogn\)
-3.  Space O\(n\),  我们要在每一个层把sorted 好的element存起来，然后再去另外一个分支进行divide，最坏情况就是把所有的node的value存起来 O\(n\)，然后再加上recursion的层数的space O\(logn\),所有O\(n\) +O\(logn\)  = O\(n\)
+2. Time O(nlogn) , O(n) for merging in each level, O(logn) for iterating the whole tree. so O(nlogn)
+3. &#x20;Space O(n),  我们要在每一个层把sorted 好的element存起来，然后再去另外一个分支进行divide，最坏情况就是把所有的node的value存起来 O(n)，然后再加上recursion的层数的space O(logn),所有O(n) +O(logn)  = O(n)
 
-```text
+```
 #
 # 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
 # 将给定数组排序
@@ -100,6 +100,4 @@ class Solution:
         return res
             
 ```
-
-
 

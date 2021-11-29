@@ -6,13 +6,13 @@
 
 ### 2. 描述
 
-给出一个有n个元素的数组S，S中是否有元素a,b,c满足a+b+c=0？找出数组S中所有满足条件的三元组。注意：  
+给出一个有n个元素的数组S，S中是否有元素a,b,c满足a+b+c=0？找出数组S中所有满足条件的三元组。注意：\
 
 
 1. 三元组（a、b、c）中的元素必须按非降序排列。（即a≤b≤c）
 2. 解集中不能包含重复的三元组。
 
-```text
+```
 例如，给定的数组 S = {-10 0 10 20 -10 -40},解集为(-10, -10, 20),(-10, 0, 10) 
 0 <= S.length <= 1000
 ```
@@ -21,13 +21,13 @@
 
 输入：
 
-```text
+```
 [0]
 ```
 
 复制返回值：
 
-```text
+```
 []
 ```
 
@@ -37,13 +37,13 @@
 
 输入：
 
-```text
+```
 [-2,0,1,1,2]
 ```
 
 复制返回值：
 
-```text
+```
 [[-2,0,2],[-2,1,1]]
 ```
 
@@ -52,15 +52,15 @@
 ### 3. 思路
 
 1. sort array
-2. iterate every element num\[i\]
-3. binary search for the remaining element to check if two sum to target = 0- num\[i\] exist
+2. iterate every element num\[i]
+3. binary search for the remaining element to check if two sum to target = 0- num\[i] exist
 4. skip all duplicated values once the first element found to avoid duplicated results
-5. Time: O\(nlogn\) for sorting  O\(n \) for the first loop,  O\(n\) for binary search in worst case, so O\(n^2 + nlogn\) = O\(n^2\) 
-6. Space O\(1\)
+5. Time: O(nlogn) for sorting  O(n ) for the first loop,  O(n) for binary search in worst case, so O(n^2 + nlogn) = O(n^2)&#x20;
+6. Space O(1)
 
 ### 4. Coding
 
-```text
+```
 #
 # 
 # @param num int整型一维数组 
@@ -113,8 +113,6 @@ class Solution:
                     
             
 ```
-
-
 
 
 

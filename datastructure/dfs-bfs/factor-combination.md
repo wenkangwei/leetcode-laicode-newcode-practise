@@ -4,7 +4,7 @@
 
 {% embed url="https://app.laicode.io/app/problem/404" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
@@ -16,15 +16,15 @@ Give A = 24
 
 since 24 = 2 x 2 x 2 x 3
 
-              = 2 x 2 x 6
+&#x20;             \= 2 x 2 x 6
 
-              = 2 x 3 x 4
+&#x20;             \= 2 x 3 x 4
 
-              = 2 x 12
+&#x20;             \= 2 x 12
 
-              = 3 x 8
+&#x20;             \= 3 x 8
 
-              = 4 x 6
+&#x20;             \= 4 x 6
 
 your solution should return
 
@@ -36,7 +36,7 @@ note: duplicate combination is not allowed.
 
 **3. 思路**
 
-```text
+```
 1. bt input: action set: [2, 3,4 ...  target], can not be 1
 sols: final results,  sol: current result, target, start: action start from 2
 2. terminal state: when target ==1 no need to factorize. Append sol when sol len >1
@@ -47,7 +47,7 @@ if so append action and use dfs to next target/i, start = i (same factor may be 
 
 **4. Coding**
 
-```text
+```
 # class Solution(object):
 #   def combinations(self, target):
 #     """
@@ -110,9 +110,9 @@ class Solution(object):
 
 
 
-如果只考虑所有质数，那就不用for loop直接看target能不能被start整除\(之后start的倍数都会被直接跳过，因为target都已经不能被start整除那就更不可能被它的倍数整除\)。如果可以就加上start，如果不行就跳过当前的start，进入下一个factor: start+1
+如果只考虑所有质数，那就不用for loop直接看target能不能被start整除(之后start的倍数都会被直接跳过，因为target都已经不能被start整除那就更不可能被它的倍数整除)。如果可以就加上start，如果不行就跳过当前的start，进入下一个factor: start+1
 
-```text
+```
 class Solution(object):
   def combinations(self, target):
     """
@@ -147,6 +147,4 @@ class Solution(object):
     else:
         self.bt(sols, sol, start+1, target)
 ```
-
-
 

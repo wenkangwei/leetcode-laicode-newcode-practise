@@ -20,17 +20,17 @@ description: 2D-DP
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "1AB2345CD","12345EF"
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "2345"
 ```
 
@@ -39,14 +39,14 @@ description: 2D-DP
 思路：2D-DP
 
 1. 用2D dp array 存放str1- vs- str2的table
-2. 用两个iterate str1, 和str2， 当str1\[i\] == str2\[j\]时把对应的DP table\[i\]\[j\]个位置存放以当前位置为结尾的连续相等的char的个数， 即 table\[i\]\[j\] = table\[i-1\]\[j-1\] +1. 之所以要i-1, j-1是因为要str1, str2都往前一位的char是相同的
-3. 把当前的table\[i\]\[j\] 与global max的length对比并更新max len以及当前的str1或者str2的位置idx
+2. 用两个iterate str1, 和str2， 当str1\[i] == str2\[j]时把对应的DP table\[i]\[j]个位置存放以当前位置为结尾的连续相等的char的个数， 即 table\[i]\[j] = table\[i-1]\[j-1] +1. 之所以要i-1, j-1是因为要str1, str2都往前一位的char是相同的
+3. 把当前的table\[i]\[j] 与global max的length对比并更新max len以及当前的str1或者str2的位置idx
 4. 最后用返回存放的位置idx以及对应的max len 长度进行substring查找
-5. Time: O\(n\*m\) n = len\(str1\)  m= len\(str2\).  Space  = O\(n\*m\)
+5. Time: O(n\*m) n = len(str1)  m= len(str2).  Space  = O(n\*m)
 
 
 
-```text
+```
 # #
 # # longest common substring
 # # @param str1 string字符串 the string
@@ -99,4 +99,3 @@ class Solution:
 Reference
 
 [https://blog.csdn.net/ggdhs/article/details/90713154](https://blog.csdn.net/ggdhs/article/details/90713154)
-

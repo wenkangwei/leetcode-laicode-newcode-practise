@@ -10,25 +10,25 @@ description: Binary Search; Hard;
 
 ### 2. 描述: NC36 在两个长度相等的排序数组中找到上中位数
 
-给定两个有序数组arr1和arr2，已知两个数组的长度都为N，求两个数组中所有数的上中位数。上中位数：假设递增序列长度为n，若n为奇数，则上中位数为第n/2+1个数；否则为第n/2个数\[要求\]时间复杂度为O\(logN\)O\(logN\)，额外空间复杂度为O\(1\)O\(1\)
+给定两个有序数组arr1和arr2，已知两个数组的长度都为N，求两个数组中所有数的上中位数。上中位数：假设递增序列长度为n，若n为奇数，则上中位数为第n/2+1个数；否则为第n/2个数\[要求]时间复杂度为O(logN)O(logN)，额外空间复杂度为O(1)O(1)
 
 ### 示例1
 
 输入：
 
-```text
+```
 [1,2,3,4],[3,4,5,6]
 ```
 
 复制返回值：
 
-```text
+```
 3
 ```
 
 复制说明：
 
-```text
+```
 总共有8个数，上中位数是第4小的数，所以返回3。 
 ```
 
@@ -36,19 +36,19 @@ description: Binary Search; Hard;
 
 输入：
 
-```text
+```
 [0,1,2],[3,4,5]
 ```
 
 复制返回值：
 
-```text
+```
 2
 ```
 
 复制说明：
 
-```text
+```
 总共有6个数，那么上中位数是第3小的数，所以返回2 
 ```
 
@@ -57,19 +57,19 @@ description: Binary Search; Hard;
 ### 3. 思路
 
 1. method 1:  merge and sort
-   1.  First merge and sort two array
+   1. &#x20;First merge and sort two array
    2. find the middle element as median of two array
-   3. Time: O\(n\), Space: O\(n\)
+   3. Time: O(n), Space: O(n)
 2. method 2:   binary search
-   1.  Define left, right pointers of arr1 = l1, r1 and  left, right pointers of arr2 = l2, r2
-   2.  Since two **sorted arrays** have same length, so first find the middle elements of two arrays \(two medians of two array\)
-   3. if arr1\[mid1\] == arr2\[mid2\]  -&gt;  two arrays have the same median and this is the global median 
-   4. **if  arr1\[mid1\]  &gt; arr2\[mid2\],** then arr1\[mid1\] is on the right hand side of arr2\[mid2\]  in the global array.   That is,  **arr1\[mid1\]  &gt;= global median &gt;= arr2\[mid2\]**.    So we need to search the left space of arr1\[mid1\]  and  the right space of arr2\[mid2\].  So let  **l1 = mid1,  r2 = mid2**
-   5. **if arr1\[mid1\] &lt;  arr2\[mid2\],**  similary,  **arr1\[mid1\] &lt;= global median &lt;= arr2\[mid2\].  So let  r1 = mid1, l2 = mid2.**
-   6. repeat step 1~5  while l1 &lt; r1
-   7. Note:  
-      1. when l1=r1-1,  compute middle between  l1, r1 could lead to  dead loop, since  l1 = mid1 always. **When  subarray arr1\[l1:r1+1\] has even size, we need l1 = mid1 + 1  and l2 = mid1 + 1**
-   8. **Time: O\(logn\), Space: O\(1\)**
+   1. &#x20;Define left, right pointers of arr1 = l1, r1 and  left, right pointers of arr2 = l2, r2
+   2. &#x20;Since two **sorted arrays** have same length, so first find the middle elements of two arrays (two medians of two array)
+   3. if arr1\[mid1] == arr2\[mid2]  ->  two arrays have the same median and this is the global median&#x20;
+   4. **if  arr1\[mid1]  > arr2\[mid2], **then arr1\[mid1] is on the right hand side of arr2\[mid2]  in the global array.   That is,  **arr1\[mid1]  >= global median >= arr2\[mid2]**.    So we need to search the left space of arr1\[mid1]  and  the right space of arr2\[mid2].  So let ** l1 = mid1,  r2 = mid2**
+   5. **if arr1\[mid1] <  arr2\[mid2],**  similary,  **arr1\[mid1] <= global median <= arr2\[mid2].  So let  r1 = mid1, l2 = mid2.**
+   6. repeat step 1\~5  while l1 < r1
+   7. Note: &#x20;
+      1. when l1=r1-1,  compute middle between  l1, r1 could lead to  dead loop, since  l1 = mid1 always. **When  subarray arr1\[l1:r1+1] has even size, we need l1 = mid1 + 1  and l2 = mid1 + 1**
+   8. **Time: O(logn), Space: O(1)**
 
 
 
@@ -152,8 +152,6 @@ class Solution:
         return min(arr1[l1], arr2[l2])
     
 ```
-
-
 
 
 

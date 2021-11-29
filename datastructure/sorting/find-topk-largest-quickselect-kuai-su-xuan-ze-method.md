@@ -6,27 +6,27 @@ description: Medium; quickselect; 腾讯；
 
 ### 1. Link
 
-[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=117&tqId=37791&companyId=138&rp=1&ru=%2Fcompany%2Fhome%2Fcode%2F138&qru=%2Fta%2Fjob-code-high%2Fquestion-ranking&tab=answerKey](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=117&tqId=37791&companyId=138&rp=1&ru=%2Fcompany%2Fhome%2Fcode%2F138&qru=%2Fta%2Fjob-code-high%2Fquestion-ranking&tab=answerKey)
+[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=117\&tqId=37791\&companyId=138\&rp=1\&ru=%2Fcompany%2Fhome%2Fcode%2F138\&qru=%2Fta%2Fjob-code-high%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=117\&tqId=37791\&companyId=138\&rp=1\&ru=%2Fcompany%2Fhome%2Fcode%2F138\&qru=%2Fta%2Fjob-code-high%2Fquestion-ranking\&tab=answerKey)
 
 ### 2. 题目描述
 
 有一个整数数组，请你根据快速排序的思路，找出数组中第K大的数。
 
-给定一个整数数组a,同时给定它的大小n和要找的K\(K在1到n之间\)，请返回第K大的数，保证答案存在。示例1
+给定一个整数数组a,同时给定它的大小n和要找的K(K在1到n之间)，请返回第K大的数，保证答案存在。示例1
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,3,5,2,2],5,3
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 2
 ```
 
@@ -35,12 +35,12 @@ description: Medium; quickselect; 腾讯；
 ### 3. 思路
 
 1. 像quicksort 一样先把pivot选出来，然后partition使pivot左边的数字大于pivot，右边的小于pivot （这里是从大到小排）
-2. 把pivot的position和 K-1对比（因为index是从0开始的），如果pivot index &gt; K-1, 那么end = pivot -1. 如果pivot index &lt; K-1,  那么start = pivot +1.如果一样，那就返回pivot对应的element
-3. Time Complexity:   worst case O\(n^2\), average case O\(nlogn\). Space: \(1\) 没有用recursion
+2. 把pivot的position和 K-1对比（因为index是从0开始的），如果pivot index > K-1, 那么end = pivot -1. 如果pivot index < K-1,  那么start = pivot +1.如果一样，那就返回pivot对应的element
+3. Time Complexity:   worst case O(n^2), average case O(nlogn). Space: (1) 没有用recursion
 
 ### 4.Code
 
-```text
+```
 # -*- coding:utf-8 -*-
 
 class Solution:
@@ -98,7 +98,7 @@ class Solution:
 
 用min-heap 找TopK largest 的方法
 
-```text
+```
 class Solution:
     def findKth(self, a, n, K):
         # method2: heap sort
@@ -125,4 +125,3 @@ class Solution:
         # that is TopK largest 
         return heapq.heappop(heap)
 ```
-

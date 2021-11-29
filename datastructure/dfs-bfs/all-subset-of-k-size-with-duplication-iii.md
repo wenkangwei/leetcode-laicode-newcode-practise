@@ -1,4 +1,4 @@
-# All Subset of K size III \(with duplication without considering order\)
+# All Subset of K size III (with duplication without considering order)
 
 1**.Link**
 
@@ -6,47 +6,47 @@
 
 **Assumptions**
 
-There could be duplicate characters in the original set.  
+There could be duplicate characters in the original set.\
 
 
 **Examples**
 
-Set = "abc", K = 2, all the subsets are \[“ab”, “ac”, “bc”\].
+Set = "abc", K = 2, all the subsets are \[“ab”, “ac”, “bc”].
 
-Set = "abb", K = 2, all the subsets are \[“ab”, “bb”\].
+Set = "abb", K = 2, all the subsets are \[“ab”, “bb”].
 
-Set = "abab", K = 2, all the subsets are \[“aa”, “ab”, “bb”\].
+Set = "abab", K = 2, all the subsets are \[“aa”, “ab”, “bb”].
 
-Set = "", K = 0, all the subsets are \[""\].
+Set = "", K = 0, all the subsets are \[""].
 
-Set = "", K = 1, all the subsets are \[\].
+Set = "", K = 1, all the subsets are \[].
 
-\*\*\*\*
+****
 
 **3. 思路**
 
-1. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos\] 时把所有的相同的char都不考虑进去**  
-2. **example**
+1. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去  **
+2.  **example**
 
-   1. **action = \[a b  e e e  c  d\]**
-   2. 如果我考虑第一个e，那么就考虑 剩下的e并且每个e都只考虑一次，那么就会有 “e...”, "ee...", "eee..."  这3中情况并且1个e, 2个e, 3个e的情况都是只出现一次
-   3. 如果我不考虑第一个e，那么就不考虑剩下的所有e了。因为如果在不选第一个e的情况下考虑其他e，就会出现“ee..”, "eee.."的情况和 case2 重复
-   4. 所以代码变成
+    1. **action = \[a b  e e e  c  d]**
+    2. 如果我考虑第一个e，那么就考虑 剩下的e并且每个e都只考虑一次，那么就会有 “e...”, "ee...", "eee..."  这3中情况并且1个e, 2个e, 3个e的情况都是只出现一次
+    3. 如果我不考虑第一个e，那么就不考虑剩下的所有e了。因为如果在不选第一个e的情况下考虑其他e，就会出现“ee..”, "eee.."的情况和 case2 重复
+    4. 所以代码变成
 
 
 
-   ```text
-   idx = pos +1
-       while idx <len(action) and action[idx] == action[pos]:
-         idx += 1
-       # skip all duplicated char to move the next char
-       self.bt(sols, sol, action,idx, k)
+    ```
+    idx = pos +1
+        while idx <len(action) and action[idx] == action[pos]:
+          idx += 1
+        # skip all duplicated char to move the next char
+        self.bt(sols, sol, action,idx, k)
 
-   ```
+    ```
 
 **4. Coding**
 
-```text
+```
 class Solution(object):
   def subSetsIIOfSizeK(self, set, k):
     """
@@ -100,6 +100,4 @@ class Solution(object):
 
 
 ```
-
-
 

@@ -8,7 +8,7 @@ description: Medium; DP; Two Pointer; String
 
 {% embed url="https://leetcode-cn.com/problems/two-sum/submissions/" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
@@ -26,19 +26,19 @@ description: Medium; DP; Two Pointer; String
 
 
 
-\*\*\*\*
+****
 
 **3. 思路**
 
-1.  **用 set 存放 window/substring里面visited 的char**
+1. ** 用 set 存放 window/substring里面visited 的char**
 2. **用 slow， fast pointer对sustring boundary存放**
 3. **用fast point遍历string，当fast point对应的char在set里面就把slow point存放的char 从set中remove 并把slow pointer往前移动， length -=1，直到fast pointer的char不在 set里面，最后把fast point的char加到set并 length +=1. 这样保证了substring的连续性**
 4. **更新 longest length of substring**
-5. **Time: O\(n^2\), Space: O\(k\), K = window size**
+5. **Time: O(n^2), Space: O(k), K = window size**
 
 **4. Coding**
 
-```text
+```
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         #input: stirng
@@ -75,6 +75,4 @@ class Solution:
         return res
         
 ```
-
-
 

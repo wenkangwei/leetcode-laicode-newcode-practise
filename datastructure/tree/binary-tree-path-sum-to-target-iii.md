@@ -1,18 +1,18 @@
 # Binary Tree Path Sum To Target III
 
-1**. Link** 
+1**. Link **
 
 {% embed url="https://app.laicode.io/app/problem/141" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
-Given a binary tree in which each node contains an integer number. Determine if there exists a path **\(the path can only be from one node to itself or to any of its descendants\),** the sum of the numbers on the path is the given target number.
+Given a binary tree in which each node contains an integer number. Determine if there exists a path** (the path can only be from one node to itself or to any of its descendants), **the sum of the numbers on the path is the given target number.
 
 **Examples**
 
-```text
+```
     5
 
   /    \
@@ -38,21 +38,21 @@ If target = 11, There exists a path only containing the node 11.
 
 **How is the binary tree represented?**
 
-We use the level order traversal sequence with a special symbol "\#" denoting the null node.
+We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
 **For Example:**
 
-The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
+The sequence \[1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+&#x20;   1
 
-  /   \
+&#x20; /   \\
 
- 2     3
+&#x20;2     3
 
-      /
+&#x20;     /
 
-    4
+&#x20;   4
 
 
 
@@ -61,12 +61,12 @@ The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
 1. 遍历 tree的每个node
 2. 以当前的node为起始点用另外一个recursion function查找 path sum to target
 3. 如果当前的node找不到path， 那么就recursion的方式查找它的left， right subtree看有没有找到path sum to target
-4. Time: O\(n\) for iterating all nodes in tree, O\(n\) for finding path sum , so O\(n^2\) 注意这里的 finding path sum因为每个node有可能是+ 或者 - 没加到最后一个node都不知道是不是可行的path，所以要遍历整棵树，就O\(n\)
-5. Space: O\(logn\) for recursion if tree is balance. if not balance O\(n\). 同理O\(logn\) for finding path if balance，otherwise， O\(n\), so In total O\(n\)
+4. Time: O(n) for iterating all nodes in tree, O(n) for finding path sum , so O(n^2) 注意这里的 finding path sum因为每个node有可能是+ 或者 - 没加到最后一个node都不知道是不是可行的path，所以要遍历整棵树，就O(n)
+5. Space: O(logn) for recursion if tree is balance. if not balance O(n). 同理O(logn) for finding path if balance，otherwise， O(n), so In total O(n)
 
 **4. Coding**
 
-```text
+```
 class Solution(object):
   def exist(self, root, target):
     """
@@ -108,4 +108,3 @@ class Solution(object):
 
 
 ```
-

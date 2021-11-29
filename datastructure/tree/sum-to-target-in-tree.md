@@ -8,24 +8,24 @@
 
 ### 2. 描述
 
-给定一个二叉树和一个值\ sum sum，判断是否有从根节点到叶子节点的节点值之和等于\ sum sum 的路径，  
-例如：  
-给出如下的二叉树，\ sum=22 sum=22，  
-![](https://uploadfiles.nowcoder.com/images/20200807/999991351_1596786493913_8BFB3E9513755565DC67D86744BB6159)  
-返回true，因为存在一条路径 5\to 4\to 11\to 25→4→11→2的节点值之和为 22  
+给定一个二叉树和一个值\ sum sum，判断是否有从根节点到叶子节点的节点值之和等于\ sum sum 的路径，\
+例如：\
+给出如下的二叉树，\ sum=22 sum=22，\
+![](https://uploadfiles.nowcoder.com/images/20200807/999991351\_1596786493913\_8BFB3E9513755565DC67D86744BB6159)\
+返回true，因为存在一条路径 5\to 4\to 11\to 25→4→11→2的节点值之和为 22\
 
 
 ### 示例1
 
 输入：
 
-```text
+```
 {1,2},0
 ```
 
 复制返回值：
 
-```text
+```
 false
 ```
 
@@ -35,13 +35,13 @@ false
 
 输入：
 
-```text
+```
 {1,2},3
 ```
 
 复制返回值：
 
-```text
+```
 true
 ```
 
@@ -50,15 +50,15 @@ true
 ### 3. 思路
 
 1. idea: recursion
-2. check if node is none, return False, 
-3.  if node is leaf node and target== node.val,return True, otherwise False
+2. check if node is none, return False,&#x20;
+3. &#x20;if node is leaf node and target== node.val,return True, otherwise False
 4. search the left and right tree path and then use OR to combine their results to check if the path exist
-5. Time: O\(n\) to iterate every tree node
-6. Space: O\(height of tree\)
+5. Time: O(n) to iterate every tree node
+6. Space: O(height of tree)
 
 ### 4. Coding
 
-```text
+```
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -101,8 +101,6 @@ class Solution:
     
         
 ```
-
-
 
 
 

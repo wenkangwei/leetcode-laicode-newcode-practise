@@ -107,7 +107,7 @@ select d.emp_no
 
 
 
-2. SQL59 获取有奖金的员工相关信息
+2\. SQL59 获取有奖金的员工相关信息
 
 给出emp\_no、first\_name、last\_name、奖金类型btype、对应的当前薪水情况salary以及奖金金额bonus。 bonus类型btype为1其奖金为薪水salary的10%，btype为2其奖金为薪水的20%，其他类型均为薪水的30%。 当前薪水表示to\_date='9999-01-01'
 
@@ -127,9 +127,9 @@ where s.to_date = "9999-01-01";
 
 
 
-3. 按照salary的累计和running\_total，其中running\_total为前N个当前\( to\_date = '9999-01-01'\)员工的salary累计和，其他以此类推。 具体结果如下Demo展示。
+3\. 按照salary的累计和running\_total，其中running\_total为前N个当前( to\_date = '9999-01-01')员工的salary累计和，其他以此类推。 具体结果如下Demo展示。
 
-Note:  在 Window function 里面如果  func\(column\) over  \(...\),  里面 **over \(\) 括号里面没有partition by 对row进行分区操作， 那么 window func在某一行row的操作是把当前这个row（包括当前的row）的前面所有row的值进行操作。 比如 window function是sum，那么在第10行的window function的输出就把1~10行的值给加起来**
+Note:  在 Window function 里面如果  func(column) over  (...),  里面 **over () 括号里面没有partition by 对row进行分区操作， 那么 window func在某一行row的操作是把当前这个row（包括当前的row）的前面所有row的值进行操作。 比如 window function是sum，那么在第10行的window function的输出就把1\~10行的值给加起来**
 
 ```sql
 
@@ -141,7 +141,7 @@ where s.to_date = "9999-01-01"
 
 
 
-4. 对于employees表中，输出first\_name排名\(按first\_name升序排序\)为奇数的first\_name
+4\. 对于employees表中，输出first\_name排名(按first\_name升序排序)为奇数的first\_name
 
 ```sql
 select a.first_name
@@ -161,32 +161,29 @@ where a.r_number % 2 = 1
 ## Conclusion
 
 1. 这里回顾了Window Function用法
-   1. 在window function里面  func\(..\) over \(..\)  如果over\(\)里面没有指定partition by进行分组， 那么window function 会对当前的row之前的所有row\(包括当前的row\) 进行window function的操作。 比如下面 sum salary 里面没有用partition by， 那么它就会第 i 行的running——total的值等于前面 1~ i行的salary的sum
+   1.  在window function里面  func(..) over (..)  如果over()里面没有指定partition by进行分组， 那么window function 会对当前的row之前的所有row(包括当前的row) 进行window function的操作。 比如下面 sum salary 里面没有用partition by， 那么它就会第 i 行的running——total的值等于前面 1\~ i行的salary的sum
 
-      ```sql
-      select s.emp_no, s.salary, sum(s.salary) over (order by s.emp_no) as running_total
-      from salaries as s
-      where s.to_date = "9999-01-01"
-      ;
-      ```
-2. Case when的用法回顾
+       ```sql
+       select s.emp_no, s.salary, sum(s.salary) over (order by s.emp_no) as running_total
+       from salaries as s
+       where s.to_date = "9999-01-01"
+       ;
+       ```
+2.  Case when的用法回顾
 
-   ```sql
-   select  case when condition_a then do_a
-   case when condition_b then do_b
-   ...
-   else default_value end  column_alias_name
+    ```sql
+    select  case when condition_a then do_a
+    case when condition_b then do_b
+    ...
+    else default_value end  column_alias_name
 
-   from ...;
-   ```
+    from ...;
+    ```
 
 
 
 ```sql
-
 ```
-
-
 
 
 

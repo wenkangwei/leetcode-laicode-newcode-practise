@@ -1,4 +1,4 @@
-# Find Tree height \(general iteration method\)
+# Find Tree height (general iteration method)
 
 
 
@@ -14,22 +14,22 @@
 
 ### 2. 题目描述
 
-求给定二叉树的最大深度，最大深度是指树的根结点到最远叶子结点的最长路径上结点的数量。  
+求给定二叉树的最大深度，最大深度是指树的根结点到最远叶子结点的最长路径上结点的数量。\
 示例1
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {1,2}
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 2
 ```
 
@@ -37,17 +37,17 @@
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 {1,2,3,4,#,#,5}
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 3
 ```
 
@@ -55,23 +55,22 @@
 
 ### 3. 思路
 
-1. bottom-up method:
+1.  bottom-up method:
 
-   1. 每个node的input: node,    ouput: max\_depth of current node
-   2. 如果node是none，return 0。否则从left， right children获取 max\_depth values, 然后返回 Max\(left depth, right depth\) +1
+    1. 每个node的input: node,    ouput: max\_depth of current node
+    2. 如果node是none，return 0。否则从left， right children获取 max\_depth values, 然后返回 Max(left depth, right depth) +1
 
- 
-
+    &#x20;
 2. top down method:
    1. 每个node的input: node, depth of parent   ouput: None
    2. 用global的max\_depth 存放结果
-   3. 如果node是none，return, 否则 max\_depth = max\(max depth,  depth + 1\)
+   3. 如果node是none，return, 否则 max\_depth = max(max depth,  depth + 1)
 
 ### 4.Coding
 
 Recursion method
 
-```text
+```
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -105,7 +104,7 @@ class Solution:
 
 Iteration DFS method
 
-```text
+```
 class Solution:
     def maxDepth(self , root ):
         #
@@ -150,13 +149,13 @@ class Solution:
 
 
 
-Tree 的**iteration general**的方法/DFS + **每一层都有返回的写法**
+Tree 的**iteration general**的方法/DFS +** 每一层都有返回的写法**
 
 1. **在原来的 iteration method for Tree traversal 的方法上添加以下两条**
-   1. **对于每一层的node的输入，可以在 stack append \(node.left, cnt,  other inputs\)的tuple里面给 child node进行input的添加**
+   1. **对于每一层的node的输入，可以在 stack append (node.left, cnt,  other inputs)的tuple里面给 child node进行input的添加**
    2. **对于每个node的返回值，可以用一个result stack存放子节点的返回值**
    3. **在post-order 的地方进行返回操作， 如果current node 有right node就pop result stack的最后一个value，同理如果有left node，就pop最后一个value。 注意： 一定是先pop right再pop left，因为left的result是先比right的res 储存**
-2. 简单来说， input 就是在cnt=0 或1的情况 stack.append\(\)的tuple里面添加input。 而output就是在post-order里面从result stack里面pop值出来更新当前的node的result，再append进去返回。
+2. 简单来说， input 就是在cnt=0 或1的情况 stack.append()的tuple里面添加input。 而output就是在post-order里面从result stack里面pop值出来更新当前的node的result，再append进去返回。
 
 ```python
 
@@ -220,9 +219,9 @@ class Solution:
 
 
 
-Iteration **BFS method**/ **Level order** method
+Iteration **BFS method**/** Level order** method
 
-```text
+```
 class Solution:
     def maxDepth(self , root ):
         #
@@ -249,8 +248,6 @@ class Solution:
         return depth
 
 ```
-
-
 
 
 

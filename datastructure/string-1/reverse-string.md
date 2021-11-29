@@ -16,31 +16,31 @@ description: Easy; String;
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "abcd"
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "dcba"
 ```
 
 ### 3. 思路
 
-1.  因为String在python是immutable 不可变，每次操作都增加新字符串，所以要先把它变成list
+1. &#x20;因为String在python是immutable 不可变，每次操作都增加新字符串，所以要先把它变成list
 2. 在list中，用two pointers/左右pointers 方法从左右两边进行char的交换，并把 两个pointer向中间移动
-3. 重复步骤2 直到 left &gt;= right 时停止
+3. 重复步骤2 直到 left >= right 时停止
 4. 返回reverse之后的字符串
-5. Time Complexity: O\(n\)  Space Complexity: O\(n\) 因为创建了一个list和返回新的字符串
+5. Time Complexity: O(n)  Space Complexity: O(n) 因为创建了一个list和返回新的字符串
 
 ### 4. Coding
 
-```text
+```
 #
 # 反转字符串
 # @param str string字符串 
@@ -57,6 +57,4 @@ class Solution:
             right -= 1
         return "".join(ls)
 ```
-
-
 

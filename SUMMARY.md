@@ -6,23 +6,29 @@
 ## Python
 
 * [Python 笔记](python/untitled.md)
+* [Page 1](python/page-1.md)
+
+## Spark
+
+* [PySpark](spark/pyspark.md)
+* [Spark Issues](spark/spark-issues.md)
+* [Page 2](spark/page-2.md)
 
 ## Recommendation System
 
 * [多路召回实现](recommendation-system/duo-lu-zhao-hui-shi-xian.md)
-* [PySpark](recommendation-system/pyspark.md)
 
 ## Deep-Learning
 
-* [Non-Negative Matrix Fatorization\(NMF\)](deep-learning/non-negative-matrix-fatorization-nmf.md)
-* [Fatorization Machine\(FM\)](deep-learning/fm.md)
+* [Non-Negative Matrix Fatorization(NMF)](deep-learning/non-negative-matrix-fatorization-nmf.md)
+* [Fatorization Machine(FM)](deep-learning/fm.md)
 * [Attention](deep-learning/attention.md)
 * [User-base/Item-base实现](deep-learning/untitled-1.md)
 * [NeuralFM](deep-learning/neuralfm.md)
 * [DeepFM](deep-learning/deepfm.md)
 * [Dropout](deep-learning/dropout.md)
 * [Batch Norm](deep-learning/batch-norm.md)
-* [Deep&Cross network \(DCN\)](deep-learning/deep-and-cross-network-dcn.md)
+* [Deep\&Cross network (DCN)](deep-learning/deep-and-cross-network-dcn.md)
 
 ## Machine Learning
 
@@ -82,7 +88,7 @@
   * [在排序数组中查找元素的第一个和最后一个位置](datastructure/linkedlist/zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
   * [删除链表里面重复的元素-1](datastructure/linkedlist/shan-chu-lian-biao-li-mian-zhong-fu-de-yuan-su.md)
 * [Tree](datastructure/tree/README.md)
-  * [Find Tree height \(general iteration method\)](datastructure/tree/find-tree-height-general-iteration-method.md)
+  * [Find Tree height (general iteration method)](datastructure/tree/find-tree-height-general-iteration-method.md)
   * [Check BST and Check CompleteTree](datastructure/tree/check-bst-and-check-completetree.md)
   * [ZigZag Order traversal](datastructure/tree/zigzag-order-traversal.md)
   * [Binary Tree diameter I](datastructure/tree/binary-tree-diameter-i.md)
@@ -99,7 +105,7 @@
   * [判断二叉树是否对称](datastructure/tree/pan-duan-er-cha-shu-shi-fou-dui-cheng.md)
   * [Path Sum to Target in Binary Tree](datastructure/tree/sum-to-target-in-tree.md)
   * [Tree-PreOrder-InOrder-PostOrder](datastructure/tree/tree-preorder-inorder-postorder.md)
-* [Heap&Queue](datastructure/heap-and-queue/README.md)
+* [Heap\&Queue](datastructure/heap-and-queue/README.md)
   * [Top-K smallest](datastructure/heap-and-queue/top-k-smallest.md)
   * [滑动窗口最大值](datastructure/heap-and-queue/hua-dong-chuang-kou-zui-da-zhi.md)
   * [Find the K-Largest](datastructure/heap-and-queue/find-the-k-largest.md)
@@ -114,10 +120,10 @@
   * [All Permutations of Subsets without duplication](datastructure/dfs-bfs/all-permutations-of-subsets-without-duplication.md)
   * [All Permutations of Subsets with duplication](datastructure/dfs-bfs/all-permutations-of-subsets-with-duplication.md)
   * [Combinations Of Coins](datastructure/dfs-bfs/untitled-2.md)
-  * [All Subset I \(without fixing size of subset, without order, without duplication\)](datastructure/dfs-bfs/all-subset-i.md)
+  * [All Subset I (without fixing size of subset, without order, without duplication)](datastructure/dfs-bfs/all-subset-i.md)
   * [All Subset of K size without duplication II](datastructure/dfs-bfs/untitled-1.md)
-  * [All Subset of K size III \(with duplication without considering order\)](datastructure/dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
-  * [All Permutation II \(with duplication and consider order\)](datastructure/dfs-bfs/all-permutation-ii.md)
+  * [All Subset of K size III (with duplication without considering order)](datastructure/dfs-bfs/all-subset-of-k-size-with-duplication-iii.md)
+  * [All Permutation II (with duplication and consider order)](datastructure/dfs-bfs/all-permutation-ii.md)
   * [Factor Combination-质数分解](datastructure/dfs-bfs/factor-combination.md)
 * [DynamicProgramming](datastructure/dynamicprogramming/README.md)
   * [DP-解题过程](datastructure/dynamicprogramming/dp-jie-ti-guo-cheng.md)
@@ -141,4 +147,3 @@
   * [Bloom Filter](big-data-algorithms/big-data-processing-algorithms/bloom-filter.md)
   * [BitMap](big-data-algorithms/big-data-processing-algorithms/bitmap.md)
   * [Heap For Big Data](big-data-algorithms/big-data-processing-algorithms/heap-for-big-data.md)
-

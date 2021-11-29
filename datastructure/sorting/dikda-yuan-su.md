@@ -2,25 +2,25 @@
 
 ### 1. Link
 
-[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&&tqId=38572&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week/question-ranking)
+[https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&\&tqId=38572\&rp=1\&ru=/ta/job-code-high-week\&qru=/ta/job-code-high-week/question-ranking](https://www.nowcoder.com/practice/e016ad9b7f0b45048c58a9f27ba618bf?tpId=188&\&tqId=38572\&rp=1\&ru=/ta/job-code-high-week\&qru=/ta/job-code-high-week/question-ranking)
 
 ### 2. 描述
 
 有一个整数数组，请你根据快速排序的思路，找出数组中第K大的数。
 
-给定一个整数数组a,同时给定它的大小n和要找的K\(1&lt;=K&lt;=n\)，请返回第K大的数\(包括重复的元素，不用去重\)，保证答案存在。
+给定一个整数数组a,同时给定它的大小n和要找的K(1<=K<=n)，请返回第K大的数(包括重复的元素，不用去重)，保证答案存在。
 
 ### 示例1
 
 输入：
 
-```text
+```
 [1,3,5,2,2],5,3
 ```
 
 复制返回值：
 
-```text
+```
 2
 ```
 
@@ -30,19 +30,19 @@
 
 输入：
 
-```text
+```
 [10,10,9,9,8,7,5,6,4,3,4,2],12,3
 ```
 
 复制返回值：
 
-```text
+```
 9
 ```
 
 复制说明：
 
-```text
+```
 去重后的第3大是8，但本题要求包含重复的元素，不用去重，所以输出9  
 ```
 
@@ -51,17 +51,17 @@
 ### 3. 思路
 
 1. method 1: quickselect
-   1. Time: O\(nlogn\) if array is not almost sorted,  Otherwise, O\(n^2\)
-   2. Space: O\(1\), inplace
+   1. Time: O(nlogn) if array is not almost sorted,  Otherwise, O(n^2)
+   2. Space: O(1), inplace
 2. method 2: heapsort
-   1. Time: O\(Nlogk\)
-   2. Space: O\(k\) for heap storage
+   1. Time: O(Nlogk)
+   2. Space: O(k) for heap storage
 
 ### 4. Coding
 
 1. QuickSelect （quicksort ） method
 
-```text
+```
 
 class Solution:
     def findKth(self, a, n, K):
@@ -113,9 +113,9 @@ class Solution:
 
 ```
 
-2. Heap Sort method
+2\. Heap Sort method
 
-```text
+```
 class Solution:
     def findKth(self, a, n, K):
         # method2: heap sort
@@ -144,8 +144,6 @@ class Solution:
         return heapq.heappop(heap)
 
 ```
-
-
 
 
 

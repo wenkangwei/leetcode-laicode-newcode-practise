@@ -2,27 +2,27 @@
 
 **Paper**: [https://arxiv.org/pdf/1502.03167.pdf](https://arxiv.org/pdf/1502.03167.pdf)
 
-**Batch Normalization transformation:** 
+**Batch Normalization transformation: **
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](<../.gitbook/assets/image (4).png>)
 
 **Training:**
 
-when training update gamma and beta using batch samples and also update running mean E\[x\], running variance Var\[x\]
+when training update gamma and beta using batch samples and also update running mean E\[x], running variance Var\[x]
 
-When inference, use running mean E\[x\], running variance Var\[x\], rather than sample mean and sample var, to compute output
+When inference, use running mean E\[x], running variance Var\[x], rather than sample mean and sample var, to compute output
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](<../.gitbook/assets/image (5).png>)
 
 **Gradient Computation** during training and updating var, mean
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](<../.gitbook/assets/image (6).png>)
 
 
 
 **Coding in pytorch**
 
-```text
+```
 import torch
 from torch import nn
 class BatchNorm(nn.Module):
@@ -62,4 +62,3 @@ bn(x), bn(x2),bn(x, inference=True)
 
 
 ```
-

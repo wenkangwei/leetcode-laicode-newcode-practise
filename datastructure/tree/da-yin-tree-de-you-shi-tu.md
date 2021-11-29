@@ -16,17 +16,17 @@ description: Medium; Tree
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,2,4,5,3],[4,2,5,1,3]
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 [1,3,5]
 ```
 
@@ -34,12 +34,12 @@ description: Medium; Tree
 
 ### 3. 思路
 
-1.  先根据 preorder, inorder 进行reconstruct tree. Time: O\(nlogn\)  if tree is balance otherwise O\(n^2\)
-2. level order print right view of tree.  Time: O\(n\)
+1. &#x20;先根据 preorder, inorder 进行reconstruct tree. Time: O(nlogn)  if tree is balance otherwise O(n^2)
+2. level order print right view of tree.  Time: O(n)
 
 ### 4. Coding
 
-```text
+```
 #
 # 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
 # 求二叉树的右视图
@@ -117,8 +117,6 @@ class Solution:
         
         
 ```
-
-
 
 
 

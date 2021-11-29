@@ -2,13 +2,13 @@
 
 ## 1. Graph Basic
 
-**参考资料:** [**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)
+**参考资料: **[**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
 
 ### 图的表示
 
 **定义一（图）**：
 
-* 一个图被记为$\mathcal{G}={\mathcal{V}, \mathcal{E}}$，其中 $\mathcal{V}=\left{v_{1}, \ldots, v_{N}\right}$是数量为$N=\|\mathcal{V}\|$ 的结点的集合， $\mathcal{E}=\left{e_{1}, \ldots, e_{M}\right}$ 是数量为 $M$ 的边的集合。
+* 一个图被记为$\mathcal{G}={\mathcal{V}, \mathcal{E}}$，其中 $\mathcal{V}=\left{v_{1}, \ldots, v_{N}\right}$是数量为$N=|\mathcal{V}|$ 的结点的集合， $\mathcal{E}=\left{e_{1}, \ldots, e_{M}\right}$ 是数量为 $M$ 的边的集合。
 * 图用节点表示实体（entities ），用边表示实体间的关系（relations）。
 * 节点和边的信息可以是**类别型**的（categorical），类别型数据的取值只能是哪一类别。一般称类别型的信息为**标签（label）**。
 * 节点和边的信息可以是**数值型**的（numeric），类别型数据的取值范围为实数。一般称类别型的信息为**属性（attribute）**。
@@ -21,11 +21,11 @@
 * 在**无权图**中，**各条边的权重被认为是等价的**，即认为**各条边的权重为$1$**。
 * 对于**有权图**，其对应的邻接矩阵通常被记为$\mathbf{W} \in{0,1}^{N \times N}$，其中$\mathbf{W}_{i, j}=w_{ij}$表示从结点$v\_i$到$v\_j$的边的权重。若边不存在时，边的权重为$0$。
 
-```text
+```
 一个无向无权图的例子：
 ```
 
-其邻接矩阵\(Adjacency matrix\)为：
+其邻接矩阵(Adjacency matrix)为：
 
 $$
 \mathbf{A}=\left(\begin{array}{lllll}
@@ -44,22 +44,22 @@ $$
 * 对于有向有权图，结点$v\_i$的出度（out degree）等于从$v\_i$出发的边的权重之和，结点$v\_i$的入度（in degree）等于从连向$v\_i$的边的权重之和。
 * 无向图是有向图的特殊情况，结点的出度与入度相等。
 * 无权图是有权图的特殊情况，各边的权重为$1$，那么结点$v\_i$的出度（out degree）等于从$v\_i$出发的边的数量，结点$v\_i$的入度（in degree）等于从连向$v\_i$的边的数量。
-* 结点$v_i$的度记为$d\(v\_i\)$，入度记为$d_{in}\(v_i\)$，出度记为$d_{out}\(v\_i\)$。
+* 结点$v_i$的度记为$d(v\_i)$，入度记为$d_{in}(v_i)$，出度记为$d_{out}(v\_i)$。
 
 **定义四（邻接结点，neighbors）**：
 
-* **结点$v\_i$的邻接结点为与结点$v\_i$直接相连的结点**，其被记为**$\mathcal{N\(v\_i\)}$**。
+* **结点$v\_i$的邻接结点为与结点$v\_i$直接相连的结点**，其被记为**$\mathcal{N(v\_i)}$**。
 * **结点$v\_i$的$k$跳远的邻接节点（neighbors with $k$-hop）**指的是到结点$v\_i$要走$k$步的节点（一个节点的$2$跳远的邻接节点包含了自身）。
 
 **定义五（行走，walk）**：
 
-* $walk\(v\_1, v\_2\) = \(v\_1, e\_6,e\_5,e\_4,e\_1,v\_2\)$，这是一次“行走”，它是一次从节点$v\_1$出发，依次经过边$e\_6,e\_5,e\_4,e\_1$，最终到达节点$v\_2$的“行走”。
-* 下图所示为$walk\(v\_1, v\_2\) = \(v\_1, e\_6,e\_5,e\_4,e\_1,v\_2\)$，其中红色数字标识了边的访问序号。
+* $walk(v\_1, v\_2) = (v\_1, e\_6,e\_5,e\_4,e\_1,v\_2)$，这是一次“行走”，它是一次从节点$v\_1$出发，依次经过边$e\_6,e\_5,e\_4,e\_1$，最终到达节点$v\_2$的“行走”。
+* 下图所示为$walk(v\_1, v\_2) = (v\_1, e\_6,e\_5,e\_4,e\_1,v\_2)$，其中红色数字标识了边的访问序号。
 * 在“行走”中，节点是运行重复的。
 
 **定理六**：
 
-* 有一图，其邻接矩阵为 $\mathbf{A}$, $\mathbf{A}^{n}$为邻接矩阵的$n$次方，那么$\mathbf{A}^{n}\[i,j\]$等于从结点$v\_i$到结点$v\_j$的长度为$n$的行走的个数。
+* 有一图，其邻接矩阵为 $\mathbf{A}$, $\mathbf{A}^{n}$为邻接矩阵的$n$次方，那么$\mathbf{A}^{n}\[i,j]$等于从结点$v\_i$到结点$v\_j$的长度为$n$的行走的个数。
 
 **定义七（路径，path）**：
 
@@ -79,13 +79,13 @@ $$
 
 **定义十一（最短路径，shortest path）**：
 
-* $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对_ $$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp}}$为$\mathcal{P}\_{\mathrm{st}}$中长度最短的一条路径，其形式化定义为
+*   $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对 _$$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp}}$为$\mathcal{P}\_{\mathrm{st}}$中长度最短的一条路径，其形式化定义为
 
-  $$
-  p_{\mathrm{s} t}^{\mathrm{sp}}=\arg \min _{p \in \mathcal{P}_{\mathrm{st}}}|p|
-  $$
+    $$
+    p_{\mathrm{s} t}^{\mathrm{sp}}=\arg \min _{p \in \mathcal{P}_{\mathrm{st}}}|p|
+    $$
 
-  其中，$p$表示$\mathcal{P}\_{\mathrm{st}}$中的一条路径，$\|p\|$是路径$p$的长度。
+    其中，$p$表示$\mathcal{P}\_{\mathrm{st}}$中的一条路径，$|p|$是路径$p$的长度。
 
 **定义十二（直径，diameter）**：
 
@@ -97,7 +97,7 @@ $$
 
 **定义十三（拉普拉斯矩阵，Laplacian Matrix）**：
 
-* 给定一个图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ ，其邻接矩阵为$A$，其拉普拉斯矩阵定义为$\mathbf{L=D-A}$，其中$\mathbf{D=diag\(d\(v\_1\), \cdots, d\(v\_N\)\)}$。
+* 给定一个图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ ，其邻接矩阵为$A$，其拉普拉斯矩阵定义为$\mathbf{L=D-A}$，其中$\mathbf{D=diag(d(v\_1), \cdots, d(v\_N))}$。
 
 **定义十四（对称归一化的拉普拉斯矩阵，Symmetric normalized Laplacian）**：
 
@@ -147,11 +147,11 @@ $$
 
 ### 六、结语
 
-在此篇文章中，我们学习了简单的图论知识。对于学习此次组队学习后续的内容，掌握这些图论知识已经足够。如果有小伙伴希望掌握更多的图论知识可以参阅参考文献“[Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)”。
+在此篇文章中，我们学习了简单的图论知识。对于学习此次组队学习后续的内容，掌握这些图论知识已经足够。如果有小伙伴希望掌握更多的图论知识可以参阅参考文献“[Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)”。
 
 ### 参考资料
 
-* [Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)
+* [Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
 
 ## 2. Practice
 
@@ -162,7 +162,7 @@ import torch
 torch.version.cuda, torch.__version__
 ```
 
-```text
+```
 ('11.1', '1.8.1')
 ```
 
@@ -198,7 +198,7 @@ print(f'Contains self-loops: {data.contains_self_loops()}') # 此图是否包含
 print(f'Is undirected: {data.is_undirected()}') # 此图 是否是无向图
 ```
 
-```text
+```
 Data(edge_index=[2, 156], train_mask=[34], x=[34, 34], y=[34])
 ==============================================================
 Number of node features:34
@@ -217,7 +217,7 @@ Is undirected: True
 ! wget https://github.com/kimiyoung/planetoid/raw/master/data/ind.cora.x
 ```
 
-```text
+```
 --2021-06-14 13:56:45--  https://github.com/kimiyoung/planetoid/raw/master/data/ind.cora.x
 Resolving github.com (github.com)... 140.82.112.4
 Connecting to github.com (github.com)|140.82.112.4|:443... connected.
@@ -247,7 +247,7 @@ dataset.num_node_features
 # 1433
 ```
 
-```text
+```
 Downloading https://github.com/kimiyoung/planetoid/raw/master/data/ind.cora.x
 Downloading https://github.com/kimiyoung/planetoid/raw/master/data/ind.cora.tx
 Downloading https://github.com/kimiyoung/planetoid/raw/master/data/ind.cora.allx
@@ -279,7 +279,7 @@ data.val_mask.sum().item()
 data.test_mask.sum().item()
 ```
 
-```text
+```
 1000
 ```
 
@@ -287,11 +287,11 @@ data.test_mask.sum().item()
 
 在 from torch\_geometric.data import Data调用 Data class之后， Data创建的实例时的输入有以下:
 
-* data.x:节点的数据矩阵，这个矩阵的大小为 \[num\_nodes, num\_node\_features\]
-* data.edge\_index: 图的连接信息，存放在Coordinate format \(COO format\) 它的矩阵大小为\[2, num\_edges\] data type是torch.long
-* data.edge\_attr: 边的特征矩阵它的shape是 \[num\_edges, num\_edge\_features\]
-* data.y: 用于训练图神经网络的target，它能够有不同的形状，可以是对应节点特征的target，也可以是对应整个图的target, e.g., node-level targets of shape \[num\_nodes, _\] or graph-level targets of shape \[1,_ \]
-* data.pos: 节点的位置信息，它的shape是 \[num\_nodes, num\_dimensions\]， 每一行代表有一个node的位置
+* data.x:节点的数据矩阵，这个矩阵的大小为 \[num\_nodes, num\_node\_features]
+* data.edge\_index: 图的连接信息，存放在Coordinate format (COO format) 它的矩阵大小为\[2, num\_edges] data type是torch.long
+* data.edge\_attr: 边的特征矩阵它的shape是 \[num\_edges, num\_edge\_features]
+* data.y: 用于训练图神经网络的target，它能够有不同的形状，可以是对应节点特征的target，也可以是对应整个图的target, e.g., node-level targets of shape \[num\_nodes, _] or graph-level targets of shape \[1, _]
+* data.pos: 节点的位置信息，它的shape是 \[num\_nodes, num\_dimensions]， 每一行代表有一个node的位置
 
 详情可以参考官方文档: [https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html](https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html)
 
@@ -403,7 +403,7 @@ x = pd.DataFrame(data= [[1,1,1],[2,2,1],[None, None, 3]], columns=["dept","autho
 data = MyGraphData(data = x, labels = {"dept":0,"author":1,"paper":2})
 ```
 
-```text
+```
 1.0 1.0 1.0
 2.0 2.0 1.0
 nan nan 3.0
@@ -420,7 +420,7 @@ print(f"x representation matrix: {data.x}")
 print(f"Node index [value, label]: {data.node_list}")
 ```
 
-```text
+```
 Test Results:
 Number of authors: 2
 Number of papers: 2
@@ -433,6 +433,4 @@ Node index [value, label]: [[1.0, 0], [1.0, 1], [1.0, 2], [2.0, 0], [2.0, 1], [3
 ```
 
 ```python
-
 ```
-

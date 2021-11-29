@@ -18,17 +18,17 @@ description: 2D-DP; Medium;
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "abc","adc",5,3,2
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 2
 ```
 
@@ -36,17 +36,17 @@ description: 2D-DP; Medium;
 
 ### 输入
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 "abc","adc",5,3,100
 ```
 
 ### 返回值
 
-[复制](javascript:void%280%29;)
+[复制](javascript:void\(0\);)
 
-```text
+```
 8
 ```
 
@@ -56,16 +56,16 @@ description: 2D-DP; Medium;
 
 1. 2D dp
 2. construct a 2D dp table, columns represents str1 and rows represent str2
-3. table 大小为  \(len\(str2\)+1\) \* \(len\(str1\)+1\)  记上两个string都是空的情况
+3. table 大小为  (len(str2)+1) \* (len(str1)+1)  记上两个string都是空的情况
 4. 由于要把str1变成str2,所以在每一行往右操作都是 + deletion cost, 每一列往下都是 + insertion cost
-5. 初始第一行和第一列后，从dp\[1\]\[1\]位置,即str1, str2的第一个char开始找最小的cost
-6. 把dp\[i-1\]\[j-1\], dp\[i-1\]\[j\], dp\[i\]\[j-1\] 的更新后的结果的最小值作为dp\[i\]\[j\]的结果
-7. Time: O\(n\*m\) for iterating and updating table, n = len\(str1\), m= len\(str2\)
-8. Space: O\(n\*m\)
+5. 初始第一行和第一列后，从dp\[1]\[1]位置,即str1, str2的第一个char开始找最小的cost
+6. 把dp\[i-1]\[j-1], dp\[i-1]\[j], dp\[i]\[j-1] 的更新后的结果的最小值作为dp\[i]\[j]的结果
+7. Time: O(n\*m) for iterating and updating table, n = len(str1), m= len(str2)
+8. Space: O(n\*m)
 
 ### 4. Coding
 
-```text
+```
 #
 # min edit cost
 # @param str1 string字符串 the string
@@ -145,8 +145,6 @@ class Solution:
         
         
 ```
-
-
 
 
 

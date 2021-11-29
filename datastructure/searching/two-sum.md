@@ -8,7 +8,7 @@ description: Easy; Two pointer;
 
 {% embed url="https://leetcode-cn.com/problems/two-sum/" %}
 
-\*\*\*\*
+****
 
 **2. 题目**
 
@@ -20,11 +20,11 @@ description: Easy; Two pointer;
 
 示例 1：
 
-输入：nums = \[2,7,11,15\], target = 9 输出：\[0,1\] 解释：因为 nums\[0\] + nums\[1\] == 9 ，返回 \[0, 1\] 。 示例 2：
+输入：nums = \[2,7,11,15], target = 9 输出：\[0,1] 解释：因为 nums\[0] + nums\[1] == 9 ，返回 \[0, 1] 。 示例 2：
 
-输入：nums = \[3,2,4\], target = 6 输出：\[1,2\] 示例 3：
+输入：nums = \[3,2,4], target = 6 输出：\[1,2] 示例 3：
 
-输入：nums = \[3,3\], target = 6 输出：\[0,1\]
+输入：nums = \[3,3], target = 6 输出：\[0,1]
 
 来源：力扣（LeetCode） 链接：[https://leetcode-cn.com/problems/two-sum](https://leetcode-cn.com/problems/two-sum) 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
@@ -34,19 +34,19 @@ description: Easy; Two pointer;
 
 **method 1:  Sorting + binary search**
 
-1. 先把 \(nums\[i\], i\) 的list进行按照element大小排序
+1. 先把 (nums\[i], i) 的list进行按照element大小排序
 2. 然后用binary search方法把left， right pointers从左右两边往中间搜索 target
-3. Time : O\(n + nlogn\), Space: O\(n\)
+3. Time : O(n + nlogn), Space: O(n)
 
-**method 2: dictionary** 
+**method 2: dictionary **
 
-1. 用dictionary把visited的element进行存放， key= nums\[i\], value = i index
-2. 把nums array的 element遍历一遍，看看target - nums\[i\]有没有visited，如果有就已经找到two sum result， 返回indices
-3. Time: O\(n\) , Space: O\(n\)
+1. 用dictionary把visited的element进行存放， key= nums\[i], value = i index
+2. 把nums array的 element遍历一遍，看看target - nums\[i]有没有visited，如果有就已经找到two sum result， 返回indices
+3. Time: O(n) , Space: O(n)
 
 **4.  Coding**
 
-```text
+```
 # class Solution:
 #     def twoSum(self, nums: List[int], target: int) -> List[int]:
 #         #
@@ -87,8 +87,6 @@ class Solution:
         return []
 
 ```
-
-
 
 
 

@@ -4,17 +4,17 @@
 
 GBDT——Gradient Boosting Decision Tree，又称Multiple Additive Regression Tree，后面这种叫法不常看到，但Regression Tree却揭示了GBDT的本质——GBDT中的树都是回归树。GBDT的主要是思想是每次把上一棵树的输出和label的残差作为下一棵树的label进行拟合，前面的树做不好的地方后面的补上，不断把拟合后的预测的残差值叠加上去，进行梯度的提升。具体步骤如下
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](<../.gitbook/assets/image (13).png>)
 
 其中负梯度相当于残差，用做target给下个tree进行拟合
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](<../.gitbook/assets/image (12).png>)
 
 
 
 GBDT的正则化防止过拟合的方法，主要有以下措施：
 
-1，Early Stopping，本质是在某项指标达标后就停止训练\(比如树的高度之类的\)，也就是设定了训练的轮数；
+1，Early Stopping，本质是在某项指标达标后就停止训练(比如树的高度之类的)，也就是设定了训练的轮数；
 
 2，Shrinkage，其实就是学习率，具体做法是将每课树的效果进行缩减，比如说将每棵树的结果乘以0.1，也就是降低单棵树的决策权重，相信集体决策；
 
@@ -39,11 +39,11 @@ XGBoost是陈天奇等人开发的一个开源机器学习项目，高效地实�
 
 **1. Objective function 优化目标函数：**
 
-![XGBoost &#x76EE;&#x6807;&#x51FD;&#x6570;](../.gitbook/assets/image%20%2828%29.png)
+![XGBoost 目标函数](<../.gitbook/assets/image (28).png>)
 
-在XGBoost的目标函数里面，它是基于GBDT的目标函数再加上一个 $$\sum_i^t\Omega(f_i) $$ 的对t棵树的输出regularization term正则化来抑制过拟合的问题. 而前面的loss 函数还是和之前一样 $$y_i$$ 是target $$\bar{y_i}^{(t)}$$ 是对前面t棵树的输出的线性相加的输出值。 在对第t棵树的输出进行计算时， 我们可以把第t棵树的regularization term和 预测值拆开来得到以上表达式。其中
+在XGBoost的目标函数里面，它是基于GBDT的目标函数再加上一个 $$\sum_i^t\Omega(f_i)$$ 的对t棵树的输出regularization term正则化来抑制过拟合的问题. 而前面的loss 函数还是和之前一样 $$y_i$$ 是target $$\bar{y_i}^{(t)}$$ 是对前面t棵树的输出的线性相加的输出值。 在对第t棵树的输出进行计算时， 我们可以把第t棵树的regularization term和 预测值拆开来得到以上表达式。其中
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](<../.gitbook/assets/image (29).png>)
 
 而regularization term  $$\Omega(f_t) = \gamma T  + \frac{1}{2}||w||^2$$ 这里的gamm是一个penalty的系数而T是第t棵树 $$f_t$$ 的节点个数，w是这颗树的每个leaf node的输出预测。
 
@@ -51,19 +51,19 @@ XGBoost是陈天奇等人开发的一个开源机器学习项目，高效地实�
 
 在XGBoost 里面，为了加速算法的计算，这里用了2阶的泰勒展开式对Objective function进行估计，泰勒展开式公式如下
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](<../.gitbook/assets/image (38).png>)
 
 之后我们可以把原来的目标函数简化成下面形式：
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](<../.gitbook/assets/image (25).png>)
 
 由于计算第t棵树的时候，前面t-1棵树的loss还有regularization的项是常数，我们可以不考虑。
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](<../.gitbook/assets/image (18).png>)
 
 把 $$f_t(x_i)$$ 树的输出替换成w的形式，我们得到关于w的一元二次函数
 
-![](../.gitbook/assets/image%20%2837%29.png)
+![](<../.gitbook/assets/image (37).png>)
 
 
 
@@ -79,7 +79,7 @@ $$
 OBj^{t}（q(x)） = -\frac{1}{2} \sum_{j=1}^T\frac{(\sum_{i\in I_j} g_i )^2}{\sum_{i\in I_j} h_i + \lambda} + \gamma T
 $$
 
-这里的 $$I_j$$ 是指属于第j个叶节点的样本的集合，wj 是第j个节点的输出值，而 $$g_i , h_i$$ 分别是关于之前t-1棵树的模型对第i个样本的输出的Loss的1阶和2阶的导数。  这里的目标函数 $$OBj^t(q(x))$$ 的值可以看成是对当前的第t棵树的loss，而q\(x\)代表了第t棵树的结构。
+这里的 $$I_j$$ 是指属于第j个叶节点的样本的集合，wj 是第j个节点的输出值，而 $$g_i , h_i$$ 分别是关于之前t-1棵树的模型对第i个样本的输出的Loss的1阶和2阶的导数。  这里的目标函数 $$OBj^t(q(x))$$ 的值可以看成是对当前的第t棵树的loss，而q(x)代表了第t棵树的结构。
 
 
 
@@ -87,29 +87,29 @@ $$
 
 虽然计算第t棵树的每个leaf node的输出值的公式是有了， 但是我们其实还没有确定这棵树的结构。为了找到树的结构，我们需要给每个特征找到分裂点，以及在每一层对特征选取。而这里就需要用到第3步找到的leaf node 输出的值和目标函数值函数了。
 
-这里举个例子， 在下图，假设我们先只考虑黄色看看的树。如果我们一开始还没建树，需要先选取一个feature \(1个column\)用来作为一个root node。那么为了使目标函数最小化我们最直接的方法是直接这个feature里面的出现的数值排序，然后把每两个值之间的间隙当成分裂点，然后看哪个分离点对应的OBj\(q\(x\)\)目标函数是最小就选那个作为当前的分裂点。所以这样在这个例子我们的分裂点是 x&lt;=6 , x&gt;6。这时我们的loss就是 $$L^{old}$$ = OBj\(q\(x\)\) of old tree structure
+这里举个例子， 在下图，假设我们先只考虑黄色看看的树。如果我们一开始还没建树，需要先选取一个feature (1个column)用来作为一个root node。那么为了使目标函数最小化我们最直接的方法是直接这个feature里面的出现的数值排序，然后把每两个值之间的间隙当成分裂点，然后看哪个分离点对应的OBj(q(x))目标函数是最小就选那个作为当前的分裂点。所以这样在这个例子我们的分裂点是 x<=6 , x>6。这时我们的loss就是 $$L^{old}$$ = OBj(q(x)) of old tree structure
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](<../.gitbook/assets/image (11).png>)
 
-由于我们想要通过添加剩下的feature作为tree的分支使得tree的loss 越小越好，那么对于old的框框下增加branch之后的tree的结构所对应的loss，标记为 $$L^{new}$$ = = OBj\(q\(x\)\) of new tree structure。 我们就想要 $$max(L^{old} - L^{new}) = OBj^{old} - OBj^{new}$$
+由于我们想要通过添加剩下的feature作为tree的分支使得tree的loss 越小越好，那么对于old的框框下增加branch之后的tree的结构所对应的loss，标记为 $$L^{new}$$ = = OBj(q(x)) of new tree structure。 我们就想要 $$max(L^{old} - L^{new}) = OBj^{old} - OBj^{new}$$
 
 而我们可以标记 $$L^{split} = max(L^{old} - L^{new})$$作为分裂增益， split gain。split gain公式可以变成
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](<../.gitbook/assets/image (41).png>)
 
-之后我们可以找到当前可以选的feature所对应的最大split gain以及对应的分裂点，并选取split gain最大的那个feature作为当前的tree node分支。 不断重复这几步就可以把树建起来了。 
+之后我们可以找到当前可以选的feature所对应的最大split gain以及对应的分裂点，并选取split gain最大的那个feature作为当前的tree node分支。 不断重复这几步就可以把树建起来了。&#x20;
 
 而这个每次都要线性扫描分裂点的建树的方法也叫做  Exact Greedy Algorithm。在当前的节点里面，把归到这个节点里面的样本做以下操作：
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](<../.gitbook/assets/image (42).png>)
 
-由于这个方法每次都要把feature的数值排序并线性扫描，在计算连续特征的时候还要先排序并把每两个值的中点作为分裂点候选点来离散化，这样计算会很慢并且会在大量数据时内存容易不足。在XGBoost里面用了一种 近似算法\(Approximate algorithm\)按照预定的百分位对数值进行分桶得到候选的分裂点集合，然后再用Exact Greedy algorithm 进行分裂点选取。以下是原paper的描述：
+由于这个方法每次都要把feature的数值排序并线性扫描，在计算连续特征的时候还要先排序并把每两个值的中点作为分裂点候选点来离散化，这样计算会很慢并且会在大量数据时内存容易不足。在XGBoost里面用了一种 近似算法(Approximate algorithm)按照预定的百分位对数值进行分桶得到候选的分裂点集合，然后再用Exact Greedy algorithm 进行分裂点选取。以下是原paper的描述：
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](<../.gitbook/assets/image (14).png>)
 
 例子：
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](<../.gitbook/assets/image (43).png>)
 
 
 
@@ -121,7 +121,7 @@ $$
 2. 对于预测时遇到的缺失值，默认被分到右子树。
 3. XGBoost把稀疏数据和缺失数据用相同方式处理。不过对类别特征还是要encoding成稀疏值后才能处理。
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](<../.gitbook/assets/image (44).png>)
 
 
 
@@ -144,7 +144,7 @@ Xgboost 它有以下几个优良的特性：
 7. 传统的GBDT没有设计对缺失值进行处理需要人工对缺失值处理，XGBoost能够自动学习出缺 失值的处理策略。
 8. 树模型对outlier不敏感，不像Parameterized model,如LR之类的
 9. XGBoost 相对于传统的GBDT可以处理缺失值，并且处理稀疏数据时比GBDT要好
-10. 思路总结： 加了Regularization term -&gt; 用二阶泰勒展开式对树模型求解-&gt;得到每个叶子的输出计算公式以及对树结构的gain的计算方式-&gt;通过gain的计算方式+ 贪心算法找到每个feature的分裂点 -&gt;按照分裂点的gain提出对稀疏值和缺失值的处理方法 -&gt;
+10. 思路总结： 加了Regularization term -> 用二阶泰勒展开式对树模型求解->得到每个叶子的输出计算公式以及对树结构的gain的计算方式->通过gain的计算方式+ 贪心算法找到每个feature的分裂点 ->按照分裂点的gain提出对稀疏值和缺失值的处理方法 ->
 
 其他特点：
 
@@ -161,22 +161,22 @@ LGBM 相对于是对XGBoost的工程上的优化
 1. LGBM 通过利用直方图分桶和采样的方式对XGBoost进行加速，计算速度远快于XGboost （用GOSS对样本采样， 用EFB对稀疏特征捆绑成新特征减少特征量）
 2. LGBM相对于XGboost需要更少的内存
 3. LGBM和XGBoost一样能够处理缺失值
-4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码类别数据形成稀疏值后才能进行计算. 
+4. LGBM是不需要对类别特征进行onehot 编码处理，而XGboost需要onehot编码类别数据形成稀疏值后才能进行计算.&#x20;
 5. 对于缺失值处理， XGBoost是把它当成稀疏值进行处理并且排序时把稀疏值放到左边或右边并排序来找最优分裂点，而LGBM是不需要输入数据编码，自动把特征编码并且通过EFB算法把多个稀疏值合并成更少特征。
 
 LGBM对XGBoost有3个改进之处
 
 ### 在找分裂点时,LGBM用直方图方法进行采样
 
-![](../.gitbook/assets/image%20%2846%29.png)
+![](<../.gitbook/assets/image (46).png>)
 
 LGBM可以通过预先把特征值进行排序，找到分位数，并按照分位数把特征离散化得到多个bins，而不像XGBoost把每个分裂点都遍历一遍，从而提高计算速度
 
 ### 在样本采样中，用GOSS根据梯度大小对样本采样进行下一个模型更新
 
-Gradient-based One side sampling 单边采样 \(GOSS\) 算法的创新之处在于它只对梯度绝对值较小的样本按照一定比例进行随机采样，而保留了梯度绝对值较大的样本。这个梯度的大小可以由阀值进行决定
+Gradient-based One side sampling 单边采样 (GOSS) 算法的创新之处在于它只对梯度绝对值较小的样本按照一定比例进行随机采样，而保留了梯度绝对值较大的样本。这个梯度的大小可以由阀值进行决定
 
-![](../.gitbook/assets/image%20%2845%29.png)
+![](<../.gitbook/assets/image (45).png>)
 
 ### 在特征采样中,LGBM用EFB互斥特征绑定方法进行特征采样
 
@@ -192,31 +192,30 @@ LGBM考虑多个稀疏的特征在很多情况下都是为0的，很少时候同
 
 XGBoost时间复杂度
 
-1. 对每个连续特征预排序O\(nlogn\), n = sample 个数
-2. 建树时 O\(nxm\),  n= 样本的数目， m=特征的数目，因为要对每个特征的排序后的样本进行扫描找分裂点。
+1. 对每个连续特征预排序O(nlogn), n = sample 个数
+2. 建树时 O(nxm),  n= 样本的数目， m=特征的数目，因为要对每个特征的排序后的样本进行扫描找分裂点。
 
-LGBM时间复杂度:  
+LGBM时间复杂度: &#x20;
 
 1. 在分桶的时候，LGBM里面用了直方图统计的方法，没有用到预排序，不用考虑预排序时间复杂度
 2. 在GOSS单边采样的时候，它先把样本根据梯度大小排序，然后按照梯度来选取样本。（**注意LGBM里面的排序是为了采样，XGBoost里面的排序是为了找分裂点**）
-3. 在**搭建直方图**时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以**O\(number of data x  number of feature\)。并且由于子节点的直方图的和是等于父节点的直方图，所以可以做差加速对直方图做快速计算，不用重新统计**
-4. **找直方图分裂点**时， **O\(number of bins x number of feature\)**,因为要遍历每个桶进行最大增益分裂点的查找。
+3. 在**搭建直方图**时, 由于要对每个feature进行分桶，并且把样本分到每个桶里，所以**O(number of data x  number of feature)。并且由于子节点的直方图的和是等于父节点的直方图，所以可以做差加速对直方图做快速计算，不用重新统计**
+4. **找直方图分裂点**时， **O(number of bins x number of feature)**,因为要遍历每个桶进行最大增益分裂点的查找。
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](<../.gitbook/assets/image (47).png>)
 
 
 
 ## Reference
 
-\[1\] [https://zhuanlan.zhihu.com/p/143009353](https://zhuanlan.zhihu.com/p/143009353)
+\[1] [https://zhuanlan.zhihu.com/p/143009353](https://zhuanlan.zhihu.com/p/143009353)
 
-\[2\] [https://zhuanlan.zhihu.com/p/58269560](https://zhuanlan.zhihu.com/p/58269560)
+\[2] [https://zhuanlan.zhihu.com/p/58269560](https://zhuanlan.zhihu.com/p/58269560)
 
-\[3\] [https://zhuanlan.zhihu.com/p/53980138](https://zhuanlan.zhihu.com/p/53980138)
+\[3] [https://zhuanlan.zhihu.com/p/53980138](https://zhuanlan.zhihu.com/p/53980138)
 
-\[4\] XGBoost: [https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf](https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf)
+\[4] XGBoost: [https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf](https://www.kdd.org/kdd2016/papers/files/rfp0697-chenAemb.pdf)
 
-\[5\] LGBM [https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf](https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
+\[5] LGBM [https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf](https://papers.nips.cc/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf)
 
-\[6\] [https://blog.csdn.net/pearl8899/article/details/106159264](https://blog.csdn.net/pearl8899/article/details/106159264)
-
+\[6] [https://blog.csdn.net/pearl8899/article/details/106159264](https://blog.csdn.net/pearl8899/article/details/106159264)

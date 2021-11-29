@@ -1,5 +1,5 @@
 ---
-description: 'Laicode：  https://app.laicode.io/app/problem/138      二叉树任意两个leaf node的最大路径和'
+description: Laicode：  https://app.laicode.io/app/problem/138      二叉树任意两个leaf node的最大路径和
 ---
 
 # Maximum Path Sum Binary Tree
@@ -10,52 +10,52 @@ Laicode： [https://app.laicode.io/app/problem/138](https://app.laicode.io/app/p
 
 [https://app.laicode.io/app/problem/140](https://app.laicode.io/app/problem/140)
 
-Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from one leaf node to another leaf node.** If there is no such path available, return Integer.MIN\_VALUE\(Java\)/INT\_MIN \(C++\).
+Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from one leaf node to another leaf node. **If there is no such path available, return Integer.MIN\_VALUE(Java)/INT\_MIN (C++).
 
 **Examples**
 
-  -15
+&#x20; \-15
 
-  /    \
+&#x20; /    \\
 
 2      11
 
-     /    \
+&#x20;    /    \\
 
-    6     14
+&#x20;   6     14
 
 The maximum path sum is 6 + 11 + 14 = 31.
 
 **How is the binary tree represented?**
 
-We use the level order traversal sequence with a special symbol "\#" denoting the null node.
+We use the level order traversal sequence with a special symbol "#" denoting the null node.
 
 **For Example:**
 
-The sequence \[1, 2, 3, \#, \#, 4\] represents the following binary tree:
+The sequence \[1, 2, 3, #, #, 4] represents the following binary tree:
 
-    1
+&#x20;   1
 
-  /   \
+&#x20; /   \\
 
- 2     3
+&#x20;2     3
 
-      /
+&#x20;     /
 
-    4
+&#x20;   4
 
-想法: top-down \(更新global max\) + bottom up（返回从上往下的path的最大的sum）
+想法: top-down (更新global max) + bottom up（返回从上往下的path的最大的sum）
 
 1. 把每个node遍历一遍
-2. 在每个node里面，找到left 的path sum和right path sum\(如果存在\)， 并把left path, right path node.val相加得到最远的两个leaf node的path的sum
+2. 在每个node里面，找到left 的path sum和right path sum(如果存在)， 并把left path, right path node.val相加得到最远的两个leaf node的path的sum
 3. 对比这个path sum和global max，更新global max
-4. 返回加上当前的node.val的一条在root node到leaf node的path上面的最大的path，即max\(left,right\)+node.val,就返回当前最大的single path
+4. 返回加上当前的node.val的一条在root node到leaf node的path上面的最大的path，即max(left,right)+node.val,就返回当前最大的single path
 
 
 
 ## Source Code
 
-```text
+```
 class Solution(object):
   def __init__(self):
     self.res = 0
@@ -101,8 +101,6 @@ class Solution(object):
         return root.val 
 
 ```
-
-
 
 
 

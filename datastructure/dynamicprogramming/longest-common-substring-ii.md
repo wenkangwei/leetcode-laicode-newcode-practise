@@ -18,7 +18,7 @@
 
 示例 1：
 
-输入：text1 = "abcde", text2 = "ace" 输出：3  
+输入：text1 = "abcde", text2 = "ace" 输出：3\
 解释：最长公共子序列是 "ace" ，它的长度为 3 。 示例 2：
 
 输入：text1 = "abc", text2 = "abc" 输出：3 解释：最长公共子序列是 "abc" ，它的长度为 3 。
@@ -30,19 +30,19 @@
 **3. 思路**
 
 1. 思路： 2D- DP
-2. row = str1, col = str2, dp\[i\]\[j\] 为str1\[:i\] 和str2\[:j\] substring的最大公共子序列的长度， 这是一个子问题
-3. 遍历str1 和str2的每一个char 进行对比，如果 str1\[i\] == str2\[j\] , 那么dp\[i\]\[j\] = dp\[i-1\]\[j-1\] + 1等于不考虑当前相同的char之前的substring的最长公共子序列的长度 + 当前相同的char 1
-4. 如果str1\[i\] != str2\[j\], 就直接简单地把dp\[i-1\]\[j-1\]，   dp\[i-1\]\[j\]， dp\[i\]\[j-1\]三种情况逐一对比找最优的情况传到下一个情况, 即考虑一下三种情况的最优解
-   1. 考虑str1\[i\] char 不考虑 str2\[j\] char
-   2. 考虑str2\[j\] char 不考虑 str1\[i\] char
-   3. str1\[i\], str2\[j\] char 都不考虑 
-5. Time: O\(n^2\), Space: O\(n^2\)
+2. row = str1, col = str2, dp\[i]\[j] 为str1\[:i] 和str2\[:j] substring的最大公共子序列的长度， 这是一个子问题
+3. 遍历str1 和str2的每一个char 进行对比，如果 str1\[i] == str2\[j] , 那么dp\[i]\[j] = dp\[i-1]\[j-1] + 1等于不考虑当前相同的char之前的substring的最长公共子序列的长度 + 当前相同的char 1
+4. 如果str1\[i] != str2\[j], 就直接简单地把dp\[i-1]\[j-1]，   dp\[i-1]\[j]， dp\[i]\[j-1]三种情况逐一对比找最优的情况传到下一个情况, 即考虑一下三种情况的最优解
+   1. 考虑str1\[i] char 不考虑 str2\[j] char
+   2. 考虑str2\[j] char 不考虑 str1\[i] char
+   3. str1\[i], str2\[j] char 都不考虑&#x20;
+5. Time: O(n^2), Space: O(n^2)
 
-\*\*\*\*
+****
 
 **4. Coding**
 
-```text
+```
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         #
@@ -78,11 +78,11 @@ class Solution:
 
 
 
-返回最长公共字符串的写法: 从dp矩阵结尾反向寻找str1\[i\] == str2\[j\]的字符，每次往最大的dp\[i\]\[j\]方向进行缩小
+返回最长公共字符串的写法: 从dp矩阵结尾反向寻找str1\[i] == str2\[j]的字符，每次往最大的dp\[i]\[j]方向进行缩小
 
 
 
-```text
+```
 class Solution:
     def LCS(self , str1 , str2 ):
         # write code here
@@ -150,8 +150,6 @@ class Solution:
         return res
                       
 ```
-
-
 
 
 
