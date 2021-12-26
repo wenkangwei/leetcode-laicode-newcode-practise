@@ -149,7 +149,7 @@ class Solution:
 
 
 
-Tree 的**iteration general**的方法/DFS +** 每一层都有返回的写法**
+Tree 的**iteration general**的方法/DFS + **每一层都有返回的写法**
 
 1. **在原来的 iteration method for Tree traversal 的方法上添加以下两条**
    1. **对于每一层的node的输入，可以在 stack append (node.left, cnt,  other inputs)的tuple里面给 child node进行input的添加**
@@ -219,7 +219,7 @@ class Solution:
 
 
 
-Iteration **BFS method**/** Level order** method
+Iteration **BFS method**/ **Level order** method
 
 ```
 class Solution:

@@ -34,7 +34,7 @@ description: Binary Search; Easy;
 
 **3. 思路**
 
-1. ** **思路： binary search
+1. &#x20;**** 思路： binary search
 2. &#x20;先用binary search 找到target并不断把right pointer 移动到target的位置，从而找到 第一次出现的 target的位置，即start
 3. &#x20;从start到 len(nums)-1 的subarray里面， 重新用binary search 找到target并不断把left pointer 移动到target的位置，从而找到 最后一次次出现的 target的位置，即end
 4. 返回 \[start, end]

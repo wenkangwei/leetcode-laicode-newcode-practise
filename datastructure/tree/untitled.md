@@ -10,7 +10,7 @@ Laicode： [https://app.laicode.io/app/problem/138](https://app.laicode.io/app/p
 
 [https://app.laicode.io/app/problem/140](https://app.laicode.io/app/problem/140)
 
-Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from one leaf node to another leaf node. **If there is no such path available, return Integer.MIN\_VALUE(Java)/INT\_MIN (C++).
+Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from one leaf node to another leaf node.** If there is no such path available, return Integer.MIN\_VALUE(Java)/INT\_MIN (C++).
 
 **Examples**
 

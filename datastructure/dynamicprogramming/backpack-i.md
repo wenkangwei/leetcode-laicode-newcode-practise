@@ -39,7 +39,7 @@
 1. &#x20;2D - dp:   dp table： row = item的id,     column =考虑第i个物品后（可以选也可以不选） 剩下volume， dp\[i]\[j] = 在考虑第i个物品 时剩下volume = j情况的的最大重量
 2. 遍历 n items 和 遍历 V volume values, start from j=V and end  at j=0
 3. 当j < item的volume, 那么就不用考虑第i个item，于是dp\[i]\[j] = dp\[i-1]\[j] 从上个item的最大值延伸到现在第i个item的状态
-4. 如果j > item的volume,  dp\[i]\[j] = max(在第i-1个item的**volume=j的情况不加第i个item的最大值**，以及在dp\[i-1]\[j-v] +w  **上一个item的加上当前第i个item的最大值 **)
+4. 如果j > item的volume,  dp\[i]\[j] = max(在第i-1个item的**volume=j的情况不加第i个item的最大值**，以及在dp\[i-1]\[j-v] +w  **上一个item的加上当前第i个item的最大值** )
 5. Time: O(n^2)  Space: O(n^2)
 6. Example
 

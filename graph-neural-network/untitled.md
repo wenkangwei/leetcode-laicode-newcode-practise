@@ -2,7 +2,7 @@
 
 ## 1. Graph Basic
 
-**参考资料: **[**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
+**参考资料:** [**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
 
 ### 图的表示
 
@@ -79,7 +79,7 @@ $$
 
 **定义十一（最短路径，shortest path）**：
 
-*   $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对 _$$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp}}$为$\mathcal{P}\_{\mathrm{st}}$中长度最短的一条路径，其形式化定义为
+*   $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对_ $$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp}}$为$\mathcal{P}\_{\mathrm{st}}$中长度最短的一条路径，其形式化定义为
 
     $$
     p_{\mathrm{s} t}^{\mathrm{sp}}=\arg \min _{p \in \mathcal{P}_{\mathrm{st}}}|p|
@@ -290,7 +290,7 @@ data.test_mask.sum().item()
 * data.x:节点的数据矩阵，这个矩阵的大小为 \[num\_nodes, num\_node\_features]
 * data.edge\_index: 图的连接信息，存放在Coordinate format (COO format) 它的矩阵大小为\[2, num\_edges] data type是torch.long
 * data.edge\_attr: 边的特征矩阵它的shape是 \[num\_edges, num\_edge\_features]
-* data.y: 用于训练图神经网络的target，它能够有不同的形状，可以是对应节点特征的target，也可以是对应整个图的target, e.g., node-level targets of shape \[num\_nodes, _] or graph-level targets of shape \[1, _]
+* data.y: 用于训练图神经网络的target，它能够有不同的形状，可以是对应节点特征的target，也可以是对应整个图的target, e.g., node-level targets of shape \[num\_nodes, _] or graph-level targets of shape \[1,_ ]
 * data.pos: 节点的位置信息，它的shape是 \[num\_nodes, num\_dimensions]， 每一行代表有一个node的位置
 
 详情可以参考官方文档: [https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html](https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html)

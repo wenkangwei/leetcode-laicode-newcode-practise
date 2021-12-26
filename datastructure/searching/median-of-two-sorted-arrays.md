@@ -64,7 +64,7 @@ description: Binary Search; Hard;
    1. &#x20;Define left, right pointers of arr1 = l1, r1 and  left, right pointers of arr2 = l2, r2
    2. &#x20;Since two **sorted arrays** have same length, so first find the middle elements of two arrays (two medians of two array)
    3. if arr1\[mid1] == arr2\[mid2]  ->  two arrays have the same median and this is the global median&#x20;
-   4. **if  arr1\[mid1]  > arr2\[mid2], **then arr1\[mid1] is on the right hand side of arr2\[mid2]  in the global array.   That is,  **arr1\[mid1]  >= global median >= arr2\[mid2]**.    So we need to search the left space of arr1\[mid1]  and  the right space of arr2\[mid2].  So let ** l1 = mid1,  r2 = mid2**
+   4. **if  arr1\[mid1]  > arr2\[mid2],** then arr1\[mid1] is on the right hand side of arr2\[mid2]  in the global array.   That is,  **arr1\[mid1]  >= global median >= arr2\[mid2]**.    So we need to search the left space of arr1\[mid1]  and  the right space of arr2\[mid2].  So let **l1 = mid1,  r2 = mid2**
    5. **if arr1\[mid1] <  arr2\[mid2],**  similary,  **arr1\[mid1] <= global median <= arr2\[mid2].  So let  r1 = mid1, l2 = mid2.**
    6. repeat step 1\~5  while l1 < r1
    7. Note: &#x20;

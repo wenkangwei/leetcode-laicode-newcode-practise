@@ -8,7 +8,7 @@
 
 
 
-Given an array of positive integers `nums`, return the _maximum possible sum of an **ascending** subarray in _`nums`.
+Given an array of positive integers `nums`, return the _maximum possible sum of an **ascending** subarray in_ `nums`.
 
 ```
 ```

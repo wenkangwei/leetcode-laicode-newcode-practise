@@ -2,7 +2,7 @@
 
 
 
-1. **Links **
+1. **Links**&#x20;
 
 {% embed url="https://app.laicode.io/app/problem/643" %}
 
@@ -21,7 +21,7 @@
 
 3. **思想**
    1. DFS
-   2. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去  **
+   2. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去** &#x20;
    3.  **example**
 
        1. **action = \[a b  e e e  c  d]**

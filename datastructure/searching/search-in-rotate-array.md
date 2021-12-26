@@ -33,7 +33,7 @@ description: Medium; Binary Search;
 **3. 思路**
 
 1. **binary search**
-2.  ** move right pointer to middle, right = mid only when**
+2.  &#x20;**move right pointer to middle, right = mid only when**
 
     1. **target < arr\[mid] and target >  arr\[0]**
     2. **arr\[mid] > target  and  arr\[0] > arr\[mid]**

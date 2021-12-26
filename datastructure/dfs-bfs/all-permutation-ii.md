@@ -21,7 +21,7 @@ Given a string with possible duplicate characters, return a list with all permut
 
 **3. 思路**
 
-1. 先把重复的char用**dictionary表示除重，key= char， value= count ** action = key
+1. 先把重复的char用**dictionary表示除重，key= char， value= count** action = key
 2. DFS method, 因为是考虑order顺序，所以需要**用for loop对不同的char进行位置**对换
 3. 对于重复的char，每次pick action时把它的count -= 1 表示剩下可以选的次数，如果没有，count=0，就选下一个action.这样能避免同一个level里面有相同的tree branch 分支，因为**每次level选取的char都保证是不一样**
 4.  recursion tree 变成： exmaple

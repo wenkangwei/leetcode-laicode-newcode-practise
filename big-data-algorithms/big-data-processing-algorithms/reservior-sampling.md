@@ -24,11 +24,11 @@ description: Big Data; Sampling;
 
 **Resevior Sampling 的每个sample被保留的概率是一样的proof:**
 
-1. 定义reservoir储水池有 容量k, 储水池里第j个被保留的sample 为 xj. 而新进来的第i个sample 为 xi, 而i> k. 那么 **在第i个sample xi到来时 P(xi 被保留) = k/i **
+1. 定义reservoir储水池有 容量k, 储水池里第j个被保留的sample 为 xj. 而新进来的第i个sample 为 xi, 而i> k. 那么 **在第i个sample xi到来时 P(xi 被保留) = k/i**&#x20;
 2. &#x20;P(xj 被xi取代) = P(xj 被选中) \* P(xi 被保留) = 1/k \* k/i = 1/i&#x20;
-3. 同理在**第 i+1 个sample 到来时**， 第i个sample被 第i个sample取代的概率** P(xi 被 xi+1取代)** = 1/ k \*  k/(i+1)  = 1/(i+1)
+3. 同理在**第 i+1 个sample 到来时**， 第i个sample被 第i个sample取代的概率 **P(xi 被 xi+1取代)** = 1/ k \*  k/(i+1)  = 1/(i+1)
 4. 那么在第 i个 sample之前被保留的情况下 **在第i+1 个sample 到来时**                     **P(xi 被保留)**  = P(第i个sample**之前**被保留) \* P(第i个sample不被取代) = k/i \*(1- 1/(i+1)) = **k/(i+1)**
-5. 以此类推, **当第n个sample到来时,即所有n个sample都被扫描后**，第i个sample xi  保留的概率为** P(xi 被保留)** = k/i \* (1 - 1/(i+1)) \* (1- 1/(i+2)) \* ...(1- 1/n) = **k/n**
+5. 以此类推, **当第n个sample到来时,即所有n个sample都被扫描后**，第i个sample xi  保留的概率为 **P(xi 被保留)** = k/i \* (1 - 1/(i+1)) \* (1- 1/(i+2)) \* ...(1- 1/n) = **k/n**
 
 ## **Coding**
 
@@ -111,9 +111,9 @@ for i, v in enumerate(data):
 
 ## **Reference**
 
-**\[1] **[**https://en.wikipedia.org/wiki/Reservoir\_sampling**](https://en.wikipedia.org/wiki/Reservoir\_sampling)****
+**\[1]** [**https://en.wikipedia.org/wiki/Reservoir\_sampling**](https://en.wikipedia.org/wiki/Reservoir\_sampling)****
 
-**\[2]  **[**https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6**](https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6)****
+**\[2]**  [**https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6**](https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6)****
 
 
 

@@ -4,7 +4,7 @@ User-Base: 计算similarity matrix of user-user using cosine similarity
 
 然后通过similarity matrix between user- user 来user vector之间的weighted sum来计算rating
 
-```text
+```
 import pandas as pd
 import numpy as np
 def userCF(users, items):
@@ -62,9 +62,9 @@ def user_Recommend(user, sim_matrix_user, users, items, k):
 
 考虑到存在着这样一种用户，他与很多商品都发生过交互，但他发生交互可能是因为他是做这个生意的或者怎么，并不是因为这些商品之间存在某种相似性，所以这里我们同样可以引入Inverse User Frequence来对物品相似度进行加权，从而避免这种用户的影响。 这里的similariry用了
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](<../.gitbook/assets/image (10).png>)
 
-```text
+```
 def usercf_sim(all_click_df, user_activate_degree_dict):
     """
         用户相似性矩阵计算
@@ -103,9 +103,9 @@ def usercf_sim(all_click_df, user_activate_degree_dict):
 
 
 
-计算topK ranking 
+计算topK ranking&#x20;
 
-```text
+```
 # 基于用户的召回 u2u2i
 def user_based_recommend(user_id, user_item_time_dict, u2u_sim, sim_user_topk, recall_item_num, 
                          item_topk_click, item_created_time_dict, emb_i2i_sim):
@@ -156,7 +156,7 @@ Item-Base: 计算similarity matrix of item-item using cosine similarity
 
 然后通过similarity matrix between item- item 来计算item vector之间的weighted sum以及每个user对这个item的rating
 
-```text
+```
 
 def itemCF(users, items):
   num_user = len(users.keys())
@@ -208,7 +208,7 @@ def item_Recommend(item, sim_matrix_item, users, items, k):
 
 计算item-item similarity
 
-```text
+```
 def itemcf_sim(df, item_created_time_dict):
     """
         文章与文章之间的相似性矩阵计算
@@ -249,7 +249,7 @@ def itemcf_sim(df, item_created_time_dict):
 
 计算item的 ranking和选择topK个召回
 
-```text
+```
 def item_based_recommend(user_id, user_item_time_dict, i2i_sim, sim_item_topk, recall_item_num, item_topk_click, item_created_time_dict, emb_i2i_sim):
     """
         基于文章协同过滤的召回
@@ -294,7 +294,5 @@ def item_based_recommend(user_id, user_item_time_dict, i2i_sim, sim_item_topk, r
 
 Reference
 
-[https://blog.csdn.net/sinat\_22594309/article/details/86420207](https://blog.csdn.net/sinat_22594309/article/details/86420207)
-
-
+[https://blog.csdn.net/sinat\_22594309/article/details/86420207](https://blog.csdn.net/sinat\_22594309/article/details/86420207)
 

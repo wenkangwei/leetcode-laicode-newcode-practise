@@ -47,7 +47,7 @@ description: LinkedList; Easy
 
 带cycle的linked list展开之后的形式：
 
-1->2 -> 3** ->4 (slow) ->**5 ->3->**4** (fast)->5 ->3->4->5....
+1->2 -> 3 **->4 (slow) ->**5 ->3->**4** (fast)->5 ->3->4->5....
 
 这里的环是3， 4， 5 所以 X= 2, C=3, fast 和slow的相遇点是4 而环的入口是3，所以Y =1。 那么slow1, slow2分别从1 和4(slow)开始前进， X=Z = 2。 当两个pointer到3时就相遇，即环的入口
 

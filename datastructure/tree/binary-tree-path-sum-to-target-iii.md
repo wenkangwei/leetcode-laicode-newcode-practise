@@ -1,6 +1,6 @@
 # Binary Tree Path Sum To Target III
 
-1**. Link **
+1**. Link**&#x20;
 
 {% embed url="https://app.laicode.io/app/problem/141" %}
 
@@ -8,7 +8,7 @@
 
 **2. 题目**
 
-Given a binary tree in which each node contains an integer number. Determine if there exists a path** (the path can only be from one node to itself or to any of its descendants), **the sum of the numbers on the path is the given target number.
+Given a binary tree in which each node contains an integer number. Determine if there exists a path **(the path can only be from one node to itself or to any of its descendants),** the sum of the numbers on the path is the given target number.
 
 **Examples**
 

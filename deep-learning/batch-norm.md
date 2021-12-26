@@ -2,7 +2,7 @@
 
 **Paper**: [https://arxiv.org/pdf/1502.03167.pdf](https://arxiv.org/pdf/1502.03167.pdf)
 
-**Batch Normalization transformation: **
+**Batch Normalization transformation:**&#x20;
 
 ![](<../.gitbook/assets/image (4).png>)
 

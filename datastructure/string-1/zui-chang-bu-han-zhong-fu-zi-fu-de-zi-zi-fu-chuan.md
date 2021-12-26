@@ -30,7 +30,7 @@ description: Medium; DP; Two Pointer; String
 
 **3. 思路**
 
-1. ** 用 set 存放 window/substring里面visited 的char**
+1. &#x20;**用 set 存放 window/substring里面visited 的char**
 2. **用 slow， fast pointer对sustring boundary存放**
 3. **用fast point遍历string，当fast point对应的char在set里面就把slow point存放的char 从set中remove 并把slow pointer往前移动， length -=1，直到fast pointer的char不在 set里面，最后把fast point的char加到set并 length +=1. 这样保证了substring的连续性**
 4. **更新 longest length of substring**

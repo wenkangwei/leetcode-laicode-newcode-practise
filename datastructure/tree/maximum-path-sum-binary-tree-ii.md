@@ -12,7 +12,7 @@ Laicode: [https://app.laicode.io/app/problem/139](https://app.laicode.io/app/pro
 
 **2. 题目：**
 
-Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from any node to any node (the start node and the end node can be the same). **
+Given a binary tree in which each node contains an integer number. Find the maximum possible sum **from any node to any node (the start node and the end node can be the same).**&#x20;
 
 **Assumptions**
 

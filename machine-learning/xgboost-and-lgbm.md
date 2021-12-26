@@ -4,11 +4,11 @@
 
 GBDT——Gradient Boosting Decision Tree，又称Multiple Additive Regression Tree，后面这种叫法不常看到，但Regression Tree却揭示了GBDT的本质——GBDT中的树都是回归树。GBDT的主要是思想是每次把上一棵树的输出和label的残差作为下一棵树的label进行拟合，前面的树做不好的地方后面的补上，不断把拟合后的预测的残差值叠加上去，进行梯度的提升。具体步骤如下
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (42).png>)
 
 其中负梯度相当于残差，用做target给下个tree进行拟合
 
-![](<../.gitbook/assets/image (12).png>)
+![](<../.gitbook/assets/image (43).png>)
 
 
 
@@ -39,11 +39,11 @@ XGBoost是陈天奇等人开发的一个开源机器学习项目，高效地实�
 
 **1. Objective function 优化目标函数：**
 
-![XGBoost 目标函数](<../.gitbook/assets/image (28).png>)
+![XGBoost 目标函数](<../.gitbook/assets/image (24).png>)
 
 在XGBoost的目标函数里面，它是基于GBDT的目标函数再加上一个 $$\sum_i^t\Omega(f_i)$$ 的对t棵树的输出regularization term正则化来抑制过拟合的问题. 而前面的loss 函数还是和之前一样 $$y_i$$ 是target $$\bar{y_i}^{(t)}$$ 是对前面t棵树的输出的线性相加的输出值。 在对第t棵树的输出进行计算时， 我们可以把第t棵树的regularization term和 预测值拆开来得到以上表达式。其中
 
-![](<../.gitbook/assets/image (29).png>)
+![](<../.gitbook/assets/image (17).png>)
 
 而regularization term  $$\Omega(f_t) = \gamma T  + \frac{1}{2}||w||^2$$ 这里的gamm是一个penalty的系数而T是第t棵树 $$f_t$$ 的节点个数，w是这颗树的每个leaf node的输出预测。
 
@@ -51,19 +51,19 @@ XGBoost是陈天奇等人开发的一个开源机器学习项目，高效地实�
 
 在XGBoost 里面，为了加速算法的计算，这里用了2阶的泰勒展开式对Objective function进行估计，泰勒展开式公式如下
 
-![](<../.gitbook/assets/image (38).png>)
+![](<../.gitbook/assets/image (25).png>)
 
 之后我们可以把原来的目标函数简化成下面形式：
 
-![](<../.gitbook/assets/image (25).png>)
+![](<../.gitbook/assets/image (28).png>)
 
 由于计算第t棵树的时候，前面t-1棵树的loss还有regularization的项是常数，我们可以不考虑。
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../.gitbook/assets/image (29).png>)
 
 把 $$f_t(x_i)$$ 树的输出替换成w的形式，我们得到关于w的一元二次函数
 
-![](<../.gitbook/assets/image (37).png>)
+![](<../.gitbook/assets/image (31).png>)
 
 
 
@@ -89,27 +89,27 @@ $$
 
 这里举个例子， 在下图，假设我们先只考虑黄色看看的树。如果我们一开始还没建树，需要先选取一个feature (1个column)用来作为一个root node。那么为了使目标函数最小化我们最直接的方法是直接这个feature里面的出现的数值排序，然后把每两个值之间的间隙当成分裂点，然后看哪个分离点对应的OBj(q(x))目标函数是最小就选那个作为当前的分裂点。所以这样在这个例子我们的分裂点是 x<=6 , x>6。这时我们的loss就是 $$L^{old}$$ = OBj(q(x)) of old tree structure
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (37).png>)
 
 由于我们想要通过添加剩下的feature作为tree的分支使得tree的loss 越小越好，那么对于old的框框下增加branch之后的tree的结构所对应的loss，标记为 $$L^{new}$$ = = OBj(q(x)) of new tree structure。 我们就想要 $$max(L^{old} - L^{new}) = OBj^{old} - OBj^{new}$$
 
 而我们可以标记 $$L^{split} = max(L^{old} - L^{new})$$作为分裂增益， split gain。split gain公式可以变成
 
-![](<../.gitbook/assets/image (41).png>)
+![](<../.gitbook/assets/image (38).png>)
 
 之后我们可以找到当前可以选的feature所对应的最大split gain以及对应的分裂点，并选取split gain最大的那个feature作为当前的tree node分支。 不断重复这几步就可以把树建起来了。&#x20;
 
 而这个每次都要线性扫描分裂点的建树的方法也叫做  Exact Greedy Algorithm。在当前的节点里面，把归到这个节点里面的样本做以下操作：
 
-![](<../.gitbook/assets/image (42).png>)
+![](<../.gitbook/assets/image (39).png>)
 
 由于这个方法每次都要把feature的数值排序并线性扫描，在计算连续特征的时候还要先排序并把每两个值的中点作为分裂点候选点来离散化，这样计算会很慢并且会在大量数据时内存容易不足。在XGBoost里面用了一种 近似算法(Approximate algorithm)按照预定的百分位对数值进行分桶得到候选的分裂点集合，然后再用Exact Greedy algorithm 进行分裂点选取。以下是原paper的描述：
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (40).png>)
 
 例子：
 
-![](<../.gitbook/assets/image (43).png>)
+![](<../.gitbook/assets/image (41).png>)
 
 
 
@@ -168,7 +168,7 @@ LGBM对XGBoost有3个改进之处
 
 ### 在找分裂点时,LGBM用直方图方法进行采样
 
-![](<../.gitbook/assets/image (46).png>)
+![](<../.gitbook/assets/image (45).png>)
 
 LGBM可以通过预先把特征值进行排序，找到分位数，并按照分位数把特征离散化得到多个bins，而不像XGBoost把每个分裂点都遍历一遍，从而提高计算速度
 
@@ -176,7 +176,7 @@ LGBM可以通过预先把特征值进行排序，找到分位数，并按照分�
 
 Gradient-based One side sampling 单边采样 (GOSS) 算法的创新之处在于它只对梯度绝对值较小的样本按照一定比例进行随机采样，而保留了梯度绝对值较大的样本。这个梯度的大小可以由阀值进行决定
 
-![](<../.gitbook/assets/image (45).png>)
+![](<../.gitbook/assets/image (46).png>)
 
 ### 在特征采样中,LGBM用EFB互斥特征绑定方法进行特征采样
 

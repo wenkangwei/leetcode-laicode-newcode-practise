@@ -25,7 +25,7 @@ Set = "", K = 1, all the subsets are \[].
 
 **3. 思路**
 
-1. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去  **
+1. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去** &#x20;
 2.  **example**
 
     1. **action = \[a b  e e e  c  d]**

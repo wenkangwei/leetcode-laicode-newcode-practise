@@ -14,7 +14,7 @@ If there does not exist any such paths, return 0.
 
 **Examples**
 
-**    **5
+&#x20;   ****    5
 
 &#x20; /    \\
 

@@ -38,7 +38,7 @@ description: Easy; Two pointer;
 2. 然后用binary search方法把left， right pointers从左右两边往中间搜索 target
 3. Time : O(n + nlogn), Space: O(n)
 
-**method 2: dictionary **
+**method 2: dictionary**&#x20;
 
 1. 用dictionary把visited的element进行存放， key= nums\[i], value = i index
 2. 把nums array的 element遍历一遍，看看target - nums\[i]有没有visited，如果有就已经找到two sum result， 返回indices
