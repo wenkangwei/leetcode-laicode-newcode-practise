@@ -16,7 +16,7 @@ description: '难度: Medium, 公司: 字节 研发 facebook'
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [[10,30],[20,60],[80,100],[150,180]]
@@ -24,7 +24,7 @@ description: '难度: Medium, 公司: 字节 研发 facebook'
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [[10,60],[80,100],[150,180]]

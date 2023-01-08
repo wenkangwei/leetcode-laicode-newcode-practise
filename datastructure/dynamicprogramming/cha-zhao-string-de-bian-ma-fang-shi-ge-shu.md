@@ -16,7 +16,7 @@ description: DP;  Medium; 字节
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "12"
@@ -24,7 +24,7 @@ description: DP;  Medium; 字节
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 2
@@ -40,7 +40,7 @@ description: DP;  Medium; 字节
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "31717126241541717"
@@ -50,7 +50,7 @@ description: DP;  Medium; 字节
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 192
@@ -147,4 +147,4 @@ class Solution:
 192种可能的译码结果
 ```
 
-[ 关联企业](javascript:void\(0\);)
+&#x20;关联企业

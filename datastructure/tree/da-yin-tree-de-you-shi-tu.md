@@ -16,7 +16,7 @@ description: Medium; Tree
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,2,4,5,3],[4,2,5,1,3]
@@ -24,7 +24,7 @@ description: Medium; Tree
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,3,5]

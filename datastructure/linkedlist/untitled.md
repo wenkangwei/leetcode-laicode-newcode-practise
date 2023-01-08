@@ -20,7 +20,7 @@ description: 字节，研发
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 {1,2,3}
@@ -28,7 +28,7 @@ description: 字节，研发
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 {3,2,1}

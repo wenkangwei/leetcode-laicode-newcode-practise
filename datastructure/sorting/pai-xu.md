@@ -10,7 +10,7 @@ description: sorting, quicksort, mergesort,
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [5,2,3,1,4]
@@ -18,7 +18,7 @@ description: sorting, quicksort, mergesort,
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,2,3,4,5]
@@ -28,7 +28,7 @@ description: sorting, quicksort, mergesort,
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [5,1,6,2,5]
@@ -36,7 +36,7 @@ description: sorting, quicksort, mergesort,
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,2,5,5,6]

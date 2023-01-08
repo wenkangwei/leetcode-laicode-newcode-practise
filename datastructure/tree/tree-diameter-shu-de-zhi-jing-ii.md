@@ -14,7 +14,7 @@ description: 这道题相对于binary tree diameter I + maximum path sum binary 
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 6,[[0,1],[1,5],[1,2],[2,3],[2,4]],[3,4,2,1,5]
@@ -22,7 +22,7 @@ description: 这道题相对于binary tree diameter I + maximum path sum binary 
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 11

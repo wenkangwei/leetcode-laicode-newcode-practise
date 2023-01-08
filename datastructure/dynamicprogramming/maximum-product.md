@@ -20,7 +20,7 @@ description: DP; Medium
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [-2.5,4,0,3,0.5,8,-1]
@@ -28,7 +28,7 @@ description: DP; Medium
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 12.00000

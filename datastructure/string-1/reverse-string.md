@@ -16,7 +16,7 @@ description: Easy; String;
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "abcd"
@@ -24,7 +24,7 @@ description: Easy; String;
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "dcba"

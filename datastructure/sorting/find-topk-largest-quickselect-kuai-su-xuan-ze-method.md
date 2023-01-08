@@ -16,7 +16,7 @@ description: Medium; quickselect; 腾讯；
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,3,5,2,2],5,3
@@ -24,7 +24,7 @@ description: Medium; quickselect; 腾讯；
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 2

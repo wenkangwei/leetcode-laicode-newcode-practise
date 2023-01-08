@@ -18,7 +18,7 @@ description: 2D-DP; Medium;
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "abc","adc",5,3,2
@@ -26,7 +26,7 @@ description: 2D-DP; Medium;
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 2
@@ -36,7 +36,7 @@ description: 2D-DP; Medium;
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "abc","adc",5,3,100
@@ -44,7 +44,7 @@ description: 2D-DP; Medium;
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 8

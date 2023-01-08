@@ -20,7 +20,7 @@ description: 2D-DP
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "1AB2345CD","12345EF"
@@ -28,7 +28,7 @@ description: 2D-DP
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 "2345"

@@ -16,7 +16,7 @@ description: Medium; heap; array; sorting;
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [4,5,1,6,2,7,3,8],4 
@@ -24,7 +24,7 @@ description: Medium; heap; array; sorting;
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,2,3,4]

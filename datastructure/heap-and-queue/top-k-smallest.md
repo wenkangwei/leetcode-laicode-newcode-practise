@@ -14,7 +14,7 @@ laicode K-largest: [https://app.laicode.io/app/problem/436](https://app.laicode.
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [4,5,1,6,2,7,3,8],4
@@ -22,7 +22,7 @@ laicode K-largest: [https://app.laicode.io/app/problem/436](https://app.laicode.
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [1,2,3,4]

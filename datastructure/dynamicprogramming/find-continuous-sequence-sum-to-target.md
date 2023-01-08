@@ -26,7 +26,7 @@ description: DP, BruteForce
 
 ### 输入
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 9
@@ -34,7 +34,7 @@ description: DP, BruteForce
 
 ### 返回值
 
-[复制](javascript:void\(0\);)
+复制
 
 ```
 [[2,3,4],[4,5]]
