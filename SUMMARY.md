@@ -6,7 +6,6 @@
 ## Python
 
 * [Python 笔记](python/untitled.md)
-* [Page 1](python/page-1.md)
 
 ## Spark
 
@@ -25,18 +24,18 @@
 ## Recommendation Algorithm <a href="#deep-learning" id="deep-learning"></a>
 
 * [Recall-and-PreRank](deep-learning/recall-and-prerank/README.md)
-  * [Non-Negative Matrix Fatorization(NMF)](deep-learning/recall-and-prerank/non-negative-matrix-fatorization-nmf.md)
-  * [Fatorization Machine(FM)](deep-learning/recall-and-prerank/fm.md)
-  * [User-base/Item-base实现](deep-learning/recall-and-prerank/untitled-1.md)
-  * [多路召回实现](deep-learning/recall-and-prerank/duo-lu-zhao-hui-shi-xian.md)
+  * [Non-Negative Matrix Fatorization(NMF)](deep-learning/non-negative-matrix-fatorization-nmf.md)
+  * [Fatorization Machine(FM)](deep-learning/fm.md)
+  * [User-base/Item-base实现](deep-learning/untitled-1.md)
+  * [多路召回实现](recommendation-system/duo-lu-zhao-hui-shi-xian.md)
 * [Ranking](deep-learning/ranking/README.md)
-  * [NeuralFM](deep-learning/ranking/neuralfm.md)
-  * [DeepFM](deep-learning/ranking/deepfm.md)
-  * [Deep\&Cross network (DCN)](deep-learning/ranking/deep-and-cross-network-dcn.md)
+  * [NeuralFM](deep-learning/neuralfm.md)
+  * [DeepFM](deep-learning/deepfm.md)
+  * [Deep\&Cross network (DCN)](deep-learning/deep-and-cross-network-dcn.md)
 * [DeepLearning-Basic](deep-learning/deeplearning-basic/README.md)
-  * [Attention](deep-learning/deeplearning-basic/attention.md)
-  * [Dropout](deep-learning/deeplearning-basic/dropout.md)
-  * [Batch Norm](deep-learning/deeplearning-basic/batch-norm.md)
+  * [Attention](deep-learning/attention.md)
+  * [Dropout](deep-learning/dropout.md)
+  * [Batch Norm](deep-learning/batch-norm.md)
 
 ## Machine Learning
 

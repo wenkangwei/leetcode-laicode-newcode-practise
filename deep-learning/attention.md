@@ -42,5 +42,4 @@ z.shape,z
 
 Reference
 
-[https://blog.csdn.net/qq\_37394634/article/details/102679096](https://blog.csdn.net/qq_37394634/article/details/102679096)
-
+[https://blog.csdn.net/qq\_37394634/article/details/102679096](https://blog.csdn.net/qq\_37394634/article/details/102679096)

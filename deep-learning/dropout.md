@@ -2,7 +2,7 @@
 
 Dropout 实现
 
-```text
+```
 class Dropout(torch.nn.Module):
   def __init__(self, p=0.5):
     super(Dropout, self).__init__()
@@ -29,8 +29,6 @@ x = relu(x)
 x = dropout(x)
 x
 ```
-
-
 
 
 

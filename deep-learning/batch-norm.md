@@ -4,7 +4,7 @@
 
 **Batch Normalization transformation:**&#x20;
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4).png>)
 
 **Training:**
 
@@ -12,11 +12,11 @@ when training update gamma and beta using batch samples and also update running 
 
 When inference, use running mean E\[x], running variance Var\[x], rather than sample mean and sample var, to compute output
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../.gitbook/assets/image (5).png>)
 
 **Gradient Computation** during training and updating var, mean
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (6).png>)
 
 
 

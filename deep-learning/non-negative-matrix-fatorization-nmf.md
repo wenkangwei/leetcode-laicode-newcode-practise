@@ -1,8 +1,8 @@
-# Non-Negative Matrix Fatorization\(NMF\)
+# Non-Negative Matrix Fatorization(NMF)
 
 Link:
 
-1.  [http://statweb.stanford.edu/~tibs/sta306bfiles/nnmf.pdf](http://statweb.stanford.edu/~tibs/sta306bfiles/nnmf.pdf)
+1. &#x20;[http://statweb.stanford.edu/\~tibs/sta306bfiles/nnmf.pdf](http://statweb.stanford.edu/\~tibs/sta306bfiles/nnmf.pdf)
 2. [https://papers.nips.cc/paper/2000/file/f9d1152547c0bde01830b7e8bd60024c-Paper.pdf](https://papers.nips.cc/paper/2000/file/f9d1152547c0bde01830b7e8bd60024c-Paper.pdf)
 
 NMF梯度的更新公式
@@ -19,7 +19,7 @@ $$
 
 
 
-```text
+```
 # integrate all functions together
 class NMF:
   def __init__(self, M, U, V):
@@ -163,4 +163,3 @@ plt.xlabel("time steps")
 plt.ylabel("log loss")
 plt.legend(["||M-UV||^2","0.5||U(Vk-Vk1)||^2","inner Product 1","inner Product 2" ,"g(Vk)-g(Vk1)"])
 ```
-
