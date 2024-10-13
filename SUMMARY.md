@@ -3,6 +3,11 @@
 * [Introduction](README.md)
 * [Records of Practice](records-of-practice.md)
 
+## 面试题
+
+* [搜索广告](mian-shi-ti/sou-suo-guang-gao.md)
+* [多模态大模型](mian-shi-ti/duo-mo-tai-da-mo-xing.md)
+
 ## Python
 
 * [Python 笔记](python/untitled.md)
