@@ -7,6 +7,7 @@
 
 * [搜索广告](mian-shi-ti/sou-suo-guang-gao.md)
 * [多模态大模型](mian-shi-ti/duo-mo-tai-da-mo-xing.md)
+* [刷题记录](mian-shi-ti/shua-ti-ji-lu.md)
 
 ## Python
 

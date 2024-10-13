@@ -8,6 +8,10 @@ description: 难度：Medium; 类型： linkedlist; 公司：字节研发，华�
 
 牛客： [https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188\&tqId=38025\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/b49c3dc907814e9bbfa8437c251b028e?tpId=188\&tqId=38025\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking\&tab=answerKey)
 
+
+
+{% embed url="https://www.nowcoder.com/practice/886370fe658f41b498d40fb34ae76ff9?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
 ### 2. 题目描述
 
 将给出的链表中的节点每 k k 个一组翻转，返回翻转后的链表 如果链表中的节点数不是 k k 的倍数，将最后剩下的节点保持原样 你不能更改节点中的值，只能更改节点本身。 要求空间复杂度  O(1) O(1) 例如： 给定的链表是1→2→3→4→5 对于  k = 2 k=2, 你应该返回  2→1→4→3→5 对于  k = 3 k=3, 你应该返回3→2→1→4→5\
@@ -15,7 +19,7 @@ description: 难度：Medium; 类型： linkedlist; 公司：字节研发，华�
 
 ### 输入
 
-复制
+复制复制
 
 ```
 {1,2,3,4,5},2
@@ -23,7 +27,7 @@ description: 难度：Medium; 类型： linkedlist; 公司：字节研发，华�
 
 ### 返回值
 
-复制
+复制复制
 
 ```
 {2,1,4,3,5}
