@@ -142,6 +142,7 @@
   * [DP-解题过程](datastructure/dynamicprogramming/dp-jie-ti-guo-cheng.md)
   * [Find Continuous Sequence Sum to Target](datastructure/dynamicprogramming/find-continuous-sequence-sum-to-target.md)
   * [1800. Maximum Ascending Subarray Sum](datastructure/dynamicprogramming/untitled.md)
+  * [NC91 最长上升子序列](datastructure/dynamicprogramming/nc91-zui-zhang-shang-sheng-zi-xu-lie.md)
   * [查找string的编码方式个数](datastructure/dynamicprogramming/cha-zhao-string-de-bian-ma-fang-shi-ge-shu.md)
   * [Maximum Product](datastructure/dynamicprogramming/maximum-product.md)
   * [Longest Common Substring](datastructure/dynamicprogramming/untitled-1.md)

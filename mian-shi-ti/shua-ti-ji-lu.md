@@ -24,7 +24,21 @@ DFS/BFS
 
 Dynamic programming
 
+{% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
+
+
+
+
+
+
 
 
 Graph
+
+
+
+
+
+
 
