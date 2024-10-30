@@ -45,8 +45,12 @@ Tree
 
 
 {% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+待刷
+{% endembed %}
 
-
+{% embed url="https://www.nowcoder.com/practice/e0cc33a83afe4530bcec46eba3325116?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+已刷
+{% endembed %}
 
 DFS/BFS&#x20;
 
