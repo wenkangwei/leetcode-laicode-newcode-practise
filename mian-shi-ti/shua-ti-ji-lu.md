@@ -29,7 +29,7 @@
 
 {% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
-
+{% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 
 
