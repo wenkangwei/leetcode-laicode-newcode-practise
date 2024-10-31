@@ -20,7 +20,22 @@
 5. 表达思路： 每说一步， 可以举个例子说明
 6. 写代码
 7. 分析复杂度
-8.
+
+
+
+
+
+## 正在做：
+
+{% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
+
+
+
+
+## 已刷
+
+
 
 Sorting
 
