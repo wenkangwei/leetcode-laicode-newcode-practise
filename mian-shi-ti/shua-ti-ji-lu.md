@@ -17,9 +17,20 @@
 4. 定义变量：&#x20;
    1. 定义变量, 说明含义, 作用 .
    2. &#x20;定义表诉对象，为了简洁，后面说思路时直接用表述对象名称说明
-5. 表达思路： 每说一步， 可以举个例子说明
-6. 写代码
-7. 分析复杂度
+5. 拆分大问题成小问题（程序是遍历重复执行， 执行的每步都是最小子问题）：
+   1. 遍历/递归过程中， 有什么边界问题
+   2. 什么时候应该更新哪个变量/边界
+   3. 怎么更新变量（有哪些子case列出来）
+   4. 做不出来时， 是否变量定义有问题
+   5. 什么时候终止程序/边界条件
+   6. 例子：
+      1. &#x20;数组最长连续上升子序列
+         1. 问题拆分： 怎么定义子序列？ 什么时候更新子序列边界？ 怎么更新子序列边界？怎么保存最长位置和返回？
+      2. 二叉树中和为最大的路径
+         1. 问题拆分：怎么定义路径？经不经过root？路径的左右边界怎么确定？怎么保存路径并进行对比？
+6. 表达思路： 每说一步， 可以举个例子说明
+7. 写代码
+8. 分析复杂度
 
 
 
@@ -33,15 +44,29 @@
 
 
 
-## 已刷
+## 已刷题目
+
+### 0、容易卡边界题
+
+{% embed url="https://www.nowcoder.com/practice/28eb3175488f4434a4a6207f6f484f47?tpId=188&tqId=38627&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
+
+###
+
+### 1. Sorting
+
+quick sort
 
 
 
-Sorting
+merge sort
 
 
 
-Search
+heap sort
+
+
+
+### 2. Search
 
 {% embed url="https://www.nowcoder.com/practice/4f470d1d3b734f8aaf2afb014185b395?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -54,6 +79,10 @@ stack & heap
 
 
 LinkList
+
+{% embed url="https://www.nowcoder.com/practice/3fed228444e740c8be66232ce8b87c2f?tpId=188&tqId=38562&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
+
+{% embed url="https://www.nowcoder.com/practice/650474f313294468a4ded3ce0f7898b9?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/75e878df47f24fdc9dc3e400ec6058ca?tpId=188&tqId=38029&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking&tab=answerKey" %}
 
@@ -97,6 +126,8 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 
 Dynamic programming
 
+一维DP
+
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 
@@ -106,6 +137,22 @@ Dynamic programming
 {% embed url="https://www.nowcoder.com/practice/b56799ebfd684fb394bd315e89324fb4?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 8/11 通过
 {% endembed %}
+
+
+
+
+
+2维度DP
+
+{% embed url="https://www.nowcoder.com/practice/7d21b6be4c6b429bb92d219341c4f8bb?tpId=188&tqId=38601&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
+
+
+
+
+
+
+
+N维度DP
 
 
 
