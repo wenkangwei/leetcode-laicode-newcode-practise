@@ -106,6 +106,12 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/abbec6a3779940aab2cc564b22d36859?tpId=191&rp=1&ru=%2Fta%2Fjob-code-high-algorithm&qru=%2Fta%2Fjob-code-high-algorithm&difficulty=&judgeStatus=&tags=583%2C593&title=&sourceUrl=&gioEnter=menu" %}
 
+可以想想连续子数组最大乘积的变种， 结果返回连续子序列而不是最大乘积
+
+{% embed url="https://www.nowcoder.com/practice/abbec6a3779940aab2cc564b22d36859?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=593&title=&sourceUrl=&gioEnter=menu" %}
+
+
+
 
 
 
