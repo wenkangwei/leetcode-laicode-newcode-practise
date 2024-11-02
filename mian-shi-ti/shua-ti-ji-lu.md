@@ -82,7 +82,19 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
   * 完全树：树的左右子树高度<=1 /完全树， 且叶节点都在左边
   * 平衡树：树的左右子树高度<=1 /完全树
 
+## DFS/BFS树遍历的变型题
+
+
+
+## 图
+
+[https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196\&tqId=37158\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196\&tqId=37158\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey)
+
+## 数组
+
 ## 正在做：
+
+{% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
 {% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -97,6 +109,14 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
+
+
+
+{% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
+
+
+
+
 
 ## 已刷题目
 
