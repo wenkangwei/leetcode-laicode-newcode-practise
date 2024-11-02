@@ -74,7 +74,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/0058c4092cec44c2975e38223f10470e?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
-
+{% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 ## 已刷题目
 
@@ -172,7 +172,9 @@ Dynamic programming
 8/11 通过
 {% endembed %}
 
-
+{% embed url="https://www.nowcoder.com/practice/eac1c953170243338f941959146ac4bf?tpId=191&tqId=36126&rp=1&ru=/ta/job-code-high-algorithm&qru=/ta/job-code-high-algorithm&difficulty=&judgeStatus=&tags=/question-ranking" %}
+DP+Set
+{% endembed %}
 
 
 
