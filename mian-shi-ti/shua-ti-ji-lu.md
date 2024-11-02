@@ -88,7 +88,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
-
+{% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
 ## 通过部分的题目/难题
 
@@ -160,7 +160,7 @@ Tree
 已刷
 {% endembed %}
 
-
+{% embed url="https://www.nowcoder.com/practice/8a19cbe657394eeaac2f6ea9b0f6fcf6?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 树+ DP
 
