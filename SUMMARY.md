@@ -152,6 +152,7 @@
   * [Backpack I](datastructure/dynamicprogramming/backpack-i.md)
   * [Array Hopper I](datastructure/dynamicprogramming/array-hopper-i.md)
   * [Minimum distance between strings](datastructure/dynamicprogramming/minimum-distance-between-strings.md)
+  * [最大正方形](datastructure/dynamicprogramming/zui-da-zheng-fang-xing.md)
 
 ## Big Data Algorithms
 
