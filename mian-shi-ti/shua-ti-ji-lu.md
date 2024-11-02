@@ -59,8 +59,28 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
   * 如果感觉当前最优解依赖固定1\~3 个变量时，一般用O(1)方法
   * **最最最重要是定义清楚dp数组存放的元素物理含义！如果定义错了，就会觉得差了信息，一般就是问题拆分得不够细导致的！**
   * **DP最考验初始值边界条件以及转移公式的情况有没有漏掉！**
+  * **DP题目变形：**
+    * **最长的xxx**&#x20;
+      * 最大和，最大乘，连续子序列，蓄水池，子序列
+    * 二维DP:
+      * 最长公共子序列， 最长公共子字符串（改写），最大正方形，二维路径和， 二维连续路径
 
+## 二叉树解题流程：
 
+* 把二叉树路径看成arr， 但是遍历方式是树的遍历
+* 注意点:
+  * 一般用递归
+  * &#x20;想清楚递归节点的输入， 输出，&#x20;
+  * 用bottom-up还是top-down 传参，&#x20;
+  * 如果题目是加了DP， 看是否要在递归外用一个变量存放额外状态数据
+* 树题目变形：
+  * 树的直径
+  * 树+DP： 树的最大直径（经过root）， 树的最大路径（不一定经过root）
+  * 多叉树(类似DFS，BFS)
+  * 搜索树：左子树所有数\<root< 右子树所有数。&#x20;
+  * 满二叉树：除了叶节点外，每个节点都有左右节点
+  * 完全树：树的左右子树高度<=1 /完全树， 且叶节点都在左边
+  * 平衡树：树的左右子树高度<=1 /完全树
 
 ## 正在做：
 
@@ -70,11 +90,13 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 
 
-## 通过部分的题目
+## 通过部分的题目/难题
 
 {% embed url="https://www.nowcoder.com/practice/0058c4092cec44c2975e38223f10470e?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
+
+{% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
 ## 已刷题目
 
@@ -143,10 +165,8 @@ Tree
 树+ DP
 
 {% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
-难/待刷 只对一半
+难/待刷 只对一半， 树太大容易超时
 {% endembed %}
-
-
 
 
 
