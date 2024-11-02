@@ -8,6 +8,11 @@
    3. 无重复： 用字典
    4. 有无序/找出xxx： 二分/排序/树遍历/ DFS/BFS
    5. 子序列： DP 前后依赖
+   6. **只要能把问题拆解成明确的子问题， 每次遍历都是子问题的重复叠加， 就不会想其他乱七八糟的corner case 加if else.， 除非是你的子问题没有想明白**
+2. **刷题方法**：
+   1. 刷2次
+   2. **1刷刷思路和问题拆分方法以及题感， 确保第一次刷快并覆盖大量题型**
+   3. **2刷刷corner case，和记住细节**
 
 
 
@@ -41,6 +46,12 @@
 {% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
+
+
+## 通过部分的题目
+
+{% embed url="https://www.nowcoder.com/practice/0058c4092cec44c2975e38223f10470e?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 
 
@@ -127,6 +138,8 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 Dynamic programming
 
 一维DP
+
+{% embed url="https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=188&tqId=38622&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
 
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
