@@ -102,6 +102,14 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
+{% embed url="https://www.nowcoder.com/practice/fc897457408f4bbe9d3f87588f497729?tpId=196&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
+
+{% embed url="https://www.nowcoder.com/practice/abbec6a3779940aab2cc564b22d36859?tpId=191&rp=1&ru=%2Fta%2Fjob-code-high-algorithm&qru=%2Fta%2Fjob-code-high-algorithm&difficulty=&judgeStatus=&tags=583%2C593&title=&sourceUrl=&gioEnter=menu" %}
+
+
+
+
+
 ## 通过部分的题目/难题
 
 {% embed url="https://www.nowcoder.com/practice/0058c4092cec44c2975e38223f10470e?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
@@ -139,6 +147,8 @@ merge sort
 heap sort
 
 
+
+{% embed url="https://www.nowcoder.com/practice/fc897457408f4bbe9d3f87588f497729?tpId=196&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 ### 2. Search
 
