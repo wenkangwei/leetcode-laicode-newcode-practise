@@ -232,6 +232,12 @@ Dynamic programming
 DP+Set
 {% endembed %}
 
+{% embed url="https://www.nowcoder.com/practice/abbec6a3779940aab2cc564b22d36859?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=593&title=&sourceUrl=&gioEnter=menu" %}
+
+
+
+
+
 
 
 2维度DP
