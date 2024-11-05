@@ -138,7 +138,9 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/28eb3175488f4434a4a6207f6f484f47?tpId=188&tqId=38627&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
 
-###
+{% embed url="https://leetcode.cn/problems/median-of-two-sorted-arrays/description/" %}
+
+
 
 ### 1. Sorting
 
@@ -152,7 +154,7 @@ merge sort
 
 heap sort
 
-
+{% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
 {% embed url="https://www.nowcoder.com/practice/fc897457408f4bbe9d3f87588f497729?tpId=196&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
@@ -169,6 +171,10 @@ stack & heap
 
 
 LinkList
+
+
+
+{% embed url="https://leetcode.cn/problems/reverse-nodes-in-k-group/submissions/578463402/" %}
 
 {% embed url="https://www.nowcoder.com/practice/3fed228444e740c8be66232ce8b87c2f?tpId=188&tqId=38562&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
 
