@@ -5,12 +5,16 @@
 刷题口头思路表达方式：
 
 1. 审题拆分题目关键词：
-   1. 最长/最大等等： DP,
-   2. 组合数目： DFS, BFS
-   3. 无重复： 用字典
-   4. 有无序/找出xxx： 二分/排序/树遍历/ DFS/BFS
-   5. 子序列： DP 前后依赖
-   6. **只要能把问题拆解成明确的子问题， 每次遍历都是子问题的重复叠加， 就不会想其他乱七八糟的corner case 加if else.， 除非是你的子问题没有想明白**
+   1. 最长/最大/最小等等： DP,
+   2. 是否能编辑/有重复： 哈希表
+   3. 组合数目： DFS, BFS
+   4. 无重复： 用字典
+   5. 有无序/找出xxx： 二分/排序/树遍历/ DFS/BFS
+   6. 子序列 (可以连续或者不连续)： DP 前后依赖
+   7. 公共子串： 2维DP
+   8. 公共前缀： DP
+   9.
+   10. **只要能把问题拆解成明确的子问题， 每次遍历都是子问题的重复叠加， 就不会想其他乱七八糟的corner case 加if else.， 除非是你的子问题没有想明白**
 2. **刷题方法**：
    1. 刷2次
    2. **1刷刷思路和问题拆分方法以及题感， 确保第一次刷快并覆盖大量题型**
@@ -164,9 +168,11 @@ heap sort
 
 
 
-stack & heap
+stack & heap /哈希表
 
 {% embed url="https://www.nowcoder.com/practice/37548e94a270412c8b9fb85643c8ccc2?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
+{% embed url="https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 
 
@@ -212,11 +218,25 @@ Tree
 
 
 
-DFS/BFS&#x20;
+字符串+DP:
+
+{% embed url="https://leetcode.cn/problems/edit-distance/" %}
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-ii/" %}
+
+{% embed url="https://leetcode.cn/problems/edit-distance/solutions/188223/bian-ji-ju-chi-by-leetcode-solution/" %}
+
+
+
+DFS/BFS / backtracking
 
 dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 剪纸等)
 
 {% embed url="https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
+
+
 
 Dynamic programming
 
@@ -226,7 +246,7 @@ Dynamic programming
 
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
-
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-ii/" %}
 
 {% embed url="https://www.nowcoder.com/practice/6d29638c85bb4ffd80c020fe244baf11?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
