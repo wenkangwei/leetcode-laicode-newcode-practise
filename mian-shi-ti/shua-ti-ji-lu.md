@@ -140,7 +140,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://www.nowcoder.com/practice/a77b4f3d84bf4a7891519ffee9376df3?tpId=196&tqId=37158&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey" %}
 
-
+{% embed url="https://leetcode.cn/problems/vertical-order-traversal-of-a-binary-tree/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 
 
@@ -176,7 +176,7 @@ heap sort
 
 {% embed url="https://www.nowcoder.com/practice/4f470d1d3b734f8aaf2afb014185b395?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
-
+{% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 stack & heap /哈希表
 
@@ -264,11 +264,17 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 
 {% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
 
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-iii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
 
 
 Dynamic programming
 
 一维DP
+
+[https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV](https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV)
 
 {% embed url="https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=188&tqId=38622&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
 
@@ -290,7 +296,7 @@ DP+Set
 
 
 
-
+{% embed url="https://leetcode.cn/problems/smallest-range-ii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 
 
