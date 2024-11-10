@@ -8,14 +8,22 @@
    1. 最长/最大/最小等等： DP,
    2. 是否能编辑/有重复： 哈希表
    3. 组合数目： DFS, BFS
-   4. 无重复： 用字典
+   4. 无重复： 用字典/哈希表
    5. 有无序/找出xxx： 二分/排序/树遍历/ DFS/BFS
    6. 子序列 (可以连续或者不连续)： DP 前后依赖
    7. 公共子串： 2维DP
    8. 公共前缀： DP
-   9.
+   9. **连续子序列： 公共前缀（DP）/  单调栈**
    10. **只要能把问题拆解成明确的子问题， 每次遍历都是子问题的重复叠加， 就不会想其他乱七八糟的corner case 加if else.， 除非是你的子问题没有想明白**
-2. **刷题方法**：
+2. 数据结构工具
+   1. 单调栈： 栈内元素单调增/减，_**用来找和大小相关的序列问**_题 ， **比当前进栈元素i刚好小（第二大） 或刚好大（第二小）的值肯定在stack\[-1]**
+   2. 双指针： 对array linkedlist， 滑动窗口
+   3. **哈希表**： 去重， 映射中间结果， **key 不一定是位置索引**， **可以是某种中间结果**
+   4. **DP：常数(只依赖上一次结果， 上一次结果通过max, min等过滤选择)，  一维度/二维 array (要记住依赖不同位置结果)**&#x20;
+   5. DFS/BFS回溯： 排列组合 / 二维或树状搜索
+   6. Tree：搜索树（右边> root>左边）  平衡树，完全数，&#x20;
+   7.
+3. **刷题方法**：
    1. 刷2次
    2. **1刷刷思路和问题拆分方法以及题感， 确保第一次刷快并覆盖大量题型**
    3. **2刷刷corner case，和记住细节**
@@ -144,7 +152,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 {% embed url="https://leetcode.cn/problems/median-of-two-sorted-arrays/description/" %}
 
-
+{% embed url="https://leetcode.cn/problems/minimum-window-substring/" %}
 
 ### 1. Sorting
 
@@ -173,6 +181,14 @@ stack & heap /哈希表
 {% embed url="https://www.nowcoder.com/practice/37548e94a270412c8b9fb85643c8ccc2?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
+
+{% embed url="https://leetcode.cn/problems/minimum-window-substring/" %}
+
+
+
+单调栈
+
+{% embed url="https://leetcode.cn/problems/largest-rectangle-in-histogram/submissions/579178750/" %}
 
 
 
@@ -225,6 +241,14 @@ Tree
 {% embed url="https://leetcode.cn/problems/palindrome-partitioning-ii/" %}
 
 {% embed url="https://leetcode.cn/problems/edit-distance/solutions/188223/bian-ji-ju-chi-by-leetcode-solution/" %}
+
+{% embed url="https://leetcode.cn/problems/edit-distance/description/" %}
+
+{% embed url="https://leetcode.cn/problems/largest-rectangle-in-histogram/submissions/579178750/" %}
+
+
+
+
 
 
 
