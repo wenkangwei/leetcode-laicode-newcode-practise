@@ -148,7 +148,11 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 ### 0、容易卡边界题
 
+{% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
 {% embed url="https://www.nowcoder.com/practice/28eb3175488f4434a4a6207f6f484f47?tpId=188&tqId=38627&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
+
+
 
 {% embed url="https://leetcode.cn/problems/median-of-two-sorted-arrays/description/" %}
 
@@ -178,7 +182,7 @@ heap sort
 
 {% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
-stack & heap /哈希表
+## 3. stack & heap /哈希表
 
 {% embed url="https://www.nowcoder.com/practice/37548e94a270412c8b9fb85643c8ccc2?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -188,13 +192,11 @@ stack & heap /哈希表
 
 
 
-单调栈
+## 4.单调栈
 
 {% embed url="https://leetcode.cn/problems/largest-rectangle-in-histogram/submissions/579178750/" %}
 
-
-
-LinkList
+## 5.LinkList
 
 
 
@@ -212,7 +214,7 @@ LinkList
 
 {% embed url="https://www.nowcoder.com/practice/886370fe658f41b498d40fb34ae76ff9?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
-Tree
+## 6.Tree
 
 树遍历
 
@@ -236,7 +238,7 @@ Tree
 难/待刷 只对一半， 树太大容易超时
 {% endembed %}
 
-
+## 7. 字符串
 
 字符串+DP:
 
@@ -256,7 +258,7 @@ Tree
 
 
 
-DFS/BFS / backtracking
+## 8.DFS/BFS / backtracking
 
 dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 剪纸等)
 
@@ -270,7 +272,7 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 
 
 
-Dynamic programming
+## 9.Dynamic programming
 
 一维DP
 
@@ -314,7 +316,7 @@ N维度DP
 
 
 
-Graph
+## 10. Graph
 
 
 
