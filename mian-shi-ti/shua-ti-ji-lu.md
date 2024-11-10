@@ -276,6 +276,21 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 
 一维DP
 
+像背包问题 这种限制累加数大小的情况， **dp\[i] 的key 不是输入数字的顺序， 而是被限制的容量**
+
+**DP多想想key 是输入数组的顺序i 还是 说容量。 这key的定义很重要**
+
+
+
+求**组合数**，遍历顺序：_先遍历物品(即选项 nums\[i])再遍历背包容量(即dp\[i] 的i为容器量)_\
+求**排列数**，遍历顺序：_先遍历背包容量(即dp\[i])再遍历物品_
+
+{% embed url="https://leetcode.cn/problems/coin-change-ii/submissions/579594920/" %}
+
+{% embed url="https://leetcode.cn/problems/combination-sum-iv/description/" %}
+
+
+
 [https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV](https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV)
 
 {% embed url="https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=188&tqId=38622&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
