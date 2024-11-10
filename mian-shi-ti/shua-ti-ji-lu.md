@@ -158,13 +158,15 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 quick sort
 
-
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method](../datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method.md)
 
 merge sort
 
-
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/mergesort-linkedlist](../datastructure/sorting/mergesort-linkedlist.md)
 
 heap sort
+
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/heap-and-queue/find-the-k-largest](../datastructure/heap-and-queue/find-the-k-largest.md)
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
