@@ -214,6 +214,8 @@ Tree
 
 树遍历
 
+{% embed url="https://leetcode.cn/problems/diameter-of-n-ary-tree/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
 {% embed url="https://www.nowcoder.com/practice/a9d0ecbacef9410ca97463e4a5c83be7?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
