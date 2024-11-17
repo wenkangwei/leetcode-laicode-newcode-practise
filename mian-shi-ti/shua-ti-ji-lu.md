@@ -308,6 +308,8 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 
 {% embed url="https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=188&tqId=38622&rp=1&ru=/ta/job-code-high-week&qru=/ta/job-code-high-week&difficulty=&judgeStatus=&tags=/question-ranking" %}
 
+{% embed url="https://leetcode.cn/problems/maximum-product-subarray/submissions/581186899/" %}
+
 {% embed url="https://www.nowcoder.com/practice/9cf027bf54714ad889d4f30ff0ae5481?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://leetcode.cn/problems/palindrome-partitioning-ii/" %}
