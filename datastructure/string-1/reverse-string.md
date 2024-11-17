@@ -8,7 +8,7 @@ description: Easy; String;
 
 {% embed url="https://www.nowcoder.com/practice/c3a6afee325e472386a1c4eb1ef987f3?tpId=188&tqId=38280&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-high-week%2Fquestion-ranking&tab=answerKey" %}
 
-
+{% embed url="https://leetcode.cn/problems/reverse-words-in-a-string/" %}
 
 ### 2. 题目描述
 

@@ -101,7 +101,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 ## DFS/BFS树遍历的变型题
 
-
+{% embed url="https://leetcode.cn/problems/maximum-width-of-binary-tree/submissions/581047868/" %}
 
 ## 图
 
@@ -179,6 +179,8 @@ heap sort
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
+{% embed url="https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/" %}
+
 {% embed url="https://www.nowcoder.com/practice/fc897457408f4bbe9d3f87588f497729?tpId=196&rp=1&ru=%2Factivity%2Foj&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking&tab=answerKey&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
 ### 2. Search
@@ -245,6 +247,8 @@ heap sort
 
 ## 7. 字符串
 
+{% embed url="https://leetcode.cn/problems/reverse-words-in-a-string/" %}
+
 字符串+DP:
 
 {% embed url="https://leetcode.cn/problems/edit-distance/" %}
@@ -295,6 +299,10 @@ dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 
 {% embed url="https://leetcode.cn/problems/combination-sum-iv/description/" %}
 
 
+
+背包问题:  限制和为xxx的所有方案情况
+
+{% embed url="https://leetcode.cn/problems/target-sum/" %}
 
 [https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV](https://leetcode.cn/problems/longest-increasing-subsequence/solutions/147667/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/?envType=problem-list-v2\&envId=fkOSqLYV)
 
