@@ -271,6 +271,21 @@ heap sort
 
 dfs/bfs 看成树的特例(遍历顺序， 限制遍历步数，遍历顺序， 剪纸等)
 
+
+
+{% embed url="https://leetcode.cn/problems/combination-sum-iii/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+```python3
+# 组合和排列的dfs不一样的地方在于：
+         组合每层会遍历一个选项， 分支只有这个选项用还是不用 2条路
+        
+        排列的话， 每层都会把选项列表遍历，但是会把已经选过的选项放到头部
+           下一层只会遍历后面没有用的选项。 考虑哪个选项先用后用
+        
+```
+
+
+
 {% embed url="https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
