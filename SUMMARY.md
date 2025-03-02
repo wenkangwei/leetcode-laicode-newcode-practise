@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Records of Practice](records-of-practice.md)
+* [关于Github 不支持密码问题](guan-yu-github-bu-zhi-chi-mi-ma-wen-ti.md)
 
 ## 面试题
 
