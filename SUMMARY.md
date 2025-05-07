@@ -10,6 +10,10 @@
 * [多模态大模型](mian-shi-ti/duo-mo-tai-da-mo-xing.md)
 * [刷题记录](mian-shi-ti/shua-ti-ji-lu.md)
 
+***
+
+* [算法代码实现](suan-fa-dai-ma-shi-xian.md)
+
 ## Python
 
 * [Python 笔记](python/untitled.md)
