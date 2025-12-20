@@ -8,13 +8,13 @@ laicode：[https://app.laicode.io/app/problem/142](https://app.laicode.io/app/pr
 
 Leetcode: [https://blog.csdn.net/xuchonghao/article/details/80657610](https://blog.csdn.net/xuchonghao/article/details/80657610)
 
-Given a binary tree in which each node contains an integer number. The diameter is defined as the longest distance from one leaf node to another leaf node**.** The distance is the number of nodes on the path.
+Given a binary tree in which each node contains an integer number. The diameter is defined as the longest distance from one leaf node to another leaf nod&#x65;**.** The distance is the number of nodes on the path.
 
 If there does not exist any such paths, return 0.
 
 **Examples**
 
-&#x20;   ****    5
+&#x20;   5
 
 &#x20; /    \\
 

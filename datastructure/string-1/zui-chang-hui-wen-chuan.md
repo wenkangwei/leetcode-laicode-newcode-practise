@@ -8,7 +8,7 @@ description: Medium; String;  Palindrome;
 
 {% embed url="https://leetcode-cn.com/problems/longest-palindrome/" %}
 
-****
+
 
 **2. 题目**
 

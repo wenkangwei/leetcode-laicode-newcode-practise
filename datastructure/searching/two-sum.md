@@ -4,11 +4,11 @@ description: Easy; Two pointer;
 
 # Two Sum
 
-1**.  Link**
+&#x31;**.  Link**
 
 {% embed url="https://leetcode-cn.com/problems/two-sum/" %}
 
-****
+
 
 **2. 题目**
 

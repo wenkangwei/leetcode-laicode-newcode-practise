@@ -14,9 +14,9 @@ description: Easy; LinkedList
 
 输入两个链表，找出它们的第一个公共节点。
 
-如下面的两个链表**：**
+如下面的两个链&#x8868;**：**
 
-[![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160\_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160\_statement.png)
+[![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/14/160_statement.png)
 
 ![](<../../.gitbook/assets/image (8).png>)
 

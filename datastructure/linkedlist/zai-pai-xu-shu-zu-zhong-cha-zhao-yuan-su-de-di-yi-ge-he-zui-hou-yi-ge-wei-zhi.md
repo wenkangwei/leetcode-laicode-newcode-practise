@@ -4,11 +4,11 @@ description: Binary Search; Easy;
 
 # 在排序数组中查找元素的第一个和最后一个位置
 
-1**. Link**
+&#x31;**. Link**
 
 {% embed url="https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/" %}
 
-****
+
 
 **2. 题目**
 
@@ -34,7 +34,7 @@ description: Binary Search; Easy;
 
 **3. 思路**
 
-1. &#x20;**** 思路： binary search
+1. &#x20;思路： binary search
 2. &#x20;先用binary search 找到target并不断把right pointer 移动到target的位置，从而找到 第一次出现的 target的位置，即start
 3. &#x20;从start到 len(nums)-1 的subarray里面， 重新用binary search 找到target并不断把left pointer 移动到target的位置，从而找到 最后一次次出现的 target的位置，即end
 4. 返回 \[start, end]

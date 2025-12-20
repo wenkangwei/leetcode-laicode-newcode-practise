@@ -4,7 +4,7 @@
 
 {% embed url="https://app.laicode.io/app/problem/643" %}
 
-****
+
 
 1. **题目**
 2.  Given a string with no duplicate characters, return a list with all permutations of the string and all its subsets.
@@ -15,8 +15,7 @@
 
     Set = “”, all permutations are \[“”].
 
-    Set = null, all permutations are \[].\
-
+    Set = null, all permutations are \[].<br>
 3. **思想**
    1. DFS
    2. 有n个action就有n个position要遍历
@@ -67,4 +66,3 @@ class Solution(object):
 
 ```
 
-****

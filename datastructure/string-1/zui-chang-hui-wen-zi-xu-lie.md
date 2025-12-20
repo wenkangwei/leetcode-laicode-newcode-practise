@@ -4,7 +4,7 @@ description: Medium; DP; String
 
 # 最长回文子序列-DP
 
-1**. Link**
+&#x31;**. Link**
 
 {% embed url="https://leetcode-cn.com/problems/longest-palindromic-subsequence/" %}
 
@@ -40,7 +40,7 @@ description: Medium; DP; String
 6. 遍历时候，把string   pointer  i 从后面遍历到前面, 查找 substring  i 到 len(s)-1 之间的substring
 7. Time : O(n^2), Space:O(n^2)
 
-****
+
 
 **4. Coding**
 

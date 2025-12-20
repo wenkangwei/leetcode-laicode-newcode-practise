@@ -2,13 +2,13 @@
 
 ## 1. Graph Basic
 
-**参考资料:** [**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
+**参考资料:** [**"Chapter 2 - Foundations of Graphs, Deep Learning on Graphs"**](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)
 
 ### 图的表示
 
 **定义一（图）**：
 
-* 一个图被记为$\mathcal{G}={\mathcal{V}, \mathcal{E}}$，其中 $\mathcal{V}=\left{v_{1}, \ldots, v_{N}\right}$是数量为$N=|\mathcal{V}|$ 的结点的集合， $\mathcal{E}=\left{e_{1}, \ldots, e_{M}\right}$ 是数量为 $M$ 的边的集合。
+* 一个图被记为$\mathcal{G}={\mathcal{V}, \mathcal{E\}}$，其中 $\mathcal{V}=\left{&#x76;_{1}, \ldots, v_{N}\right}$是数量为$N=|\mathcal{V}|$ 的结点的集合， $\mathcal{E}=\left{&#x65;_{1}, \ldots, e_{M}\right}$ 是数量为 $M$ 的边的集合。
 * 图用节点表示实体（entities ），用边表示实体间的关系（relations）。
 * 节点和边的信息可以是**类别型**的（categorical），类别型数据的取值只能是哪一类别。一般称类别型的信息为**标签（label）**。
 * 节点和边的信息可以是**数值型**的（numeric），类别型数据的取值范围为实数。一般称类别型的信息为**属性（attribute）**。
@@ -16,7 +16,7 @@
 
 **定义二（图的邻接矩阵）**：
 
-* 给定一个图$\mathcal{G}={\mathcal{V}, \mathcal{E}}$，其对应的**邻接矩阵**被记为$\mathbf{A} \in{0,1}^{N \times N}$。$\mathbf{A}\_{i, j}=1$表示存在从结点$v\_i$到$v\_j$的边，反之表示不存在从结点$v\_i$到$v\_j$的边。
+* 给定一个图$\mathcal{G}={\mathcal{V}, \mathcal{E\}}$，其对应的**邻接矩阵**被记为$\mathbf{A} \in{0,1}^{N \times N}$。$\mathbf{A}\_{i, j}=1$表示存在从结点$v\_i$到$v\_j$的边，反之表示不存在从结点$v\_i$到$v\_j$的边。
 * 在**无向图**中，从结点$v\_i$到$v\_j$的边存在，意味着从结点$v\_j$到$v\_i$的边也存在。因而**无向图的邻接矩阵是对称的**。
 * 在**无权图**中，**各条边的权重被认为是等价的**，即认为**各条边的权重为$1$**。
 * 对于**有权图**，其对应的邻接矩阵通常被记为$\mathbf{W} \in{0,1}^{N \times N}$，其中$\mathbf{W}_{i, j}=w_{ij}$表示从结点$v\_i$到$v\_j$的边的权重。若边不存在时，边的权重为$0$。
@@ -44,12 +44,12 @@ $$
 * 对于有向有权图，结点$v\_i$的出度（out degree）等于从$v\_i$出发的边的权重之和，结点$v\_i$的入度（in degree）等于从连向$v\_i$的边的权重之和。
 * 无向图是有向图的特殊情况，结点的出度与入度相等。
 * 无权图是有权图的特殊情况，各边的权重为$1$，那么结点$v\_i$的出度（out degree）等于从$v\_i$出发的边的数量，结点$v\_i$的入度（in degree）等于从连向$v\_i$的边的数量。
-* 结点$v_i$的度记为$d(v\_i)$，入度记为$d_{in}(v_i)$，出度记为$d_{out}(v\_i)$。
+* 结点$&#x76;_&#x69;$的度记为$d(v\_i)$，入度记为$d_{in}(&#x76;_&#x69;)$，出度记为$d_{out}(v\_i)$。
 
 **定义四（邻接结点，neighbors）**：
 
-* **结点$v\_i$的邻接结点为与结点$v\_i$直接相连的结点**，其被记为**$\mathcal{N(v\_i)}$**。
-* **结点$v\_i$的$k$跳远的邻接节点（neighbors with $k$-hop）**指的是到结点$v\_i$要走$k$步的节点（一个节点的$2$跳远的邻接节点包含了自身）。
+* **结点$v\_i$的邻接结点为与结点$v\_i$直接相连的结点**，其被记&#x4E3A;**$\mathcal{N(v\_i)}$**。
+* **结点$v\_i$的$k$跳远的邻接节点（neighbors with $k$-hop）**&#x6307;的是到结点$v\_i$要走$k$步的节点（一个节点的$2$跳远的邻接节点包含了自身）。
 
 **定义五（行走，walk）**：
 
@@ -67,7 +67,7 @@ $$
 
 **定义八（子图，subgraph）**：
 
-* 有一图$\mathcal{G}={\mathcal{V}, \mathcal{E}}$，另有一图$\mathcal{G}^{\prime}={\mathcal{V}^{\prime}, \mathcal{E}^{\prime}}$，其中$\mathcal{V}^{\prime} \in \mathcal{V}$，$\mathcal{E}^{\prime} \in \mathcal{E}$并且$\mathcal{V}^{\prime}$不包含$\mathcal{E}^{\prime}$中未出现过的结点，那么$\mathcal{G}^{\prime}$是$\mathcal{G}$的子图。
+* 有一图$\mathcal{G}={\mathcal{V}, \mathcal{E\}}$，另有一图$\mathcal{G}^{\prime}={\mathcal{V}^{\prime}, \mathcal{E}^{\prime\}}$，其中$\mathcal{V}^{\prime} \in \mathcal{V}$，$\mathcal{E}^{\prime} \in \mathcal{E}$并且$\mathcal{V}^{\prime}$不包含$\mathcal{E}^{\prime}$中未出现过的结点，那么$\mathcal{G}^{\prime}$是$\mathcal{G}$的子图。
 
 **定义九（连通分量，connected component）**：
 
@@ -79,13 +79,13 @@ $$
 
 **定义十一（最短路径，shortest path）**：
 
-*   $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对_ $$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp}}$为$\mathcal{P}\_{\mathrm{st}}$中长度最短的一条路径，其形式化定义为
+*   $$v{s}, v{t} \in \mathcal{V}$$ 是图 $$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$$ 上的一对结点，结点对 $$v{s}, v{t} \in \mathcal{V}$$ 之间所有路径的集合记为 $$\mathcal{P}{\mathrm{st}}$$ _。结点对_ $$v{s}, v{t}$$ _之间的最短路径$p_{\mathrm{s} t}^{\mathrm{sp\}}$为$\mathcal{P}\_{\mathrm{st\}}$中长度最短的一条路径，其形式化定义为
 
     $$
     p_{\mathrm{s} t}^{\mathrm{sp}}=\arg \min _{p \in \mathcal{P}_{\mathrm{st}}}|p|
     $$
 
-    其中，$p$表示$\mathcal{P}\_{\mathrm{st}}$中的一条路径，$|p|$是路径$p$的长度。
+    其中，$p$表示$\mathcal{P}\_{\mathrm{st\}}$中的一条路径，$|p|$是路径$p$的长度。
 
 **定义十二（直径，diameter）**：
 
@@ -147,11 +147,11 @@ $$
 
 ### 六、结语
 
-在此篇文章中，我们学习了简单的图论知识。对于学习此次组队学习后续的内容，掌握这些图论知识已经足够。如果有小伙伴希望掌握更多的图论知识可以参阅参考文献“[Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)”。
+在此篇文章中，我们学习了简单的图论知识。对于学习此次组队学习后续的内容，掌握这些图论知识已经足够。如果有小伙伴希望掌握更多的图论知识可以参阅参考文献“[Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)”。
 
 ### 参考资料
 
-* [Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/\~mayao4/dlg\_book/chapters/chapter2.pdf)
+* [Chapter 2 - Foundations of Graphs, Deep Learning on Graphs](https://cse.msu.edu/~mayao4/dlg_book/chapters/chapter2.pdf)
 
 ## 2. Practice
 

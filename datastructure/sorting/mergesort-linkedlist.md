@@ -1,10 +1,10 @@
 # MergeSort Linkedlist
 
-1**. link**
+&#x31;**. link**
 
 {% embed url="https://app.laicode.io/app/problem/29" %}
 
-****
+
 
 **2. 题目**
 
@@ -15,7 +15,7 @@
 1. **这里的mergesort linkedlist要考虑partition时只有左边的list只有2个node，右边的list为None，导致死循环的情况。 因为只有2个node时，通过fast slow pointer 找中点时，partition的list还是left= 2node的list， right= None**
 2. **Merge sort： Time:O(nlogn),  Space: O(logn) for recursion, O(1) for inplace operation in each node**
 
-****
+
 
 **4. Coding**
 

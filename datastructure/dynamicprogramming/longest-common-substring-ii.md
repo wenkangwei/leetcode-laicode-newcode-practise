@@ -38,7 +38,7 @@
    3. str1\[i], str2\[j] char 都不考虑&#x20;
 5. Time: O(n^2), Space: O(n^2)
 
-****
+
 
 **4. Coding**
 

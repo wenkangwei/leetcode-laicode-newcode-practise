@@ -39,11 +39,11 @@ description: Medium; Binary Search;
     2. **arr\[mid] > target  and  arr\[0] > arr\[mid]**
     3. **target >arr\[0]  and arr\[0] > arr\[mid]**
 
-    ****
+
 3. **otherwise, left = mid**
 4. **Time: O(logn), Space: O(1)**
 
-****
+
 
 **4. Coding**
 

@@ -6,7 +6,7 @@
 
 {% embed url="https://app.laicode.io/app/problem/643" %}
 
-****
+
 
 1. **题目**
 2.  Given a string with no duplicate characters, return a list with all permutations of the string and all its subsets.
@@ -17,8 +17,7 @@
 
     Set = “”, all permutations are \[“”].
 
-    Set = null, all permutations are \[].\
-
+    Set = null, all permutations are \[].<br>
 3. **思想**
    1. DFS
    2. **在原来的 all subset II without duplication 的基础里面，在不选当前的char， action\[pos] 时把所有的相同的char都不考虑进去** &#x20;
@@ -99,4 +98,3 @@ class Solution(object):
 
 ```
 
-****

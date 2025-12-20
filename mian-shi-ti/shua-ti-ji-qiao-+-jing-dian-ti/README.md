@@ -1,6 +1,6 @@
-# 刷题记录
+# 刷题技巧+经典题
 
-
+## 1. 刷题方法论
 
 刷题口头思路表达方式：
 
@@ -16,7 +16,7 @@
    9. **连续子序列： 公共前缀（DP）/  单调栈**
    10. **只要能把问题拆解成明确的子问题， 每次遍历都是子问题的重复叠加， 就不会想其他乱七八糟的corner case 加if else.， 除非是你的子问题没有想明白**
 2. 数据结构工具
-   1. 单调栈： 栈内元素单调增/减，_**用来找和大小相关的序列问**_题 ， **比当前进栈元素i刚好小（第二大） 或刚好大（第二小）的值肯定在stack\[-1]**
+   1. 单调栈： 栈内元素单调增/减，_**用来找和大小相关的序列问**_&#x9898; ， **比当前进栈元素i刚好小（第二大） 或刚好大（第二小）的值肯定在stack\[-1]**
    2. 双指针： 对array linkedlist， 滑动窗口
    3. **哈希表**： 去重， 映射中间结果， **key 不一定是位置索引**， **可以是某种中间结果**
    4. **DP：常数(只依赖上一次结果， 上一次结果通过max, min等过滤选择)，  一维度/二维 array (要记住依赖不同位置结果)**&#x20;
@@ -61,7 +61,9 @@
 dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 ```
 
-## 动态规划解题流程：
+## 2. 不同类型题目技巧
+
+### 2.1 动态规划解题流程：
 
 * 确定当前问题是不是可以拆成子问题， 比如输入矩阵或者数值， 把它看成i, i+1的数值看看之间是否有依赖
 * DP的存储有O(1), O(n), O(n^2)
@@ -82,7 +84,7 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
     * **前缀和 / 前子集最优解： dp\[i]指 arr 0-i子arr 的最优解。 dp\[i] - dp\[j]代表 中间子集最优解**
     * **注意： 只要有限制条件在，我们很难找到位置连续的最优解， 这种情况只能加多一维的DP放限制条件。**
 
-## 二叉树解题流程：
+### 2.2 二叉树解题流程：
 
 * 把二叉树路径看成arr， 但是遍历方式是树的遍历
 * 注意点:
@@ -98,6 +100,10 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
   * 满二叉树：除了叶节点外，每个节点都有左右节点
   * 完全树：树的左右子树高度<=1 /完全树， 且叶节点都在左边
   * 平衡树：树的左右子树高度<=1 /完全树
+
+
+
+## 3. 各类型经典题
 
 ## DFS/BFS树遍历的变型题
 
@@ -167,15 +173,15 @@ dp = [[0 for i in range(cols+1) ] for j in range(rows+1) ]
 
 quick sort
 
-[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method](../datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method.md)
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method](../../datastructure/sorting/find-topk-largest-quickselect-kuai-su-xuan-ze-method.md)
 
 merge sort
 
-[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/mergesort-linkedlist](../datastructure/sorting/mergesort-linkedlist.md)
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/sorting/mergesort-linkedlist](../../datastructure/sorting/mergesort-linkedlist.md)
 
 heap sort
 
-[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/heap-and-queue/find-the-k-largest](../datastructure/heap-and-queue/find-the-k-largest.md)
+[https://app.gitbook.com/o/MQg1qdqArWYMTe4S9fPp/s/-MU4s3p9Ql9V0G1xvT9E-2910905616/datastructure/heap-and-queue/find-the-k-largest](../../datastructure/heap-and-queue/find-the-k-largest.md)
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 

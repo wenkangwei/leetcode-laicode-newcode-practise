@@ -8,7 +8,8 @@
 
 * [搜索广告](mian-shi-ti/sou-suo-guang-gao.md)
 * [多模态大模型](mian-shi-ti/duo-mo-tai-da-mo-xing.md)
-* [刷题记录](mian-shi-ti/shua-ti-ji-lu.md)
+* [刷题技巧+经典题](mian-shi-ti/shua-ti-ji-qiao-+-jing-dian-ti/README.md)
+  * [刷题记录- 202512](mian-shi-ti/shua-ti-ji-qiao-+-jing-dian-ti/shua-ti-ji-lu-202512.md)
 
 ***
 

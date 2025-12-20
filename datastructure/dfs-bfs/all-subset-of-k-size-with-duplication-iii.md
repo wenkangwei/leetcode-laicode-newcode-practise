@@ -1,13 +1,12 @@
 # All Subset of K size III (with duplication without considering order)
 
-1**.Link**
+&#x31;**.Link**
 
 **2.题目**
 
 **Assumptions**
 
-There could be duplicate characters in the original set.\
-
+There could be duplicate characters in the original set.<br>
 
 **Examples**
 
@@ -21,7 +20,7 @@ Set = "", K = 0, all the subsets are \[""].
 
 Set = "", K = 1, all the subsets are \[].
 
-****
+
 
 **3. 思路**
 

@@ -1,10 +1,10 @@
 # Factor Combination-质数分解
 
-1**. Link**
+&#x31;**. Link**
 
 {% embed url="https://app.laicode.io/app/problem/404" %}
 
-****
+
 
 **2. 题目**
 

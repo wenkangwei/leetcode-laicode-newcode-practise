@@ -16,8 +16,7 @@
 
 给定 target = 7，返回 true。
 
-给定 target = 3，返回 false。\
-
+给定 target = 3，返回 false。<br>
 
 ### 示例1
 

@@ -30,7 +30,7 @@ description: 字节；腾讯
 
 想法：
 
-1. set column, row 的边界 cs_, ce_, rs re
+1. set column, row 的边界 c&#x73;_, ce_, rs re
 2. 计算它目前位置的column到cs 的距离
 3. 利用这个距离和cs, ce, rs, re 查找4个对应位置的element 并swap
 4. cs, ce, rs, re向内部缩小一层

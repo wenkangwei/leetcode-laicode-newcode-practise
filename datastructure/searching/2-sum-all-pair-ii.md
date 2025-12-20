@@ -1,6 +1,6 @@
 # 2 Sum All Pair II
 
-1**. Link**
+&#x31;**. Link**
 
 **2. 题目**
 
@@ -13,15 +13,15 @@ Find all pairs of elements in a given array that sum to the pair the given targe
 
 **Examples**
 
-* A = {2, 1, 3, 2, 4, 3, 4, 2}, target = 6, return \[\[2, 4\], \[3, 3\]\]
+* A = {2, 1, 3, 2, 4, 3, 4, 2}, target = 6, return \[\[2, 4], \[3, 3]]
 
 **3. 思路**
 
-**Time: O\(nlogn + n\), sorting + binary search iteration**
+**Time: O(nlogn + n), sorting + binary search iteration**
 
 **4. Coding**
 
-```text
+```
 class Solution(object):
   def allPairs(self, array, target):
     """
@@ -69,8 +69,6 @@ class Solution(object):
 
 
 ```
-
-
 
 
 

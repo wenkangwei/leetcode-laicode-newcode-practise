@@ -38,7 +38,7 @@ Set = "", K = 1, all the subsets are \[].
    2. 每个level只考虑 action\[pos] 选或者不选，可以除重
    3. 每个level里面用for loop把选择后的element和当前的element对调可以考虑subset的顺序性
 
-****
+
 
 **4. Coding**
 

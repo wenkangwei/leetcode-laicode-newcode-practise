@@ -61,7 +61,7 @@ for i, v in enumerate(data):
         print(s.arr)
 ```
 
-****
+
 
 **Return random largest value:**
 
@@ -105,15 +105,15 @@ for i, v in enumerate(data):
 
 ```
 
-****
 
-****
+
+
 
 ## **Reference**
 
-**\[1]** [**https://en.wikipedia.org/wiki/Reservoir\_sampling**](https://en.wikipedia.org/wiki/Reservoir\_sampling)****
+**\[1]** [**https://en.wikipedia.org/wiki/Reservoir\_sampling**](https://en.wikipedia.org/wiki/Reservoir_sampling)
 
-**\[2]**  [**https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6**](https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6)****
+**\[2]**  [**https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#\_label6**](https://www.cnblogs.com/ECJTUACM-873284962/p/6910842.html#_label6)
 
 
 

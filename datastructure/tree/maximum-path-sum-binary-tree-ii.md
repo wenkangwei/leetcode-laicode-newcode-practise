@@ -4,7 +4,7 @@ description: Hard.   二叉树任意两个节点的最大路径和
 
 # Maximum Path Sum Binary Tree II
 
-1**.Links：**
+&#x31;**.Links：**
 
 牛客: [https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196\&tqId=37050\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey](https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=196\&tqId=37050\&rp=1\&ru=%2Factivity%2Foj\&qru=%2Fta%2Fjob-code-total%2Fquestion-ranking\&tab=answerKey)
 
