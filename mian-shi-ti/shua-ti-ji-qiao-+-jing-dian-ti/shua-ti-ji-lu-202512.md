@@ -2,7 +2,7 @@
 
 ## 已做题目
 
-sorting
+**sorting**
 
 * quick sort/ quick selection
 
@@ -14,7 +14,13 @@ sorting
 
 
 
-searching
+**searching**
+
+{% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: 旋转数组考虑2点： arr\[left]和arr\[right]大小关系 和arr\[mid]与arr\[left]之间关系，怎么在非递增矩阵情况下right边界一直默认左移且默认在最小的结果位置上而不会死循环。
+
+
 
 {% embed url="https://www.nowcoder.com/practice/4f470d1d3b734f8aaf2afb014185b395?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -47,7 +53,7 @@ searching
 
 
 
-heap/Array
+**heap/Array**
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
@@ -57,7 +63,7 @@ heap/Array
 
 * 滑动窗口+ max-heap
 
-DFS
+**DFS**
 
 {% embed url="https://leetcode.cn/problems/combination-sum-iii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
@@ -66,7 +72,7 @@ DFS
 
 
 
-BFS
+**BFS**
 
 {% embed url="https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -74,7 +80,7 @@ BFS
 
 
 
-Tree
+**Tree**
 
 树遍历
 
@@ -137,6 +143,12 @@ class Solution:
 
 
 
+P
+
+
+
+
+
 ## 待做题目
 
 #### sorting&#x20;
@@ -160,8 +172,6 @@ heap sort
 
 
 #### Searching
-
-{% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 
 
