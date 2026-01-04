@@ -2,7 +2,7 @@
 
 ## 已做题目
 
-**sorting**
+#### **sorting**
 
 * quick sort/ quick selection
 
@@ -14,7 +14,7 @@
 
 
 
-**searching**
+#### **searching**
 
 {% embed url="https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
@@ -53,7 +53,7 @@
 
 
 
-**heap/Array**
+#### **heap/Array**
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
@@ -65,30 +65,47 @@
 
 
 
-**DFS**
+#### **DFS**
 
-permutation 排列
+**permutation 排列**
 
 {% embed url="https://leetcode.cn/problems/permutations-ii/" %}
 
 {% embed url="https://leetcode.cn/problems/permutations/submissions/688951631/" %}
 
-* 思路： dfs + option排序去重逻辑
+* 思路： dfs + 排序去重逻辑
 
 
 
-combination
+**combination**
+
+{% embed url="https://leetcode.cn/problems/combination-sum-ii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路:  类似凑硬币问题，有2个问题先要解决
+  * 选项数字可能重复，需要先通过字典进行去重和次数存储
+    * dfs recursion里面的**for循环 是当前选项数字的使用次数**。(**排序问题里面的for循环是当前位置选择用哪个数字**)&#x20;
+  * terminal state 递归层数最大是去重后的选项数 或者 和为target的组合数字的层数。有2个条件。
 
 
 
 {% embed url="https://leetcode.cn/problems/combination-sum-iii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
-* 思路：组合问题，不是排列问题， recursion 里只有2个child
+* 思路：组合问题，不是排列问题， recursion 里只有2个child/ 选和不选。 重点是终止条件的先后
 * 备注： 细节问题， 注意传参被传错
 
 
 
-**BFS**
+
+
+Palidrome回文数
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
+
+
+
+
+
+#### **BFS**
 
 {% embed url="https://www.nowcoder.com/practice/0c9664d1554e466aa107d899418e814e?tpId=188&tags=&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -96,7 +113,7 @@ combination
 
 
 
-**Tree**
+#### **Tree**
 
 树遍历
 
@@ -184,8 +201,6 @@ heap sort
 
 
 #### Searching
-
-
 
 #### Array&#x20;
 
