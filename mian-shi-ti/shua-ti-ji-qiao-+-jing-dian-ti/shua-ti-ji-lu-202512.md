@@ -61,9 +61,21 @@
 
 {% embed url="https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
-* 滑动窗口+ max-heap
+* 滑动窗口+ 单调队列（单调递减队列存放window里第1，2，3.。k大值）
+
+
 
 **DFS**
+
+p
+
+{% embed url="https://leetcode.cn/problems/permutations-ii/" %}
+
+{% embed url="https://leetcode.cn/problems/permutations/submissions/688951631/" %}
+
+* 思路： dfs + option排序去重逻辑
+
+
 
 {% embed url="https://leetcode.cn/problems/combination-sum-iii/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
@@ -83,10 +95,6 @@
 **Tree**
 
 树遍历
-
-
-
-
 
 
 
@@ -143,7 +151,7 @@ class Solution:
 
 
 
-P
+
 
 
 
