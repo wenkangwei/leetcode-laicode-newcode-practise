@@ -53,7 +53,7 @@
 
 
 
-#### **heap/Array**
+#### **heap/Array/Stack**
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
 
@@ -65,6 +65,16 @@
 
 
 
+{% embed url="https://leetcode.cn/problems/0ynMMM/submissions/689820599/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路： 单调栈 存储， left\[i] = 从左往右数比heights\[i] 小的最大数 right\[i]同理
+
+#### Set
+
+{% embed url="https://leetcode.cn/problems/longest-substring-without-repeating-characters/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: sliding window + set
+
 #### **DFS**
 
 **permutation 排列**
@@ -74,6 +84,7 @@
 {% embed url="https://leetcode.cn/problems/permutations/submissions/688951631/" %}
 
 * 思路： dfs + 排序去重逻辑
+  * 要先把选项排序，然后在dfs的递归里的for循环中对比 opt\[i-1], opt\[i]把已经选择过的元素skip掉
 
 
 
@@ -95,13 +106,16 @@
 
 
 
-
-
-Palidrome回文数
+**Palidrome回文数**
 
 {% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
 
-
+* 思路:  分割回文数得到所有**回文数组合**， 和 **全排列逻辑类似**， 区别只在
+  * for循环里面从选择数字变成 选择 边界数字(分割的最后一个数字)
+  * for循环里面，进入下一层递归时，**从起始位置pos +1变成终止位置i+1 来跳过中间的分割选项**
+  * **加入dp存储 回文数状态**，dp\[i]\[j] 取决于dp\[i+1]\[j-1] 和s\[i]==s\[j]
+* 回文数判断方法:
+  * 分奇数偶数长度情况判断corner case， 然后从外到内或内到外延申判断
 
 
 
@@ -116,8 +130,6 @@ Palidrome回文数
 #### **Tree**
 
 树遍历
-
-
 
 {% embed url="https://www.nowcoder.com/practice/e0cc33a83afe4530bcec46eba3325116?tpId=188&tags=583&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
@@ -172,9 +184,77 @@ class Solution:
 
 
 
+#### DP
+
+* dp思路技巧回顾
+  * 问题凡是带 "最xx" 最长最短等等 找某个状态的极端值，用dp存储状态 + 贪心算法找极值
+  * dp存储的状态1个维度是存答案的状态，其他维度是其他中间状态。&#x20;
+    * 比如 ”最长长度“，dp\[i]\[j] 里i存长度， j可以存其他维度状态
 
 
 
+{% embed url="https://leetcode.cn/problems/longest-arithmetic-subsequence/submissions/689810933/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路：二维dp， dp\[i]\[d], i是以第i个数字结尾的等差=d的子序列长度
+
+{% embed url="https://leetcode.cn/problems/edit-distance/submissions/689332682/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: 二维dp，dp\[i]\[j] , i, j都是代表字符的位置
+
+{% embed url="https://leetcode.cn/problems/longest-increasing-subsequence/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: dp\[i] = 以s\[i]结尾的字串的最长递增子序列长度
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-iii/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路：&#x20;
+  * 拆分2个问题
+    * 子串变成回文数的编辑次数 cost\[i]\[j]
+    * 对字串s\[:i] 分割为 j 次的最小次数 dp\[i]\[j]
+    * dp\[i]\[j]转移方程: dp\[i]\[j] 变成用 i1 遍历0 \~i 位置里的  上一个位置状态dp\[i1]\[j-1] + 最后一次编辑的次数cost\[i1]\[i-1]
+  * code
+
+{% code overflow="wrap" expandable="true" %}
+```python
+// Some code
+class Solution:
+    def palindromePartition(self, s: str, k: int) -> int:
+        """
+        拆分问题
+        1. find palindrome first and use dp[i][j] = cost of modifying s[i:j+1] to palindrome
+        2. The find  min cost
+        """
+        n = len(s)
+        cost = [ [0] * len(s)  for _ in range(len(s))]
+        # find  palindrome cost
+        for gap in range(2, n+1):
+            # gap between left, right boundary
+            for left in range( n-gap +1):
+                right = left + gap -1
+                # 从左到右移动，gap从小到大变大
+                # cost = 变成回文数的编辑次数
+                cost[left][right] = cost[left+1][right-1] + 0 if s[left] == s[right] else 1
+        
+        dp = [ [10**9] * (k+1) for _ in range(n+1) ]
+        dp[0][0] = 0
+        # dp[i][j] = 对s[:i+1]切分成j个回文数的次数和 
+        # dp[i][j] 依赖上一个相邻字串的总编辑次数 +  新增字串的cost
+        for i in range(1, n+1):
+            # 字串长度为i
+            for j in range(1, min(k, i) +1):
+                # 切分成 j个分区，j< k,i
+                if j == 1:
+                    # 只切分1个分区，就是 s[0: i]字串
+                    dp[i][j] = cost[0][i-1]
+                else:
+                    for i1 in range(j-1, i):
+                        # cost[i1][i-1] = 最后一个分区的编辑次数
+                        # dp[i1][j-1] 前j-1个分区且末尾字串为i1的字串的编辑次数
+                        dp[i][j] = min(dp[i][j] , dp[i1][j-1] + cost[i1][i-1])
+        return dp[n][k]
+
+```
+{% endcode %}
 
 
 
@@ -214,19 +294,17 @@ heap sort
 
 DFS
 
-{% embed url="https://leetcode.cn/problems/palindrome-partitioning/description/" %}
-
-{% embed url="https://leetcode.cn/problems/palindrome-partitioning-iii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
-
 BFS
-
-
 
 #### DP&#x20;
 
 {% embed url="https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
-####
+
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-iii/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
 
 #### Tree
 
