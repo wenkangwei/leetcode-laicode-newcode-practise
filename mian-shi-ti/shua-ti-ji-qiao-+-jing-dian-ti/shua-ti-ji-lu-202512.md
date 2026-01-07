@@ -131,6 +131,10 @@
 
 树遍历
 
+{% embed url="https://leetcode.cn/problems/6eUYwP/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路： **前缀和 + 树遍历，  可以参考和为target的子数组题目，只是变成树结构遍历而**已
+
 {% embed url="https://www.nowcoder.com/practice/e0cc33a83afe4530bcec46eba3325116?tpId=188&tags=583&title=&difficulty=&judgeStatus=&rp=1&sourceUrl=&gioEnter=menu" %}
 
 * 注意：o1, o2不能是ancester
