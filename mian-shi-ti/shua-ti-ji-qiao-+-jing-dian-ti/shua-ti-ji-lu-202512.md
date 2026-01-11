@@ -53,6 +53,20 @@
 
 
 
+#### LinkedList
+
+{% embed url="https://leetcode.cn/problems/swap-nodes-in-pairs/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路： fast slow pointer， 对 slow.next节点开始, fast 节点结尾的group进行反转
+
+{% embed url="https://leetcode.cn/problems/reverse-nodes-in-k-group/submissions/690537596/" %}
+
+
+
+
+
+
+
 #### **heap/Array/Stack**
 
 {% embed url="https://leetcode.cn/problems/merge-k-sorted-lists/" %}
@@ -259,6 +273,17 @@ class Solution:
 
 ```
 {% endcode %}
+
+
+
+
+
+{% embed url="https://leetcode.cn/problems/longest-palindromic-substring/solutions/63641/zhong-xin-kuo-san-fa-he-dong-tai-gui-hua-by-reedfa/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: 找最长回文数， 中心延展法 内到外延申
+  * 备注: 如果是检测是否回文数， 可以由外到内递归判断 dp\[i:j] = dp\[ i+1:j-1 ] && s\[i]==s\[j]
+
+
 
 
 
