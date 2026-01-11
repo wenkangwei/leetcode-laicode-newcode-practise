@@ -61,9 +61,15 @@
 
 {% embed url="https://leetcode.cn/problems/reverse-nodes-in-k-group/submissions/690537596/" %}
 
+{% embed url="https://leetcode.cn/problems/partition-list/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 
 
+
+
+#### Two pointer
+
+{% embed url="https://leetcode.cn/problems/container-with-most-water/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 
 
@@ -198,6 +204,10 @@ class Solution:
 
 * recursion swap 左右节点即可
 
+#### Zig-zag Order / BFS
+
+{% embed url="https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
 
 
 
@@ -276,6 +286,18 @@ class Solution:
 
 
 
+{% embed url="https://leetcode.cn/problems/jump-game-ii/submissions/690667237/" %}
+
+* 跳台阶: dp, 状态dp\[i]= i结尾最远达到距离， i 达不到max\_pos时需要step一跳
+
+
+
+{% embed url="https://leetcode.cn/problems/longest-increasing-subsequence/" %}
+
+* 思路: dp, 子序列问题 dp\[i] = 以i结尾的子序列的最长长度，&#x20;
+
+
+
 
 
 {% embed url="https://leetcode.cn/problems/longest-palindromic-substring/solutions/63641/zhong-xin-kuo-san-fa-he-dong-tai-gui-hua-by-reedfa/?envType=problem-list-v2&envId=fkOSqLYV" %}
@@ -284,6 +306,14 @@ class Solution:
   * 备注: 如果是检测是否回文数， 可以由外到内递归判断 dp\[i:j] = dp\[ i+1:j-1 ] && s\[i]==s\[j]
 
 
+
+{% embed url="https://leetcode.cn/problems/target-sum/description/" %}
+
+
+
+{% embed url="https://leetcode.cn/problems/contiguous-array/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+* 思路: prefix sum =0
 
 
 
