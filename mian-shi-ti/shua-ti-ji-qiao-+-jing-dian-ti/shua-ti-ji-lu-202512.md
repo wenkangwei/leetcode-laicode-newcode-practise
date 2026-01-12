@@ -65,6 +65,8 @@
 
 
 
+{% embed url="https://leetcode.cn/problems/add-two-numbers-ii/submissions/690905297/" %}
+
 
 
 #### Two pointer
@@ -204,6 +206,10 @@ class Solution:
 
 * recursion swap 左右节点即可
 
+{% embed url="https://leetcode.cn/problems/sum-root-to-leaf-numbers/submissions/690915446/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
 #### Zig-zag Order / BFS
 
 {% embed url="https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal/?envType=problem-list-v2&envId=fkOSqLYV" %}
@@ -314,6 +320,20 @@ class Solution:
 {% embed url="https://leetcode.cn/problems/contiguous-array/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 * 思路: prefix sum =0
+
+
+
+{% embed url="https://leetcode.cn/problems/longest-arithmetic-subsequence-of-given-difference/description/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
+{% embed url="https://leetcode.cn/problems/longest-common-subsequence/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
+
+
+
 
 
 
