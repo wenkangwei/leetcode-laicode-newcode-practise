@@ -227,6 +227,26 @@ class Solution:
 
 
 
+{% embed url="https://leetcode.cn/problems/maximum-product-subarray/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+```
+// Some code 最大累加和思路
+
+def max_sum(nums):
+    max_sum = -float('inf')
+    res = max_sum
+    for i in range(len(nums)):
+        max_sum = max(max_sum, 0) + nums[i]
+        res = max(res, max_sum)
+    return res
+```
+
+
+
+
+
+
+
 {% embed url="https://leetcode.cn/problems/longest-arithmetic-subsequence/submissions/689810933/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
 * 思路：二维dp， dp\[i]\[d], i是以第i个数字结尾的等差=d的子序列长度
