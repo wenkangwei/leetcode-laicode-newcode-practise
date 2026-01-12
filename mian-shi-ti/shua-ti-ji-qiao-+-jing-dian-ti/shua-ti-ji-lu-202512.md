@@ -331,7 +331,61 @@ class Solution:
 
 
 
+```
+// Some code
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
+        """
+            a b c d e       
+        a   1 1 1 1 1 
+        c   1 1 2 2 2
+        e   1 1 2 2 3
 
+
+            b s b i n i n m
+        j   0 0 0 0 0 0 0 0 
+        m   0 0 0 0 0 0 0 1
+        j   0 0 0 0 0 0 0 1
+        k   0 0 0 0 0 0 0 1
+        b   1 1  
+        k
+        j
+        k
+        v
+        dp[i][j] = s[:i] 和s2[:j] 最长公共子序列长度
+        dp[i][j] = max(dp[i-1][j-1], dp[i-1][j], dp[i][j-1] ) + 0 if s[i]!=s[j] else 1 
+        """
+        #长度+1 是为了考虑边界值， 从空值开始
+        dp = [ [0] * (len(text1)+1) for _ in range(len(text2)+1) ]
+
+        for r in range(1, len(text2)+1):
+            for c in range(1, len(text1)+1):
+                if text1[c-1] == text2[r-1]:
+                    # 如果最后一个字符是一样的，那么dp[r][c]就是前一行和前一列的解+1
+                    dp[r][c] = dp[r-1][c-1] + 1
+                else:
+                    # 如果最后一个字符不一样, 那么就找上一次情况的解里面最大那个
+                    dp[r][c] = max(max(dp[r-1][c], dp[r][c-1]), dp[r-1][c-1])
+
+        return dp[-1][-1]
+                
+                    
+class Solution:
+    def longestCommonSubsequence(self, s: str, t: str) -> int:
+        f = [0] * (len(t) + 1)
+        for x in s:
+            pre = 0  # f[0]
+            for j, y in enumerate(t):
+                tmp = f[j + 1]
+                f[j + 1] = pre + 1 if x == y else max(f[j + 1], f[j])
+                pre = tmp
+        return f[-1]
+
+作者：灵茶山艾府
+链接：https://leetcode.cn/problems/longest-common-subsequence/solutions/2133188/jiao-ni-yi-bu-bu-si-kao-dong-tai-gui-hua-lbz5/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
 
 
 
