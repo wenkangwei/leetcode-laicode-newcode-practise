@@ -225,7 +225,7 @@ class Solution:
   * dp存储的状态1个维度是存答案的状态，其他维度是其他中间状态。&#x20;
     * 比如 ”最长长度“，dp\[i]\[j] 里i存长度， j可以存其他维度状态
 
-
+{% embed url="https://www.nowcoder.com/practice/abbec6a3779940aab2cc564b22d36859?tpId=191&rp=1&ru=%2Fta%2Fjob-code-high-algorithm&qru=%2Fta%2Fjob-code-high-algorithm&difficulty=&judgeStatus=&tags=583%2C593&title=&sourceUrl=&gioEnter=menu" %}
 
 {% embed url="https://leetcode.cn/problems/maximum-product-subarray/?envType=problem-list-v2&envId=fkOSqLYV" %}
 
@@ -243,7 +243,11 @@ def max_sum(nums):
 
 
 
+{% embed url="https://www.nowcoder.com/practice/da785ea0f64b442488c125b441a4ba4a?tpId=188&rp=1&ru=%2Fta%2Fjob-code-high-week&qru=%2Fta%2Fjob-code-high-week&difficulty=&judgeStatus=&tags=&title=&sourceUrl=&gioEnter=menu" %}
 
+
+
+{% embed url="https://leetcode.cn/problems/palindrome-partitioning-ii/" %}
 
 
 
@@ -312,6 +316,16 @@ class Solution:
 
 
 
+
+
+{% embed url="https://leetcode.cn/problems/maximal-square/solutions/234964/zui-da-zheng-fang-xing-by-leetcode-solution/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
+{% embed url="https://leetcode.cn/problems/smallest-range-ii/submissions/691178895/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
+
 {% embed url="https://leetcode.cn/problems/jump-game-ii/submissions/690667237/" %}
 
 * 跳台阶: dp, 状态dp\[i]= i结尾最远达到距离， i 达不到max\_pos时需要step一跳
@@ -348,6 +362,8 @@ class Solution:
 
 
 {% embed url="https://leetcode.cn/problems/longest-common-subsequence/?envType=problem-list-v2&envId=fkOSqLYV" %}
+
+
 
 
 
